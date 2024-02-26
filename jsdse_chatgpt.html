@@ -107,21 +107,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1 data-number="1"><span class="header-section-number">1</span> Background &amp; data</h1>
 <p>This notebook includes the code and data that were used to produce the results of our study, which was submitted to the Journal of Statistics and Data Science Education.</p>
 <p>Note that the complete raw text data is not being made available to protect the privacy of the student writers. However, samples from the published and ChatGPT-generated data are included in order to demonstrate the processing pipeline.</p>
-<section id="load-packages" class="level3" data-number="1.0.1">
-<h3 data-number="1.0.1" class="anchored" data-anchor-id="load-packages"><span class="header-section-number">1.0.1</span> Load packages</h3>
+<section id="load-packages" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="load-packages"><span class="header-section-number">1.1</span> Load packages</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="load-data" class="level3" data-number="1.0.2">
-<h3 data-number="1.0.2" class="anchored" data-anchor-id="load-data"><span class="header-section-number">1.0.2</span> Load data</h3>
+<section id="load-data" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="load-data"><span class="header-section-number">1.2</span> Load data</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"data/chatgpt_data.rda"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="create-a-composition-table" class="level3" data-number="1.0.3">
-<h3 data-number="1.0.3" class="anchored" data-anchor-id="create-a-composition-table"><span class="header-section-number">1.0.3</span> Create a composition table</h3>
+<section id="create-a-composition-table" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="create-a-composition-table"><span class="header-section-number">1.3</span> Create a composition table</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>corpus_comp <span class="ot">&lt;-</span> stats_freq <span class="sc">%&gt;%</span> </span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> AF_chatgpt<span class="sc">:</span>AF_student, <span class="at">names_to =</span> <span class="st">"Author_Type"</span>, <span class="at">values_to =</span> <span class="st">"AF"</span>) <span class="sc">%&gt;%</span></span>
@@ -139,23 +139,23 @@ Table&nbsp;1: Composition of corpus.
 </figcaption>
 <div aria-describedby="tbl-corpus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="ycxcphjjwf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ycxcphjjwf table {
+<div id="gassiskiao" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#gassiskiao table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ycxcphjjwf thead, #ycxcphjjwf tbody, #ycxcphjjwf tfoot, #ycxcphjjwf tr, #ycxcphjjwf td, #ycxcphjjwf th {
+#gassiskiao thead, #gassiskiao tbody, #gassiskiao tfoot, #gassiskiao tr, #gassiskiao td, #gassiskiao th {
   border-style: none;
 }
 
-#ycxcphjjwf p {
+#gassiskiao p {
   margin: 0;
   padding: 0;
 }
 
-#ycxcphjjwf .gt_table {
+#gassiskiao .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -181,12 +181,12 @@ Table&nbsp;1: Composition of corpus.
   border-left-color: #D3D3D3;
 }
 
-#ycxcphjjwf .gt_caption {
+#gassiskiao .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ycxcphjjwf .gt_title {
+#gassiskiao .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -198,7 +198,7 @@ Table&nbsp;1: Composition of corpus.
   border-bottom-width: 0;
 }
 
-#ycxcphjjwf .gt_subtitle {
+#gassiskiao .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -210,7 +210,7 @@ Table&nbsp;1: Composition of corpus.
   border-top-width: 0;
 }
 
-#ycxcphjjwf .gt_heading {
+#gassiskiao .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -222,13 +222,13 @@ Table&nbsp;1: Composition of corpus.
   border-right-color: #D3D3D3;
 }
 
-#ycxcphjjwf .gt_bottom_border {
+#gassiskiao .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ycxcphjjwf .gt_col_headings {
+#gassiskiao .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -243,7 +243,7 @@ Table&nbsp;1: Composition of corpus.
   border-right-color: #D3D3D3;
 }
 
-#ycxcphjjwf .gt_col_heading {
+#gassiskiao .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -263,7 +263,7 @@ Table&nbsp;1: Composition of corpus.
   overflow-x: hidden;
 }
 
-#ycxcphjjwf .gt_column_spanner_outer {
+#gassiskiao .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -275,15 +275,15 @@ Table&nbsp;1: Composition of corpus.
   padding-right: 4px;
 }
 
-#ycxcphjjwf .gt_column_spanner_outer:first-child {
+#gassiskiao .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ycxcphjjwf .gt_column_spanner_outer:last-child {
+#gassiskiao .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ycxcphjjwf .gt_column_spanner {
+#gassiskiao .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -295,11 +295,11 @@ Table&nbsp;1: Composition of corpus.
   width: 100%;
 }
 
-#ycxcphjjwf .gt_spanner_row {
+#gassiskiao .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ycxcphjjwf .gt_group_heading {
+#gassiskiao .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -325,7 +325,7 @@ Table&nbsp;1: Composition of corpus.
   text-align: left;
 }
 
-#ycxcphjjwf .gt_empty_group_heading {
+#gassiskiao .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -340,15 +340,15 @@ Table&nbsp;1: Composition of corpus.
   vertical-align: middle;
 }
 
-#ycxcphjjwf .gt_from_md > :first-child {
+#gassiskiao .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ycxcphjjwf .gt_from_md > :last-child {
+#gassiskiao .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ycxcphjjwf .gt_row {
+#gassiskiao .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -367,7 +367,7 @@ Table&nbsp;1: Composition of corpus.
   overflow-x: hidden;
 }
 
-#ycxcphjjwf .gt_stub {
+#gassiskiao .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -380,7 +380,7 @@ Table&nbsp;1: Composition of corpus.
   padding-right: 5px;
 }
 
-#ycxcphjjwf .gt_stub_row_group {
+#gassiskiao .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -394,15 +394,15 @@ Table&nbsp;1: Composition of corpus.
   vertical-align: top;
 }
 
-#ycxcphjjwf .gt_row_group_first td {
+#gassiskiao .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ycxcphjjwf .gt_row_group_first th {
+#gassiskiao .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ycxcphjjwf .gt_summary_row {
+#gassiskiao .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -412,16 +412,16 @@ Table&nbsp;1: Composition of corpus.
   padding-right: 5px;
 }
 
-#ycxcphjjwf .gt_first_summary_row {
+#gassiskiao .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ycxcphjjwf .gt_first_summary_row.thick {
+#gassiskiao .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ycxcphjjwf .gt_last_summary_row {
+#gassiskiao .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -431,7 +431,7 @@ Table&nbsp;1: Composition of corpus.
   border-bottom-color: #D3D3D3;
 }
 
-#ycxcphjjwf .gt_grand_summary_row {
+#gassiskiao .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -441,7 +441,7 @@ Table&nbsp;1: Composition of corpus.
   padding-right: 5px;
 }
 
-#ycxcphjjwf .gt_first_grand_summary_row {
+#gassiskiao .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -451,7 +451,7 @@ Table&nbsp;1: Composition of corpus.
   border-top-color: #D3D3D3;
 }
 
-#ycxcphjjwf .gt_last_grand_summary_row_top {
+#gassiskiao .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -461,11 +461,11 @@ Table&nbsp;1: Composition of corpus.
   border-bottom-color: #D3D3D3;
 }
 
-#ycxcphjjwf .gt_striped {
+#gassiskiao .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ycxcphjjwf .gt_table_body {
+#gassiskiao .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -474,7 +474,7 @@ Table&nbsp;1: Composition of corpus.
   border-bottom-color: #D3D3D3;
 }
 
-#ycxcphjjwf .gt_footnotes {
+#gassiskiao .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -488,7 +488,7 @@ Table&nbsp;1: Composition of corpus.
   border-right-color: #D3D3D3;
 }
 
-#ycxcphjjwf .gt_footnote {
+#gassiskiao .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -497,7 +497,7 @@ Table&nbsp;1: Composition of corpus.
   padding-right: 5px;
 }
 
-#ycxcphjjwf .gt_sourcenotes {
+#gassiskiao .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -511,7 +511,7 @@ Table&nbsp;1: Composition of corpus.
   border-right-color: #D3D3D3;
 }
 
-#ycxcphjjwf .gt_sourcenote {
+#gassiskiao .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -519,63 +519,63 @@ Table&nbsp;1: Composition of corpus.
   padding-right: 5px;
 }
 
-#ycxcphjjwf .gt_left {
+#gassiskiao .gt_left {
   text-align: left;
 }
 
-#ycxcphjjwf .gt_center {
+#gassiskiao .gt_center {
   text-align: center;
 }
 
-#ycxcphjjwf .gt_right {
+#gassiskiao .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ycxcphjjwf .gt_font_normal {
+#gassiskiao .gt_font_normal {
   font-weight: normal;
 }
 
-#ycxcphjjwf .gt_font_bold {
+#gassiskiao .gt_font_bold {
   font-weight: bold;
 }
 
-#ycxcphjjwf .gt_font_italic {
+#gassiskiao .gt_font_italic {
   font-style: italic;
 }
 
-#ycxcphjjwf .gt_super {
+#gassiskiao .gt_super {
   font-size: 65%;
 }
 
-#ycxcphjjwf .gt_footnote_marks {
+#gassiskiao .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ycxcphjjwf .gt_asterisk {
+#gassiskiao .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ycxcphjjwf .gt_indent_1 {
+#gassiskiao .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ycxcphjjwf .gt_indent_2 {
+#gassiskiao .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ycxcphjjwf .gt_indent_3 {
+#gassiskiao .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ycxcphjjwf .gt_indent_4 {
+#gassiskiao .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ycxcphjjwf .gt_indent_5 {
+#gassiskiao .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -736,23 +736,23 @@ Table&nbsp;2: Caption describing table.
 </figcaption>
 <div aria-describedby="tbl-ld1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="zwhdedmjvr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#zwhdedmjvr table {
+<div id="plgjlwqfcd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#plgjlwqfcd table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#zwhdedmjvr thead, #zwhdedmjvr tbody, #zwhdedmjvr tfoot, #zwhdedmjvr tr, #zwhdedmjvr td, #zwhdedmjvr th {
+#plgjlwqfcd thead, #plgjlwqfcd tbody, #plgjlwqfcd tfoot, #plgjlwqfcd tr, #plgjlwqfcd td, #plgjlwqfcd th {
   border-style: none;
 }
 
-#zwhdedmjvr p {
+#plgjlwqfcd p {
   margin: 0;
   padding: 0;
 }
 
-#zwhdedmjvr .gt_table {
+#plgjlwqfcd .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -778,12 +778,12 @@ Table&nbsp;2: Caption describing table.
   border-left-color: #D3D3D3;
 }
 
-#zwhdedmjvr .gt_caption {
+#plgjlwqfcd .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#zwhdedmjvr .gt_title {
+#plgjlwqfcd .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -795,7 +795,7 @@ Table&nbsp;2: Caption describing table.
   border-bottom-width: 0;
 }
 
-#zwhdedmjvr .gt_subtitle {
+#plgjlwqfcd .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -807,7 +807,7 @@ Table&nbsp;2: Caption describing table.
   border-top-width: 0;
 }
 
-#zwhdedmjvr .gt_heading {
+#plgjlwqfcd .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -819,13 +819,13 @@ Table&nbsp;2: Caption describing table.
   border-right-color: #D3D3D3;
 }
 
-#zwhdedmjvr .gt_bottom_border {
+#plgjlwqfcd .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zwhdedmjvr .gt_col_headings {
+#plgjlwqfcd .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -840,7 +840,7 @@ Table&nbsp;2: Caption describing table.
   border-right-color: #D3D3D3;
 }
 
-#zwhdedmjvr .gt_col_heading {
+#plgjlwqfcd .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -860,7 +860,7 @@ Table&nbsp;2: Caption describing table.
   overflow-x: hidden;
 }
 
-#zwhdedmjvr .gt_column_spanner_outer {
+#plgjlwqfcd .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -872,15 +872,15 @@ Table&nbsp;2: Caption describing table.
   padding-right: 4px;
 }
 
-#zwhdedmjvr .gt_column_spanner_outer:first-child {
+#plgjlwqfcd .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zwhdedmjvr .gt_column_spanner_outer:last-child {
+#plgjlwqfcd .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zwhdedmjvr .gt_column_spanner {
+#plgjlwqfcd .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -892,11 +892,11 @@ Table&nbsp;2: Caption describing table.
   width: 100%;
 }
 
-#zwhdedmjvr .gt_spanner_row {
+#plgjlwqfcd .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#zwhdedmjvr .gt_group_heading {
+#plgjlwqfcd .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -922,7 +922,7 @@ Table&nbsp;2: Caption describing table.
   text-align: left;
 }
 
-#zwhdedmjvr .gt_empty_group_heading {
+#plgjlwqfcd .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -937,15 +937,15 @@ Table&nbsp;2: Caption describing table.
   vertical-align: middle;
 }
 
-#zwhdedmjvr .gt_from_md > :first-child {
+#plgjlwqfcd .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zwhdedmjvr .gt_from_md > :last-child {
+#plgjlwqfcd .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zwhdedmjvr .gt_row {
+#plgjlwqfcd .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -964,7 +964,7 @@ Table&nbsp;2: Caption describing table.
   overflow-x: hidden;
 }
 
-#zwhdedmjvr .gt_stub {
+#plgjlwqfcd .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -977,7 +977,7 @@ Table&nbsp;2: Caption describing table.
   padding-right: 5px;
 }
 
-#zwhdedmjvr .gt_stub_row_group {
+#plgjlwqfcd .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -991,15 +991,15 @@ Table&nbsp;2: Caption describing table.
   vertical-align: top;
 }
 
-#zwhdedmjvr .gt_row_group_first td {
+#plgjlwqfcd .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#zwhdedmjvr .gt_row_group_first th {
+#plgjlwqfcd .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#zwhdedmjvr .gt_summary_row {
+#plgjlwqfcd .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1009,16 +1009,16 @@ Table&nbsp;2: Caption describing table.
   padding-right: 5px;
 }
 
-#zwhdedmjvr .gt_first_summary_row {
+#plgjlwqfcd .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#zwhdedmjvr .gt_first_summary_row.thick {
+#plgjlwqfcd .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#zwhdedmjvr .gt_last_summary_row {
+#plgjlwqfcd .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1028,7 +1028,7 @@ Table&nbsp;2: Caption describing table.
   border-bottom-color: #D3D3D3;
 }
 
-#zwhdedmjvr .gt_grand_summary_row {
+#plgjlwqfcd .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1038,7 +1038,7 @@ Table&nbsp;2: Caption describing table.
   padding-right: 5px;
 }
 
-#zwhdedmjvr .gt_first_grand_summary_row {
+#plgjlwqfcd .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1048,7 +1048,7 @@ Table&nbsp;2: Caption describing table.
   border-top-color: #D3D3D3;
 }
 
-#zwhdedmjvr .gt_last_grand_summary_row_top {
+#plgjlwqfcd .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1058,11 +1058,11 @@ Table&nbsp;2: Caption describing table.
   border-bottom-color: #D3D3D3;
 }
 
-#zwhdedmjvr .gt_striped {
+#plgjlwqfcd .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zwhdedmjvr .gt_table_body {
+#plgjlwqfcd .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1071,7 +1071,7 @@ Table&nbsp;2: Caption describing table.
   border-bottom-color: #D3D3D3;
 }
 
-#zwhdedmjvr .gt_footnotes {
+#plgjlwqfcd .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1085,7 +1085,7 @@ Table&nbsp;2: Caption describing table.
   border-right-color: #D3D3D3;
 }
 
-#zwhdedmjvr .gt_footnote {
+#plgjlwqfcd .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1094,7 +1094,7 @@ Table&nbsp;2: Caption describing table.
   padding-right: 5px;
 }
 
-#zwhdedmjvr .gt_sourcenotes {
+#plgjlwqfcd .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1108,7 +1108,7 @@ Table&nbsp;2: Caption describing table.
   border-right-color: #D3D3D3;
 }
 
-#zwhdedmjvr .gt_sourcenote {
+#plgjlwqfcd .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1116,63 +1116,63 @@ Table&nbsp;2: Caption describing table.
   padding-right: 5px;
 }
 
-#zwhdedmjvr .gt_left {
+#plgjlwqfcd .gt_left {
   text-align: left;
 }
 
-#zwhdedmjvr .gt_center {
+#plgjlwqfcd .gt_center {
   text-align: center;
 }
 
-#zwhdedmjvr .gt_right {
+#plgjlwqfcd .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zwhdedmjvr .gt_font_normal {
+#plgjlwqfcd .gt_font_normal {
   font-weight: normal;
 }
 
-#zwhdedmjvr .gt_font_bold {
+#plgjlwqfcd .gt_font_bold {
   font-weight: bold;
 }
 
-#zwhdedmjvr .gt_font_italic {
+#plgjlwqfcd .gt_font_italic {
   font-style: italic;
 }
 
-#zwhdedmjvr .gt_super {
+#plgjlwqfcd .gt_super {
   font-size: 65%;
 }
 
-#zwhdedmjvr .gt_footnote_marks {
+#plgjlwqfcd .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#zwhdedmjvr .gt_asterisk {
+#plgjlwqfcd .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#zwhdedmjvr .gt_indent_1 {
+#plgjlwqfcd .gt_indent_1 {
   text-indent: 5px;
 }
 
-#zwhdedmjvr .gt_indent_2 {
+#plgjlwqfcd .gt_indent_2 {
   text-indent: 10px;
 }
 
-#zwhdedmjvr .gt_indent_3 {
+#plgjlwqfcd .gt_indent_3 {
   text-indent: 15px;
 }
 
-#zwhdedmjvr .gt_indent_4 {
+#plgjlwqfcd .gt_indent_4 {
   text-indent: 20px;
 }
 
-#zwhdedmjvr .gt_indent_5 {
+#plgjlwqfcd .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1359,23 +1359,23 @@ Table&nbsp;3: Caption describing table.
 </figcaption>
 <div aria-describedby="tbl-ld2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="flqydvsqlg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#flqydvsqlg table {
+<div id="mnjzbdwell" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#mnjzbdwell table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#flqydvsqlg thead, #flqydvsqlg tbody, #flqydvsqlg tfoot, #flqydvsqlg tr, #flqydvsqlg td, #flqydvsqlg th {
+#mnjzbdwell thead, #mnjzbdwell tbody, #mnjzbdwell tfoot, #mnjzbdwell tr, #mnjzbdwell td, #mnjzbdwell th {
   border-style: none;
 }
 
-#flqydvsqlg p {
+#mnjzbdwell p {
   margin: 0;
   padding: 0;
 }
 
-#flqydvsqlg .gt_table {
+#mnjzbdwell .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1401,12 +1401,12 @@ Table&nbsp;3: Caption describing table.
   border-left-color: #D3D3D3;
 }
 
-#flqydvsqlg .gt_caption {
+#mnjzbdwell .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#flqydvsqlg .gt_title {
+#mnjzbdwell .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1418,7 +1418,7 @@ Table&nbsp;3: Caption describing table.
   border-bottom-width: 0;
 }
 
-#flqydvsqlg .gt_subtitle {
+#mnjzbdwell .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1430,7 +1430,7 @@ Table&nbsp;3: Caption describing table.
   border-top-width: 0;
 }
 
-#flqydvsqlg .gt_heading {
+#mnjzbdwell .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1442,13 +1442,13 @@ Table&nbsp;3: Caption describing table.
   border-right-color: #D3D3D3;
 }
 
-#flqydvsqlg .gt_bottom_border {
+#mnjzbdwell .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#flqydvsqlg .gt_col_headings {
+#mnjzbdwell .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1463,7 +1463,7 @@ Table&nbsp;3: Caption describing table.
   border-right-color: #D3D3D3;
 }
 
-#flqydvsqlg .gt_col_heading {
+#mnjzbdwell .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1483,7 +1483,7 @@ Table&nbsp;3: Caption describing table.
   overflow-x: hidden;
 }
 
-#flqydvsqlg .gt_column_spanner_outer {
+#mnjzbdwell .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1495,15 +1495,15 @@ Table&nbsp;3: Caption describing table.
   padding-right: 4px;
 }
 
-#flqydvsqlg .gt_column_spanner_outer:first-child {
+#mnjzbdwell .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#flqydvsqlg .gt_column_spanner_outer:last-child {
+#mnjzbdwell .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#flqydvsqlg .gt_column_spanner {
+#mnjzbdwell .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1515,11 +1515,11 @@ Table&nbsp;3: Caption describing table.
   width: 100%;
 }
 
-#flqydvsqlg .gt_spanner_row {
+#mnjzbdwell .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#flqydvsqlg .gt_group_heading {
+#mnjzbdwell .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1545,7 +1545,7 @@ Table&nbsp;3: Caption describing table.
   text-align: left;
 }
 
-#flqydvsqlg .gt_empty_group_heading {
+#mnjzbdwell .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1560,15 +1560,15 @@ Table&nbsp;3: Caption describing table.
   vertical-align: middle;
 }
 
-#flqydvsqlg .gt_from_md > :first-child {
+#mnjzbdwell .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#flqydvsqlg .gt_from_md > :last-child {
+#mnjzbdwell .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#flqydvsqlg .gt_row {
+#mnjzbdwell .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1587,7 +1587,7 @@ Table&nbsp;3: Caption describing table.
   overflow-x: hidden;
 }
 
-#flqydvsqlg .gt_stub {
+#mnjzbdwell .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1600,7 +1600,7 @@ Table&nbsp;3: Caption describing table.
   padding-right: 5px;
 }
 
-#flqydvsqlg .gt_stub_row_group {
+#mnjzbdwell .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1614,15 +1614,15 @@ Table&nbsp;3: Caption describing table.
   vertical-align: top;
 }
 
-#flqydvsqlg .gt_row_group_first td {
+#mnjzbdwell .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#flqydvsqlg .gt_row_group_first th {
+#mnjzbdwell .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#flqydvsqlg .gt_summary_row {
+#mnjzbdwell .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1632,16 +1632,16 @@ Table&nbsp;3: Caption describing table.
   padding-right: 5px;
 }
 
-#flqydvsqlg .gt_first_summary_row {
+#mnjzbdwell .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#flqydvsqlg .gt_first_summary_row.thick {
+#mnjzbdwell .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#flqydvsqlg .gt_last_summary_row {
+#mnjzbdwell .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1651,7 +1651,7 @@ Table&nbsp;3: Caption describing table.
   border-bottom-color: #D3D3D3;
 }
 
-#flqydvsqlg .gt_grand_summary_row {
+#mnjzbdwell .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1661,7 +1661,7 @@ Table&nbsp;3: Caption describing table.
   padding-right: 5px;
 }
 
-#flqydvsqlg .gt_first_grand_summary_row {
+#mnjzbdwell .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1671,7 +1671,7 @@ Table&nbsp;3: Caption describing table.
   border-top-color: #D3D3D3;
 }
 
-#flqydvsqlg .gt_last_grand_summary_row_top {
+#mnjzbdwell .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1681,11 +1681,11 @@ Table&nbsp;3: Caption describing table.
   border-bottom-color: #D3D3D3;
 }
 
-#flqydvsqlg .gt_striped {
+#mnjzbdwell .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#flqydvsqlg .gt_table_body {
+#mnjzbdwell .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1694,7 +1694,7 @@ Table&nbsp;3: Caption describing table.
   border-bottom-color: #D3D3D3;
 }
 
-#flqydvsqlg .gt_footnotes {
+#mnjzbdwell .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1708,7 +1708,7 @@ Table&nbsp;3: Caption describing table.
   border-right-color: #D3D3D3;
 }
 
-#flqydvsqlg .gt_footnote {
+#mnjzbdwell .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1717,7 +1717,7 @@ Table&nbsp;3: Caption describing table.
   padding-right: 5px;
 }
 
-#flqydvsqlg .gt_sourcenotes {
+#mnjzbdwell .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1731,7 +1731,7 @@ Table&nbsp;3: Caption describing table.
   border-right-color: #D3D3D3;
 }
 
-#flqydvsqlg .gt_sourcenote {
+#mnjzbdwell .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1739,63 +1739,63 @@ Table&nbsp;3: Caption describing table.
   padding-right: 5px;
 }
 
-#flqydvsqlg .gt_left {
+#mnjzbdwell .gt_left {
   text-align: left;
 }
 
-#flqydvsqlg .gt_center {
+#mnjzbdwell .gt_center {
   text-align: center;
 }
 
-#flqydvsqlg .gt_right {
+#mnjzbdwell .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#flqydvsqlg .gt_font_normal {
+#mnjzbdwell .gt_font_normal {
   font-weight: normal;
 }
 
-#flqydvsqlg .gt_font_bold {
+#mnjzbdwell .gt_font_bold {
   font-weight: bold;
 }
 
-#flqydvsqlg .gt_font_italic {
+#mnjzbdwell .gt_font_italic {
   font-style: italic;
 }
 
-#flqydvsqlg .gt_super {
+#mnjzbdwell .gt_super {
   font-size: 65%;
 }
 
-#flqydvsqlg .gt_footnote_marks {
+#mnjzbdwell .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#flqydvsqlg .gt_asterisk {
+#mnjzbdwell .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#flqydvsqlg .gt_indent_1 {
+#mnjzbdwell .gt_indent_1 {
   text-indent: 5px;
 }
 
-#flqydvsqlg .gt_indent_2 {
+#mnjzbdwell .gt_indent_2 {
   text-indent: 10px;
 }
 
-#flqydvsqlg .gt_indent_3 {
+#mnjzbdwell .gt_indent_3 {
   text-indent: 15px;
 }
 
-#flqydvsqlg .gt_indent_4 {
+#mnjzbdwell .gt_indent_4 {
   text-indent: 20px;
 }
 
-#flqydvsqlg .gt_indent_5 {
+#mnjzbdwell .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1923,24 +1923,30 @@ n:100</strong></th>
 <h1 data-number="4"><span class="header-section-number">4</span> Modal verb frequencies</h1>
 <p>Say stuff…</p>
 <div class="cell">
+<div id="tbl-modals" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-modals-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4: Caption describing table.
+</figcaption>
+<div aria-describedby="tbl-modals-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="ifhuyxfytb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ifhuyxfytb table {
+<div id="kszkxuxbda" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#kszkxuxbda table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ifhuyxfytb thead, #ifhuyxfytb tbody, #ifhuyxfytb tfoot, #ifhuyxfytb tr, #ifhuyxfytb td, #ifhuyxfytb th {
+#kszkxuxbda thead, #kszkxuxbda tbody, #kszkxuxbda tfoot, #kszkxuxbda tr, #kszkxuxbda td, #kszkxuxbda th {
   border-style: none;
 }
 
-#ifhuyxfytb p {
+#kszkxuxbda p {
   margin: 0;
   padding: 0;
 }
 
-#ifhuyxfytb .gt_table {
+#kszkxuxbda .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1966,12 +1972,12 @@ n:100</strong></th>
   border-left-color: #D3D3D3;
 }
 
-#ifhuyxfytb .gt_caption {
+#kszkxuxbda .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ifhuyxfytb .gt_title {
+#kszkxuxbda .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1983,7 +1989,7 @@ n:100</strong></th>
   border-bottom-width: 0;
 }
 
-#ifhuyxfytb .gt_subtitle {
+#kszkxuxbda .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1995,7 +2001,7 @@ n:100</strong></th>
   border-top-width: 0;
 }
 
-#ifhuyxfytb .gt_heading {
+#kszkxuxbda .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2007,13 +2013,13 @@ n:100</strong></th>
   border-right-color: #D3D3D3;
 }
 
-#ifhuyxfytb .gt_bottom_border {
+#kszkxuxbda .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ifhuyxfytb .gt_col_headings {
+#kszkxuxbda .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2028,7 +2034,7 @@ n:100</strong></th>
   border-right-color: #D3D3D3;
 }
 
-#ifhuyxfytb .gt_col_heading {
+#kszkxuxbda .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2048,7 +2054,7 @@ n:100</strong></th>
   overflow-x: hidden;
 }
 
-#ifhuyxfytb .gt_column_spanner_outer {
+#kszkxuxbda .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2060,15 +2066,15 @@ n:100</strong></th>
   padding-right: 4px;
 }
 
-#ifhuyxfytb .gt_column_spanner_outer:first-child {
+#kszkxuxbda .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ifhuyxfytb .gt_column_spanner_outer:last-child {
+#kszkxuxbda .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ifhuyxfytb .gt_column_spanner {
+#kszkxuxbda .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2080,11 +2086,11 @@ n:100</strong></th>
   width: 100%;
 }
 
-#ifhuyxfytb .gt_spanner_row {
+#kszkxuxbda .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ifhuyxfytb .gt_group_heading {
+#kszkxuxbda .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2110,7 +2116,7 @@ n:100</strong></th>
   text-align: left;
 }
 
-#ifhuyxfytb .gt_empty_group_heading {
+#kszkxuxbda .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2125,15 +2131,15 @@ n:100</strong></th>
   vertical-align: middle;
 }
 
-#ifhuyxfytb .gt_from_md > :first-child {
+#kszkxuxbda .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ifhuyxfytb .gt_from_md > :last-child {
+#kszkxuxbda .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ifhuyxfytb .gt_row {
+#kszkxuxbda .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2152,7 +2158,7 @@ n:100</strong></th>
   overflow-x: hidden;
 }
 
-#ifhuyxfytb .gt_stub {
+#kszkxuxbda .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2165,7 +2171,7 @@ n:100</strong></th>
   padding-right: 5px;
 }
 
-#ifhuyxfytb .gt_stub_row_group {
+#kszkxuxbda .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2179,15 +2185,15 @@ n:100</strong></th>
   vertical-align: top;
 }
 
-#ifhuyxfytb .gt_row_group_first td {
+#kszkxuxbda .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ifhuyxfytb .gt_row_group_first th {
+#kszkxuxbda .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ifhuyxfytb .gt_summary_row {
+#kszkxuxbda .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2197,16 +2203,16 @@ n:100</strong></th>
   padding-right: 5px;
 }
 
-#ifhuyxfytb .gt_first_summary_row {
+#kszkxuxbda .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ifhuyxfytb .gt_first_summary_row.thick {
+#kszkxuxbda .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ifhuyxfytb .gt_last_summary_row {
+#kszkxuxbda .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2216,7 +2222,7 @@ n:100</strong></th>
   border-bottom-color: #D3D3D3;
 }
 
-#ifhuyxfytb .gt_grand_summary_row {
+#kszkxuxbda .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2226,7 +2232,7 @@ n:100</strong></th>
   padding-right: 5px;
 }
 
-#ifhuyxfytb .gt_first_grand_summary_row {
+#kszkxuxbda .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2236,7 +2242,7 @@ n:100</strong></th>
   border-top-color: #D3D3D3;
 }
 
-#ifhuyxfytb .gt_last_grand_summary_row_top {
+#kszkxuxbda .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2246,11 +2252,11 @@ n:100</strong></th>
   border-bottom-color: #D3D3D3;
 }
 
-#ifhuyxfytb .gt_striped {
+#kszkxuxbda .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ifhuyxfytb .gt_table_body {
+#kszkxuxbda .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2259,7 +2265,7 @@ n:100</strong></th>
   border-bottom-color: #D3D3D3;
 }
 
-#ifhuyxfytb .gt_footnotes {
+#kszkxuxbda .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2273,7 +2279,7 @@ n:100</strong></th>
   border-right-color: #D3D3D3;
 }
 
-#ifhuyxfytb .gt_footnote {
+#kszkxuxbda .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2282,7 +2288,7 @@ n:100</strong></th>
   padding-right: 5px;
 }
 
-#ifhuyxfytb .gt_sourcenotes {
+#kszkxuxbda .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2296,7 +2302,7 @@ n:100</strong></th>
   border-right-color: #D3D3D3;
 }
 
-#ifhuyxfytb .gt_sourcenote {
+#kszkxuxbda .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2304,68 +2310,68 @@ n:100</strong></th>
   padding-right: 5px;
 }
 
-#ifhuyxfytb .gt_left {
+#kszkxuxbda .gt_left {
   text-align: left;
 }
 
-#ifhuyxfytb .gt_center {
+#kszkxuxbda .gt_center {
   text-align: center;
 }
 
-#ifhuyxfytb .gt_right {
+#kszkxuxbda .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ifhuyxfytb .gt_font_normal {
+#kszkxuxbda .gt_font_normal {
   font-weight: normal;
 }
 
-#ifhuyxfytb .gt_font_bold {
+#kszkxuxbda .gt_font_bold {
   font-weight: bold;
 }
 
-#ifhuyxfytb .gt_font_italic {
+#kszkxuxbda .gt_font_italic {
   font-style: italic;
 }
 
-#ifhuyxfytb .gt_super {
+#kszkxuxbda .gt_super {
   font-size: 65%;
 }
 
-#ifhuyxfytb .gt_footnote_marks {
+#kszkxuxbda .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ifhuyxfytb .gt_asterisk {
+#kszkxuxbda .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ifhuyxfytb .gt_indent_1 {
+#kszkxuxbda .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ifhuyxfytb .gt_indent_2 {
+#kszkxuxbda .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ifhuyxfytb .gt_indent_3 {
+#kszkxuxbda .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ifhuyxfytb .gt_indent_4 {
+#kszkxuxbda .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ifhuyxfytb .gt_indent_5 {
+#kszkxuxbda .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
 
-<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table do-not-create-environment cell table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
 <tr class="header gt_col_headings gt_spanner_row">
 <th rowspan="2" id="Modal verb" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Modal verb</th>
@@ -2478,10 +2484,1640 @@ n:100</strong></th>
 </div>
 </div>
 </div>
+</figure>
+</div>
+</div>
 </section>
 <section id="noun-phrases" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> Noun phrases</h1>
 <p>Say stuff…</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>count_pre <span class="ot">&lt;-</span> <span class="cf">function</span>(np, root){</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  np_vector <span class="ot">&lt;-</span> stringi<span class="sc">::</span><span class="fu">stri_extract_all_words</span>(np) <span class="sc">%&gt;%</span> <span class="fu">unlist</span>()</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  n_pre <span class="ot">&lt;-</span> <span class="fu">match</span>(root, np_vector) <span class="sc">-</span> <span class="dv">1</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  n_pre <span class="ot">&lt;-</span> <span class="fu">unlist</span>(<span class="fu">unname</span>(n_pre))</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(n_pre)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>count_post <span class="ot">&lt;-</span> <span class="cf">function</span>(np, root){</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  np_vector <span class="ot">&lt;-</span> stringi<span class="sc">::</span><span class="fu">stri_extract_all_words</span>(np) <span class="sc">%&gt;%</span> <span class="fu">unlist</span>()</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  n_post <span class="ot">&lt;-</span> <span class="fu">length</span>(np_vector) <span class="sc">-</span> <span class="fu">match</span>(root, np_vector)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  n_post <span class="ot">&lt;-</span> <span class="fu">unlist</span>(<span class="fu">unname</span>(n_post))</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(n_post)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>pre_counts <span class="ot">&lt;-</span> stats_nps <span class="sc">%&gt;%</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(author_type, pre_nom) <span class="sc">%&gt;%</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">count =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(author_type) <span class="sc">%&gt;%</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">proportion =</span> count<span class="sc">/</span><span class="fu">sum</span>(count) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="sc">-</span>proportion)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>post_counts <span class="ot">&lt;-</span> stats_nps <span class="sc">%&gt;%</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(author_type, post_nom) <span class="sc">%&gt;%</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">count =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(author_type) <span class="sc">%&gt;%</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">proportion =</span> count<span class="sc">/</span><span class="fu">sum</span>(count) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="sc">-</span>proportion)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We actually don’t have these in the study, but they’re interesting?</p>
+<div class="cell">
+<div id="tbl-prenominal" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-prenominal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5: Caption describing table.
+</figcaption>
+<div aria-describedby="tbl-prenominal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div id="shsovcands" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#shsovcands table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#shsovcands thead, #shsovcands tbody, #shsovcands tfoot, #shsovcands tr, #shsovcands td, #shsovcands th {
+  border-style: none;
+}
+
+#shsovcands p {
+  margin: 0;
+  padding: 0;
+}
+
+#shsovcands .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#shsovcands .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#shsovcands .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#shsovcands .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#shsovcands .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#shsovcands .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#shsovcands .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#shsovcands .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#shsovcands .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#shsovcands .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#shsovcands .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#shsovcands .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#shsovcands .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#shsovcands .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#shsovcands .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#shsovcands .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#shsovcands .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#shsovcands .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#shsovcands .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#shsovcands .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#shsovcands .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#shsovcands .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#shsovcands .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#shsovcands .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#shsovcands .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#shsovcands .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#shsovcands .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#shsovcands .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#shsovcands .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#shsovcands .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#shsovcands .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#shsovcands .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#shsovcands .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#shsovcands .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#shsovcands .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#shsovcands .gt_left {
+  text-align: left;
+}
+
+#shsovcands .gt_center {
+  text-align: center;
+}
+
+#shsovcands .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#shsovcands .gt_font_normal {
+  font-weight: normal;
+}
+
+#shsovcands .gt_font_bold {
+  font-weight: bold;
+}
+
+#shsovcands .gt_font_italic {
+  font-style: italic;
+}
+
+#shsovcands .gt_super {
+  font-size: 65%;
+}
+
+#shsovcands .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#shsovcands .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#shsovcands .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#shsovcands .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#shsovcands .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#shsovcands .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#shsovcands .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_col_headings gt_spanner_row">
+<th rowspan="2" id="Pre-nominal POS" class="gt_col_heading gt_columns_bottom_border gt_left" style="text-align: right;" data-quarto-table-cell-role="th" scope="col">Pre-nominal POS</th>
+<th colspan="3" id="Absolute Frequency" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><span class="gt_column_spanner">Absolute Frequency</span></th>
+<th colspan="3" id="Relative Frequency (per 10<sup>2</sup> words)" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><span class="gt_column_spanner">Relative Frequency (per 10<sup>2</sup> words)</span></th>
+</tr>
+<tr class="odd gt_col_headings">
+<th id="ChatGPT" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">ChatGPT</th>
+<th id="Published" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Published</th>
+<th id="Student" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Student</th>
+<th id="ChatGPT" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">ChatGPT</th>
+<th id="Published" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Published</th>
+<th id="Student" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Student</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">NA</td>
+<td class="gt_row gt_right" headers="count_chatgpt">431</td>
+<td class="gt_row gt_right" headers="count_published">2043</td>
+<td class="gt_row gt_right" headers="count_student">654</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">29.95</td>
+<td class="gt_row gt_right" headers="proportion_published">27.85</td>
+<td class="gt_row gt_right" headers="proportion_student">31.96</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">NN</td>
+<td class="gt_row gt_right" headers="count_chatgpt">441</td>
+<td class="gt_row gt_right" headers="count_published">1038</td>
+<td class="gt_row gt_right" headers="count_student">188</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">30.65</td>
+<td class="gt_row gt_right" headers="proportion_published">14.15</td>
+<td class="gt_row gt_right" headers="proportion_student">9.19</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">JJ</td>
+<td class="gt_row gt_right" headers="count_chatgpt">190</td>
+<td class="gt_row gt_right" headers="count_published">1943</td>
+<td class="gt_row gt_right" headers="count_student">368</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">13.20</td>
+<td class="gt_row gt_right" headers="proportion_published">26.49</td>
+<td class="gt_row gt_right" headers="proportion_student">17.99</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">DT</td>
+<td class="gt_row gt_right" headers="count_chatgpt">268</td>
+<td class="gt_row gt_right" headers="count_published">1412</td>
+<td class="gt_row gt_right" headers="count_student">517</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">18.62</td>
+<td class="gt_row gt_right" headers="proportion_published">19.25</td>
+<td class="gt_row gt_right" headers="proportion_student">25.27</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">PRP$</td>
+<td class="gt_row gt_right" headers="count_chatgpt">4</td>
+<td class="gt_row gt_right" headers="count_published">102</td>
+<td class="gt_row gt_right" headers="count_student">92</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.28</td>
+<td class="gt_row gt_right" headers="proportion_published">1.39</td>
+<td class="gt_row gt_right" headers="proportion_student">4.50</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">NNP</td>
+<td class="gt_row gt_right" headers="count_chatgpt">4</td>
+<td class="gt_row gt_right" headers="count_published">285</td>
+<td class="gt_row gt_right" headers="count_student">49</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.28</td>
+<td class="gt_row gt_right" headers="proportion_published">3.88</td>
+<td class="gt_row gt_right" headers="proportion_student">2.39</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">JJR</td>
+<td class="gt_row gt_right" headers="count_chatgpt">49</td>
+<td class="gt_row gt_right" headers="count_published">50</td>
+<td class="gt_row gt_right" headers="count_student">37</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">3.41</td>
+<td class="gt_row gt_right" headers="proportion_published">0.68</td>
+<td class="gt_row gt_right" headers="proportion_student">1.81</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">VBN</td>
+<td class="gt_row gt_right" headers="count_chatgpt">12</td>
+<td class="gt_row gt_right" headers="count_published">126</td>
+<td class="gt_row gt_right" headers="count_student">20</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.83</td>
+<td class="gt_row gt_right" headers="proportion_published">1.72</td>
+<td class="gt_row gt_right" headers="proportion_student">0.98</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">CD</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">87</td>
+<td class="gt_row gt_right" headers="count_student">30</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">1.19</td>
+<td class="gt_row gt_right" headers="proportion_student">1.47</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">VBG</td>
+<td class="gt_row gt_right" headers="count_chatgpt">14</td>
+<td class="gt_row gt_right" headers="count_published">83</td>
+<td class="gt_row gt_right" headers="count_student">20</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.97</td>
+<td class="gt_row gt_right" headers="proportion_published">1.13</td>
+<td class="gt_row gt_right" headers="proportion_student">0.98</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">NNS</td>
+<td class="gt_row gt_right" headers="count_chatgpt">12</td>
+<td class="gt_row gt_right" headers="count_published">23</td>
+<td class="gt_row gt_right" headers="count_student">12</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.83</td>
+<td class="gt_row gt_right" headers="proportion_published">0.31</td>
+<td class="gt_row gt_right" headers="proportion_student">0.59</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">POS</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">9</td>
+<td class="gt_row gt_right" headers="count_student">17</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.12</td>
+<td class="gt_row gt_right" headers="proportion_student">0.83</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">HYPH</td>
+<td class="gt_row gt_right" headers="count_chatgpt">11</td>
+<td class="gt_row gt_right" headers="count_published">57</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.76</td>
+<td class="gt_row gt_right" headers="proportion_published">0.78</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">JJS</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">28</td>
+<td class="gt_row gt_right" headers="count_student">14</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.38</td>
+<td class="gt_row gt_right" headers="proportion_student">0.68</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">WP</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">1</td>
+<td class="gt_row gt_right" headers="count_student">10</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.01</td>
+<td class="gt_row gt_right" headers="proportion_student">0.49</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">WDT</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">8</td>
+<td class="gt_row gt_right" headers="count_student">9</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.11</td>
+<td class="gt_row gt_right" headers="proportion_student">0.44</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">RB</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">12</td>
+<td class="gt_row gt_right" headers="count_student">4</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.16</td>
+<td class="gt_row gt_right" headers="proportion_student">0.20</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">SYM</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">13</td>
+<td class="gt_row gt_right" headers="count_student">1</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.18</td>
+<td class="gt_row gt_right" headers="proportion_student">0.05</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">IN</td>
+<td class="gt_row gt_right" headers="count_chatgpt">1</td>
+<td class="gt_row gt_right" headers="count_published">5</td>
+<td class="gt_row gt_right" headers="count_student">2</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.07</td>
+<td class="gt_row gt_right" headers="proportion_published">0.07</td>
+<td class="gt_row gt_right" headers="proportion_student">0.10</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">CC</td>
+<td class="gt_row gt_right" headers="count_chatgpt">1</td>
+<td class="gt_row gt_right" headers="count_published">2</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.07</td>
+<td class="gt_row gt_right" headers="proportion_published">0.03</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">VB</td>
+<td class="gt_row gt_right" headers="count_chatgpt">1</td>
+<td class="gt_row gt_right" headers="count_published">0</td>
+<td class="gt_row gt_right" headers="count_student">1</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.07</td>
+<td class="gt_row gt_right" headers="proportion_published">0.00</td>
+<td class="gt_row gt_right" headers="proportion_student">0.05</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">NNPS</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">2</td>
+<td class="gt_row gt_right" headers="count_student">1</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.03</td>
+<td class="gt_row gt_right" headers="proportion_student">0.05</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">VBD</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">3</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.04</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">FW</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">1</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.01</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">RP</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">1</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.01</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">VBZ</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">1</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.01</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="pre_nom">WP$</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">1</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.01</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="cell">
+<div id="tbl-postnominal" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-postnominal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6: Caption describing table.
+</figcaption>
+<div aria-describedby="tbl-postnominal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div id="qdyilccmmz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qdyilccmmz table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#qdyilccmmz thead, #qdyilccmmz tbody, #qdyilccmmz tfoot, #qdyilccmmz tr, #qdyilccmmz td, #qdyilccmmz th {
+  border-style: none;
+}
+
+#qdyilccmmz p {
+  margin: 0;
+  padding: 0;
+}
+
+#qdyilccmmz .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#qdyilccmmz .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#qdyilccmmz .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#qdyilccmmz .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#qdyilccmmz .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qdyilccmmz .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qdyilccmmz .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qdyilccmmz .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#qdyilccmmz .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#qdyilccmmz .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#qdyilccmmz .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#qdyilccmmz .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#qdyilccmmz .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#qdyilccmmz .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#qdyilccmmz .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#qdyilccmmz .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#qdyilccmmz .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#qdyilccmmz .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#qdyilccmmz .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qdyilccmmz .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#qdyilccmmz .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#qdyilccmmz .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#qdyilccmmz .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qdyilccmmz .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#qdyilccmmz .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#qdyilccmmz .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qdyilccmmz .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qdyilccmmz .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#qdyilccmmz .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qdyilccmmz .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#qdyilccmmz .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qdyilccmmz .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qdyilccmmz .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qdyilccmmz .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qdyilccmmz .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qdyilccmmz .gt_left {
+  text-align: left;
+}
+
+#qdyilccmmz .gt_center {
+  text-align: center;
+}
+
+#qdyilccmmz .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#qdyilccmmz .gt_font_normal {
+  font-weight: normal;
+}
+
+#qdyilccmmz .gt_font_bold {
+  font-weight: bold;
+}
+
+#qdyilccmmz .gt_font_italic {
+  font-style: italic;
+}
+
+#qdyilccmmz .gt_super {
+  font-size: 65%;
+}
+
+#qdyilccmmz .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#qdyilccmmz .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#qdyilccmmz .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#qdyilccmmz .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#qdyilccmmz .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#qdyilccmmz .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#qdyilccmmz .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_col_headings gt_spanner_row">
+<th rowspan="2" id="Post-nominal POS" class="gt_col_heading gt_columns_bottom_border gt_left" style="text-align: right;" data-quarto-table-cell-role="th" scope="col">Post-nominal POS</th>
+<th colspan="3" id="Absolute Frequency" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><span class="gt_column_spanner">Absolute Frequency</span></th>
+<th colspan="3" id="Relative Frequency (per 10<sup>2</sup> words)" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><span class="gt_column_spanner">Relative Frequency (per 10<sup>2</sup> words)</span></th>
+</tr>
+<tr class="odd gt_col_headings">
+<th id="ChatGPT" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">ChatGPT</th>
+<th id="Published" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Published</th>
+<th id="Student" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Student</th>
+<th id="ChatGPT" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">ChatGPT</th>
+<th id="Published" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Published</th>
+<th id="Student" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Student</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">NA</td>
+<td class="gt_row gt_right" headers="count_chatgpt">716</td>
+<td class="gt_row gt_right" headers="count_published">3837</td>
+<td class="gt_row gt_right" headers="count_student">1177</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">49.76</td>
+<td class="gt_row gt_right" headers="proportion_published">52.30</td>
+<td class="gt_row gt_right" headers="proportion_student">57.53</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">IN</td>
+<td class="gt_row gt_right" headers="count_chatgpt">513</td>
+<td class="gt_row gt_right" headers="count_published">2284</td>
+<td class="gt_row gt_right" headers="count_student">604</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">35.65</td>
+<td class="gt_row gt_right" headers="proportion_published">31.13</td>
+<td class="gt_row gt_right" headers="proportion_student">29.52</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">CC</td>
+<td class="gt_row gt_right" headers="count_chatgpt">69</td>
+<td class="gt_row gt_right" headers="count_published">305</td>
+<td class="gt_row gt_right" headers="count_student">79</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">4.79</td>
+<td class="gt_row gt_right" headers="proportion_published">4.16</td>
+<td class="gt_row gt_right" headers="proportion_student">3.86</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">WP</td>
+<td class="gt_row gt_right" headers="count_chatgpt">38</td>
+<td class="gt_row gt_right" headers="count_published">8</td>
+<td class="gt_row gt_right" headers="count_student">14</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">2.64</td>
+<td class="gt_row gt_right" headers="proportion_published">0.11</td>
+<td class="gt_row gt_right" headers="proportion_student">0.68</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">NN</td>
+<td class="gt_row gt_right" headers="count_chatgpt">37</td>
+<td class="gt_row gt_right" headers="count_published">45</td>
+<td class="gt_row gt_right" headers="count_student">9</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">2.57</td>
+<td class="gt_row gt_right" headers="proportion_published">0.61</td>
+<td class="gt_row gt_right" headers="proportion_student">0.44</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">WDT</td>
+<td class="gt_row gt_right" headers="count_chatgpt">16</td>
+<td class="gt_row gt_right" headers="count_published">147</td>
+<td class="gt_row gt_right" headers="count_student">38</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">1.11</td>
+<td class="gt_row gt_right" headers="proportion_published">2.00</td>
+<td class="gt_row gt_right" headers="proportion_student">1.86</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">VBN</td>
+<td class="gt_row gt_right" headers="count_chatgpt">2</td>
+<td class="gt_row gt_right" headers="count_published">140</td>
+<td class="gt_row gt_right" headers="count_student">16</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.14</td>
+<td class="gt_row gt_right" headers="proportion_published">1.91</td>
+<td class="gt_row gt_right" headers="proportion_student">0.78</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">VBG</td>
+<td class="gt_row gt_right" headers="count_chatgpt">10</td>
+<td class="gt_row gt_right" headers="count_published">112</td>
+<td class="gt_row gt_right" headers="count_student">14</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.69</td>
+<td class="gt_row gt_right" headers="proportion_published">1.53</td>
+<td class="gt_row gt_right" headers="proportion_student">0.68</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">JJ</td>
+<td class="gt_row gt_right" headers="count_chatgpt">21</td>
+<td class="gt_row gt_right" headers="count_published">74</td>
+<td class="gt_row gt_right" headers="count_student">19</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">1.46</td>
+<td class="gt_row gt_right" headers="proportion_published">1.01</td>
+<td class="gt_row gt_right" headers="proportion_student">0.93</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">TO</td>
+<td class="gt_row gt_right" headers="count_chatgpt">3</td>
+<td class="gt_row gt_right" headers="count_published">92</td>
+<td class="gt_row gt_right" headers="count_student">27</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.21</td>
+<td class="gt_row gt_right" headers="proportion_published">1.25</td>
+<td class="gt_row gt_right" headers="proportion_student">1.32</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">NNP</td>
+<td class="gt_row gt_right" headers="count_chatgpt">1</td>
+<td class="gt_row gt_right" headers="count_published">55</td>
+<td class="gt_row gt_right" headers="count_student">7</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.07</td>
+<td class="gt_row gt_right" headers="proportion_published">0.75</td>
+<td class="gt_row gt_right" headers="proportion_student">0.34</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">RB</td>
+<td class="gt_row gt_right" headers="count_chatgpt">3</td>
+<td class="gt_row gt_right" headers="count_published">50</td>
+<td class="gt_row gt_right" headers="count_student">8</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.21</td>
+<td class="gt_row gt_right" headers="proportion_published">0.68</td>
+<td class="gt_row gt_right" headers="proportion_student">0.39</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">NNS</td>
+<td class="gt_row gt_right" headers="count_chatgpt">9</td>
+<td class="gt_row gt_right" headers="count_published">4</td>
+<td class="gt_row gt_right" headers="count_student">5</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.63</td>
+<td class="gt_row gt_right" headers="proportion_published">0.05</td>
+<td class="gt_row gt_right" headers="proportion_student">0.24</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">CD</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">44</td>
+<td class="gt_row gt_right" headers="count_student">2</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.60</td>
+<td class="gt_row gt_right" headers="proportion_student">0.10</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">WRB</td>
+<td class="gt_row gt_right" headers="count_chatgpt">1</td>
+<td class="gt_row gt_right" headers="count_published">31</td>
+<td class="gt_row gt_right" headers="count_student">8</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.07</td>
+<td class="gt_row gt_right" headers="proportion_published">0.42</td>
+<td class="gt_row gt_right" headers="proportion_student">0.39</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">DT</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">29</td>
+<td class="gt_row gt_right" headers="count_student">6</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.40</td>
+<td class="gt_row gt_right" headers="proportion_student">0.29</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">VBZ</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">26</td>
+<td class="gt_row gt_right" headers="count_student">2</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.35</td>
+<td class="gt_row gt_right" headers="proportion_student">0.10</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">PRP</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">8</td>
+<td class="gt_row gt_right" headers="count_student">7</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.11</td>
+<td class="gt_row gt_right" headers="proportion_student">0.34</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">VBP</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">16</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.22</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">VBD</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">11</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.15</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">PRP$</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">0</td>
+<td class="gt_row gt_right" headers="count_student">2</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.00</td>
+<td class="gt_row gt_right" headers="proportion_student">0.10</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">RBR</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">0</td>
+<td class="gt_row gt_right" headers="count_student">1</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.00</td>
+<td class="gt_row gt_right" headers="proportion_student">0.05</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">RP</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">0</td>
+<td class="gt_row gt_right" headers="count_student">1</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.00</td>
+<td class="gt_row gt_right" headers="proportion_student">0.05</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">MD</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">3</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.04</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">POS</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">3</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.04</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">SYM</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">3</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.04</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">XX</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">3</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.04</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">FW</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">1</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.01</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">JJR</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">1</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.01</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">JJS</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">1</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.01</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">RBS</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">1</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.01</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">VGG</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">1</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.01</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" style="text-align: right;" headers="post_nom">WP$</td>
+<td class="gt_row gt_right" headers="count_chatgpt">0</td>
+<td class="gt_row gt_right" headers="count_published">1</td>
+<td class="gt_row gt_right" headers="count_student">0</td>
+<td class="gt_row gt_right" headers="proportion_chatgpt">0.00</td>
+<td class="gt_row gt_right" headers="proportion_published">0.01</td>
+<td class="gt_row gt_right" headers="proportion_student">0.00</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df_plot <span class="ot">&lt;-</span> stats_nps  <span class="sc">%&gt;%</span> </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(n_pre) <span class="sc">|</span> <span class="sc">!</span><span class="fu">is.na</span>(n_post)) <span class="sc">%&gt;%</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(author_type) <span class="sc">%&gt;%</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">np_len =</span> <span class="fu">mean</span>(np_len),</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">pre_root =</span> <span class="fu">mean</span>(n_pre),</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">post_root =</span> <span class="fu">mean</span>(n_post)) <span class="sc">%&gt;%</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">author_type =</span> <span class="fu">c</span>(<span class="st">"ChatGPT"</span>, <span class="st">"Published"</span>, <span class="st">"Student"</span>))</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>df_plot <span class="ot">&lt;-</span> <span class="fu">within</span>(df_plot, author_type <span class="ot">&lt;-</span> <span class="fu">factor</span>(author_type, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">'Student'</span>, <span class="st">'ChatGPT'</span>, <span class="st">'Published'</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="build-plot" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="build-plot"><span class="header-section-number">5.1</span> Build plot</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>text_center <span class="ot">&lt;-</span> grid<span class="sc">::</span><span class="fu">textGrob</span>(<span class="st">"Root noun"</span>, <span class="at">gp=</span> grid<span class="sc">::</span><span class="fu">gpar</span>(<span class="at">fontsize=</span><span class="dv">10</span>, <span class="at">fontface=</span><span class="st">"bold"</span>))</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>text_left <span class="ot">&lt;-</span> grid<span class="sc">::</span><span class="fu">textGrob</span>(<span class="st">"Pre-nominal"</span>, <span class="at">gp=</span> grid<span class="sc">::</span><span class="fu">gpar</span>(<span class="at">fontsize=</span><span class="dv">10</span>, <span class="at">fontface=</span><span class="st">"bold"</span>))</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>text_right <span class="ot">&lt;-</span> grid<span class="sc">::</span><span class="fu">textGrob</span>(<span class="st">"Post-nominal"</span>, <span class="at">gp=</span> grid<span class="sc">::</span><span class="fu">gpar</span>(<span class="at">fontsize=</span><span class="dv">10</span>, <span class="at">fontface=</span><span class="st">"bold"</span>))</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>g.mid <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(df_plot, <span class="fu">aes</span>(<span class="at">x=</span><span class="dv">1</span>, <span class="at">y=</span>author_type)) <span class="sc">+</span> </span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste0</span>(<span class="st">"- "</span>, author_type, <span class="st">" -"</span>)), <span class="at">lineheight =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotation_custom</span>(text_center, <span class="at">xmin=</span><span class="dv">1</span>, <span class="at">xmax=</span><span class="dv">1</span>, <span class="at">ymin=</span><span class="sc">-</span><span class="fl">0.5</span>, <span class="at">ymax=</span><span class="fl">1.5</span>) <span class="sc">+</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">clip =</span> <span class="st">"off"</span>) <span class="sc">+</span> </span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.y=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.ticks.y=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.x=</span><span class="fu">element_text</span>(<span class="at">color=</span><span class="cn">NA</span>),</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.ticks.x=</span><span class="fu">element_line</span>(<span class="at">color=</span><span class="cn">NA</span>),</span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.margin =</span> <span class="fu">unit</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="fl">1.25</span>, <span class="sc">-</span><span class="dv">1</span>), <span class="st">"lines"</span>))</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>g1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> df_plot, <span class="fu">aes</span>(<span class="at">x =</span> author_type, <span class="at">y =</span> pre_root, <span class="at">fill =</span> author_type)) <span class="sc">+</span></span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">width =</span> <span class="fl">0.5</span>) <span class="sc">+</span> <span class="fu">ggtitle</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(</span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Published"</span> <span class="ot">=</span> viridis<span class="sc">::</span><span class="fu">viridis</span>(<span class="dv">3</span>)[<span class="dv">2</span>], </span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">"ChatGPT"</span>   <span class="ot">=</span> viridis<span class="sc">::</span><span class="fu">viridis</span>(<span class="dv">3</span>)[<span class="dv">1</span>], </span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Student"</span>   <span class="ot">=</span> viridis<span class="sc">::</span><span class="fu">viridis</span>(<span class="dv">3</span>)[<span class="dv">3</span>])</span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(</span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">y =</span> .<span class="dv">55</span>, <span class="at">label =</span> <span class="fu">paste0</span>(<span class="st">"← "</span>, <span class="fu">round</span>(pre_root, <span class="dv">2</span>), <span class="st">" words"</span>)),</span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">nudge_x =</span> .<span class="dv">5</span></span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.x =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title.y =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.y =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.ticks.y =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.x =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position =</span> <span class="st">"none"</span>,</span>
+<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.ticks.x =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.margin =</span> <span class="fu">unit</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">0</span>), <span class="st">"lines"</span>)) <span class="sc">+</span></span>
+<span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotation_custom</span>(text_left, <span class="at">xmin=</span><span class="sc">-</span><span class="fl">0.5</span>, <span class="at">xmax=</span><span class="fl">1.5</span>, <span class="at">ymin=</span><span class="sc">-</span><span class="fl">0.5</span>, <span class="at">ymax=</span><span class="sc">-</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb11-41"><a href="#cb11-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_reverse</span>() <span class="sc">+</span> </span>
+<span id="cb11-42"><a href="#cb11-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span>
+<span id="cb11-43"><a href="#cb11-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-44"><a href="#cb11-44" aria-hidden="true" tabindex="-1"></a>g2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> df_plot, <span class="fu">aes</span>(<span class="at">x =</span> author_type, <span class="at">y =</span> post_root, <span class="at">fill =</span> author_type)) <span class="sc">+</span></span>
+<span id="cb11-45"><a href="#cb11-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb11-46"><a href="#cb11-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">width =</span> <span class="fl">0.5</span>) <span class="sc">+</span> <span class="fu">ggtitle</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb11-47"><a href="#cb11-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(</span>
+<span id="cb11-48"><a href="#cb11-48" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Published"</span> <span class="ot">=</span> viridis<span class="sc">::</span><span class="fu">viridis</span>(<span class="dv">3</span>)[<span class="dv">2</span>], </span>
+<span id="cb11-49"><a href="#cb11-49" aria-hidden="true" tabindex="-1"></a>    <span class="st">"ChatGPT"</span>   <span class="ot">=</span> viridis<span class="sc">::</span><span class="fu">viridis</span>(<span class="dv">3</span>)[<span class="dv">1</span>], </span>
+<span id="cb11-50"><a href="#cb11-50" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Student"</span>   <span class="ot">=</span> viridis<span class="sc">::</span><span class="fu">viridis</span>(<span class="dv">3</span>)[<span class="dv">3</span>])</span>
+<span id="cb11-51"><a href="#cb11-51" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb11-52"><a href="#cb11-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(</span>
+<span id="cb11-53"><a href="#cb11-53" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">y =</span> .<span class="dv">5</span>, <span class="at">label =</span> <span class="fu">paste0</span>(<span class="fu">round</span>(post_root, <span class="dv">2</span>), <span class="st">" words →"</span>)),</span>
+<span id="cb11-54"><a href="#cb11-54" aria-hidden="true" tabindex="-1"></a>    <span class="at">nudge_x =</span> .<span class="dv">5</span></span>
+<span id="cb11-55"><a href="#cb11-55" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb11-56"><a href="#cb11-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.x =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb11-57"><a href="#cb11-57" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title.y =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb11-58"><a href="#cb11-58" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.y =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb11-59"><a href="#cb11-59" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.ticks.y =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb11-60"><a href="#cb11-60" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.x =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb11-61"><a href="#cb11-61" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.ticks.x =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb11-62"><a href="#cb11-62" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position =</span> <span class="st">"none"</span>,</span>
+<span id="cb11-63"><a href="#cb11-63" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb11-64"><a href="#cb11-64" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.margin =</span> <span class="fu">unit</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="sc">-</span><span class="dv">1</span>), <span class="st">"lines"</span>)) <span class="sc">+</span></span>
+<span id="cb11-65"><a href="#cb11-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotation_custom</span>(text_right, <span class="at">xmin=</span><span class="sc">-</span><span class="fl">0.5</span>, <span class="at">xmax=</span><span class="fl">1.5</span>, <span class="at">ymin=</span><span class="fl">0.5</span>, <span class="at">ymax=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb11-66"><a href="#cb11-66" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span>
+<span id="cb11-67"><a href="#cb11-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-68"><a href="#cb11-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-69"><a href="#cb11-69" aria-hidden="true" tabindex="-1"></a>gg1 <span class="ot">&lt;-</span> <span class="fu">ggplot_gtable</span>(<span class="fu">ggplot_build</span>(g1))</span>
+<span id="cb11-70"><a href="#cb11-70" aria-hidden="true" tabindex="-1"></a>gg2 <span class="ot">&lt;-</span> <span class="fu">ggplot_gtable</span>(<span class="fu">ggplot_build</span>(g2))</span>
+<span id="cb11-71"><a href="#cb11-71" aria-hidden="true" tabindex="-1"></a>gg.mid <span class="ot">&lt;-</span> <span class="fu">ggplot_gtable</span>(<span class="fu">ggplot_build</span>(g.mid))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="plot" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="plot"><span class="header-section-number">5.2</span> Plot</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-nps" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-nps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="jsdse_chatgpt_files/figure-html/fig-nps-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-nps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Caption describing plot.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
 </section>
 
 </main>

@@ -329,7 +329,7 @@ post_counts <- stats_nps %>%
 
 We actually don't have these in the study, but they're interesting?
 
-```{r}
+```{r echo=F, warning=F, message=F}
 #| label: tbl-prenominal
 #| tbl-cap: "Caption describing table."
 
@@ -371,7 +371,7 @@ pre_counts |>
   )
 ```
 
-```{r}
+```{r echo=F, warning=F, message=F}
 #| label: tbl-postnominal
 #| tbl-cap: "Caption describing table."
 
@@ -504,9 +504,10 @@ gg.mid <- ggplot_gtable(ggplot_build(g.mid))
 
 ## Plot
 
-```{r}
+```{r echo=F, warning=F, message=F}
 #| label: fig-nps
 #| fig-cap: "Caption describing plot."
+#| fig-height: 3
 
 gridExtra::grid.arrange(gg1, gg.mid, gg2, ncol=3, widths=c(2.2/10, 1.7/10, 6.1/10))
 ```
