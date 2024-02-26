@@ -1,0 +1,165 @@
+---
+title: "Student Writing and Expertise in the Age of AI"
+author: "David Brown & Alex Reinhart"
+format:
+  html: 
+    number-sections: true
+---
+
+# Background & data
+
+This notebook includes the code and data that were used to produce the results of our study, which was submitted to the Journal of Statistics and Data Science Education.
+
+Note that the complete raw text data is not being made available to protect the privacy of the student writers. However, samples from the published and ChatGPT-generated data are included in order to demonstrate the processing pipeline.
+
+### Load packages
+
+```{r message=F, warning=F}
+library(tidyverse)
+library(gt)
+```
+
+### Load data
+
+```{r warning=FALSE, message=FALSE}
+load("data/chatgpt_data.rda")
+```
+
+### Create a composition table
+
+```{r}
+corpus_comp <- stats_freq %>% 
+  pivot_longer(cols = AF_chatgpt:AF_student, names_to = "Author_Type", values_to = "AF") %>%
+  group_by(Author_Type) %>%
+  summarize(Texts = 100,
+            Tokens = sum(AF)) %>%
+  mutate(Author_Type = c("ChatGPT", "Published", "Student"))
+```
+
+Say stuff...
+
+```{r echo=F, warning=F, message=F}
+#| label: tbl-corpus
+#| tbl-cap: "Composition of corpus."
+
+corpus_comp |> 
+  gt() |>
+  fmt_integer() |>
+  cols_label(
+    Author_Type = md("**Author Type**"),
+    Texts = md("**Texts**"),
+    Tokens = md("**Tokens**")
+  ) |>
+  grand_summary_rows(
+    columns = c(Texts, Tokens),
+    fns = list(
+      Total ~ sum(.)
+    ) ,
+    fmt = ~ fmt_integer(.)
+    )
+```
+
+# Multiple univariate regression
+
+Say stuff...
+
+```{r message=F, warning=FALSE}
+z_means <- stats_biber %>%
+  select(-doc_id) %>%
+  mutate_if(is.numeric, scale) %>%
+  pivot_longer(!Group, names_to = "variable", values_to = "z_score") %>%
+  group_by(Group, variable) %>%
+  summarize(mean_z = mean(z_score)) %>%
+  pivot_wider(names_from = Group, values_from = mean_z)
+
+lm_biber <- stats_biber %>%
+  select(-doc_id) %>%
+  pivot_longer(!Group, names_to = "variable", values_to = "value") %>%
+  group_by(variable) %>%
+  arrange(.by_group = TRUE) %>% 
+  nest() %>%
+  mutate(models = map(data, ~ lm(value ~ Group, data = .)),
+         glance = map(models, broom::glance)) %>%
+  unnest(glance) %>%
+  select(-c(data, models)) %>%
+  left_join(z_means) %>%
+  select(variable, ChatGPT:Student, everything())
+```
+
+```{r message=FALSE}
+ld1_tbl <- lm_biber %>%
+  select(ChatGPT:r.squared, p.value) %>%
+  mutate(direction = ifelse(ChatGPT > 0 & Published < 0 & Student <0, "machine", NA)) %>%
+  mutate(direction = ifelse(ChatGPT < 0 & Published > 0 & Student > 0, "human", direction)) %>%
+  filter(!is.na(direction)) %>%
+  filter(r.squared > 0.1) %>%
+  arrange(direction, -r.squared)
+
+ld2_tbl <- lm_biber %>%
+  select(ChatGPT:r.squared, p.value) %>%
+  mutate(direction = ifelse(Published > 0 & ChatGPT < 0 & Student <0, "expert", NA)) %>%
+  mutate(direction = ifelse(Student > 0 & ChatGPT < 0 & Published < 0, "novice", direction)) %>%
+  filter(!is.na(direction)) %>%
+  filter(r.squared > 0.1) %>%
+  arrange(direction, -r.squared)
+```
+
+```{r echo=F, warning=F, message=F}
+#| label: tbl-ld1
+#| tbl-cap: "Caption describing table."
+
+ld1_tbl |> 
+  mutate(direction = paste0("Features indicating ", direction, "-generated writing")) |>
+  mutate(variable = str_remove(variable, "f_\\d+_")) |>
+  mutate(variable = str_replace_all(variable, "_", " ")) |>
+  gt(groupname_col = 'direction') |>
+  cols_label(
+    variable = md(""),
+    ChatGPT = md("**ChatGPT<br>n:100**"),
+    Published = md("**Published<br>n:100**"),
+    Student = md("**Student<br>n:100**"),
+    r.squared = md("***R*^2^**"),
+    p.value = md("***p*-value**")
+  ) |> 
+  fmt_number(
+    columns = everything(),
+    decimals = 2
+  )  |> 
+  data_color(
+    columns = c(ChatGPT:Student),
+    colors = scales::col_numeric(
+      palette = c(
+        "#FF6666", "white", "#336699"),
+      domain = c(-1.01, 0, 1.25))
+  )
+```
+
+```{r echo=F, warning=F, message=F}
+#| label: tbl-ld2
+#| tbl-cap: "Caption describing table."
+
+ld2_tbl |> 
+  mutate(direction = paste0("Features indicating ", direction, " writing")) |>
+  mutate(variable = str_remove(variable, "f_\\d+_")) |>
+  mutate(variable = str_replace_all(variable, "_", " ")) |>
+  gt(groupname_col = 'direction') |>
+  cols_label(
+    variable = md(""),
+    ChatGPT = md("**ChatGPT<br>n:100**"),
+    Published = md("**Published<br>n:100**"),
+    Student = md("**Student<br>n:100**"),
+    r.squared = md("***R*^2^**"),
+    p.value = md("***p*-value**")
+  ) |> 
+  fmt_number(
+    columns = everything(),
+    decimals = 2
+  )  |> 
+  data_color(
+    columns = c(ChatGPT:Student),
+    colors = scales::col_numeric(
+      palette = c(
+        "#FF6666", "white", "#336699"),
+      domain = c(-1, 0, 1))
+  )
+```

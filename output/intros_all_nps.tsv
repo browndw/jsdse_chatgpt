@@ -1,0 +1,1874 @@
+doc_id	noun_phrase	root_text	pre_nom	post_nom	start_idx	end_idx	root_idx
+chatgpt-200-1_001	Employee engagement	engagement	NN	VBZ	0	1	1
+chatgpt-200-1_001	organizational success, productivity, and employee well-being	success	JJ	NN	5	14	6
+chatgpt-200-1_001	productivity, and employee well-being	productivity	,	CC	8	14	8
+chatgpt-200-1_001	employee well-being	being	HYPH	.	11	14	14
+chatgpt-200-1_001	This research project	project	NN	VBZ	16	18	18
+chatgpt-200-1_001	the influence of workplace well-being initiatives on employee engagement	influence	DT	IN	22	32	23
+chatgpt-200-1_001	workplace well-being initiatives on employee engagement	initiatives	VBG	IN	25	32	29
+chatgpt-200-1_001	employee engagement	engagement	NN	.	31	32	32
+chatgpt-200-1_001	employee engagement surveys	surveys	NN	RB	36	38	38
+chatgpt-200-1_001	we	we	,	MD	51	51	51
+chatgpt-200-1_001	significance testing	testing	NN	TO	54	55	55
+chatgpt-200-1_001	who	who	NNS	VBP	60	60	60
+chatgpt-200-1_001	higher levels of engagement and job satisfaction	levels	JJR	IN	69	75	70
+chatgpt-200-1_001	engagement and job satisfaction	satisfaction	NN	VBN	72	75	75
+chatgpt-200-1_001	those who do not engage in such initiatives	those	IN	WP	78	85	78
+chatgpt-200-1_001	who	who	DT	VBP	79	79	79
+chatgpt-200-1_001	such initiatives	initiatives	JJ	.	84	85	85
+chatgpt-200-1_001	The findings of this study	findings	DT	IN	87	91	88
+chatgpt-200-1_001	this study	study	DT	MD	90	91	91
+chatgpt-200-1_001	insights into the effectiveness of well-being programs in fostering employee engagement and guide organizations in designing comprehensive employee well-being strategies	insights	VB	IN	94	117	94
+chatgpt-200-1_001	the effectiveness of well-being programs in fostering employee engagement and guide organizations in designing comprehensive employee well-being strategies	effectiveness	DT	IN	96	117	97
+chatgpt-200-1_001	well-being programs in fostering employee engagement and guide organizations in designing comprehensive employee well-being strategies	programs	VBG	IN	99	117	102
+chatgpt-200-1_001	employee engagement and	engagement	NN	CC	105	107	106
+chatgpt-200-1_001	organizations	organizations	VB	IN	109	109	109
+chatgpt-200-1_001	comprehensive employee	employee	JJ	NN	112	113	113
+chatgpt-200-1_001	well-being strategies	strategies	NN	.	114	117	117
+chatgpt-200-1_002	Social media platforms	platforms	NNS	VBP	0	2	2
+chatgpt-200-1_002	the way individuals interact and communicate	way	DT	NNS	5	10	6
+chatgpt-200-1_002	individuals	individuals	NN	VBP	7	7	7
+chatgpt-200-1_002	concerns about their impact on interpersonal relationships	concerns	VBG	IN	13	19	13
+chatgpt-200-1_002	their impact on interpersonal relationships	impact	PRP$	IN	15	19	16
+chatgpt-200-1_002	interpersonal relationships	relationships	JJ	.	18	19	19
+chatgpt-200-1_002	This research project	project	NN	VBZ	21	23	23
+chatgpt-200-1_002	the relationship between social media usage	relationship	DT	IN	27	32	28
+chatgpt-200-1_002	social media usage	usage	NNS	CC	30	32	32
+chatgpt-200-1_002	social support	support	JJ	.	35	36	36
+chatgpt-200-1_002	surveys	surveys	VBG	CC	40	40	40
+chatgpt-200-1_002	data on social media activity	data	VBG	IN	43	47	43
+chatgpt-200-1_002	social media activity	activity	NNS	CC	45	47	47
+chatgpt-200-1_002	social support levels	levels	NN	PRP	50	52	52
+chatgpt-200-1_002	we	we	,	MD	54	54	54
+chatgpt-200-1_002	significance testing	testing	NN	TO	57	58	58
+chatgpt-200-1_002	higher social media usage	usage	NNS	VBZ	62	65	65
+chatgpt-200-1_002	lower levels of perceived social support	levels	JJR	IN	69	74	70
+chatgpt-200-1_002	perceived social support	support	JJ	.	72	74	74
+chatgpt-200-1_002	The findings of this study	findings	DT	IN	76	80	77
+chatgpt-200-1_002	this study	study	DT	MD	79	80	80
+chatgpt-200-1_002	a better understanding of the social dynamics influenced by social media	understanding	JJR	IN	84	94	86
+chatgpt-200-1_002	the social dynamics influenced by social media	dynamics	JJ	VBN	88	94	90
+chatgpt-200-1_002	social media	media	JJ	CC	93	94	94
+chatgpt-200-1_002	insights into the implications for individual well-being and relationship satisfaction	insights	VB	IN	97	108	97
+chatgpt-200-1_002	the implications for individual well-being and relationship satisfaction	implications	DT	IN	99	108	100
+chatgpt-200-1_002	individual well-being and relationship satisfaction	satisfaction	NN	.	102	108	108
+chatgpt-200-1_003	Mental health issues	issues	NN	VBP	0	2	2
+chatgpt-200-1_003	a significant concern	concern	JJ	IN	5	7	7
+chatgpt-200-1_003	a rising prevalence globally	prevalence	VBG	RB	10	13	12
+chatgpt-200-1_003	This research project	project	NN	VBZ	15	17	17
+chatgpt-200-1_003	the impact of mindfulness-based interventions on mental well-being	impact	DT	IN	21	32	22
+chatgpt-200-1_003	mindfulness-based interventions on mental well-being	interventions	VBN	IN	24	32	27
+chatgpt-200-1_003	mental well-being	being	HYPH	.	29	32	32
+chatgpt-200-1_003	psychological assessments	assessments	JJ	NN	36	37	37
+chatgpt-200-1_003	we	we	,	MD	50	50	50
+chatgpt-200-1_003	significance testing	testing	NN	TO	53	54	54
+chatgpt-200-1_003	individuals who undergo mindfulness-based interventions experience	individuals	IN	WP	58	65	58
+chatgpt-200-1_003	who	who	NNS	VBP	59	59	59
+chatgpt-200-1_003	mindfulness-based interventions experience	experience	NNS	VBD	61	65	65
+chatgpt-200-1_003	mental well-being	being	HYPH	VBN	67	70	70
+chatgpt-200-1_003	those who do not participate in such interventions	those	IN	WP	73	80	73
+chatgpt-200-1_003	who	who	DT	VBP	74	74	74
+chatgpt-200-1_003	such interventions	interventions	JJ	.	79	80	80
+chatgpt-200-1_003	The findings of this study	findings	DT	IN	82	86	83
+chatgpt-200-1_003	this study	study	DT	MD	85	86	86
+chatgpt-200-1_003	insights into the effectiveness of mindfulness-based approaches in promoting mental well-being and guide mental health practitioners in designing intervention programs	insights	VB	IN	89	112	89
+chatgpt-200-1_003	the effectiveness of mindfulness-based approaches in promoting mental well-being and guide mental health practitioners in designing intervention programs	effectiveness	DT	IN	91	112	92
+chatgpt-200-1_003	mindfulness-based approaches	approaches	VBN	IN	94	97	97
+chatgpt-200-1_003	mental well-being	being	HYPH	CC	100	103	103
+chatgpt-200-1_003	mental health practitioners	practitioners	NN	IN	106	108	108
+chatgpt-200-1_003	intervention programs	programs	NN	.	111	112	112
+chatgpt-200-1_004	The rise of online learning platforms	rise	DT	IN	0	5	1
+chatgpt-200-1_004	online learning platforms	platforms	NN	VBZ	3	5	5
+chatgpt-200-1_004	the field of education	field	DT	IN	8	11	9
+chatgpt-200-1_004	education	education	IN	VBG	11	11	11
+chatgpt-200-1_004	flexible and accessible learning opportunities	opportunities	NN	.	14	18	18
+chatgpt-200-1_004	This research project	project	NN	VBZ	20	22	22
+chatgpt-200-1_004	the effectiveness of online learning in student outcomes	effectiveness	DT	IN	26	33	27
+chatgpt-200-1_004	online learning in student outcomes	learning	JJ	IN	29	33	30
+chatgpt-200-1_004	student outcomes	outcomes	NN	.	32	33	33
+chatgpt-200-1_004	student performance data, satisfaction surveys, and course completion rates	data	NN	NN	37	47	39
+chatgpt-200-1_004	satisfaction surveys, and course completion rates	surveys	NN	CC	41	47	42
+chatgpt-200-1_004	course completion rates	rates	NN	PRP	45	47	47
+chatgpt-200-1_004	we	we	,	MD	49	49	49
+chatgpt-200-1_004	significance testing	testing	NN	TO	52	53	53
+chatgpt-200-1_004	who	who	NNS	VBP	58	58	58
+chatgpt-200-1_004	online learning experience	experience	NN	JJ	61	63	63
+chatgpt-200-1_004	those in traditional classroom settings	those	IN	IN	71	75	71
+chatgpt-200-1_004	traditional classroom settings	settings	NN	.	73	75	75
+chatgpt-200-1_004	The findings of this study	findings	DT	IN	77	81	78
+chatgpt-200-1_004	this study	study	DT	MD	80	81	81
+chatgpt-200-1_004	insights into the effectiveness of online learning	insights	VB	IN	84	90	84
+chatgpt-200-1_004	the effectiveness of online learning	effectiveness	DT	IN	86	90	87
+chatgpt-200-1_004	online learning	learning	NN	CC	89	90	90
+chatgpt-200-1_004	educational institutions	institutions	JJ	IN	93	94	94
+chatgpt-200-1_004	effective online learning environments	environments	VBG	.	97	100	100
+chatgpt-200-1_005	Mental health issues	issues	NN	VBP	0	2	2
+chatgpt-200-1_005	a global concern	concern	JJ	VBG	5	7	7
+chatgpt-200-1_005	individuals across various demographics	individuals	VBG	IN	10	13	10
+chatgpt-200-1_005	various demographics	demographics	JJ	.	12	13	13
+chatgpt-200-1_005	This research project	project	NN	VBZ	15	17	17
+chatgpt-200-1_005	the impact of mindfulness-based interventions on mental well-being	impact	DT	IN	21	32	22
+chatgpt-200-1_005	mindfulness-based interventions on mental well-being	interventions	VBN	IN	24	32	27
+chatgpt-200-1_005	mental well-being	being	HYPH	.	29	32	32
+chatgpt-200-1_005	mental health assessments	assessments	NN	NN	36	38	38
+chatgpt-200-1_005	we	we	,	MD	51	51	51
+chatgpt-200-1_005	significance testing	testing	NN	TO	54	55	55
+chatgpt-200-1_005	individuals who engage in mindfulness-based interventions experience	individuals	IN	WP	59	67	59
+chatgpt-200-1_005	who	who	NNS	VBP	60	60	60
+chatgpt-200-1_005	mindfulness-based interventions experience	experience	NNS	VBD	63	67	67
+chatgpt-200-1_005	mental well-being	being	HYPH	CC	69	72	72
+chatgpt-200-1_005	stress, anxiety, and depression	stress	IN	NN	77	82	77
+chatgpt-200-1_005	anxiety, and depression	anxiety	,	CC	79	82	79
+chatgpt-200-1_005	depression	depression	CC	VBN	82	82	82
+chatgpt-200-1_005	those who do not engage in such interventions	those	IN	WP	85	92	85
+chatgpt-200-1_005	who	who	DT	VBP	86	86	86
+chatgpt-200-1_005	such interventions	interventions	JJ	.	91	92	92
+chatgpt-200-1_005	The findings of this study	findings	DT	IN	94	98	95
+chatgpt-200-1_005	this study	study	DT	MD	97	98	98
+chatgpt-200-1_005	insights into the effectiveness of mindfulness approaches in promoting mental well-being and guide mental health practitioners in designing evidence-based interventions	insights	VB	IN	101	124	101
+chatgpt-200-1_005	the effectiveness of mindfulness approaches in promoting mental well-being and guide mental health practitioners in designing evidence-based interventions	effectiveness	DT	IN	103	124	104
+chatgpt-200-1_005	mindfulness approaches in promoting mental well-being and guide mental health practitioners in designing evidence-based interventions	approaches	NN	IN	106	124	107
+chatgpt-200-1_005	mental well-being	being	HYPH	CC	110	113	113
+chatgpt-200-1_005	mental health practitioners	practitioners	NN	IN	116	118	118
+chatgpt-200-1_005	evidence-based interventions	interventions	VBN	.	121	124	124
+chatgpt-200-1_006	Artificial intelligence (AI)	intelligence	JJ	-LRB-	0	4	1
+chatgpt-200-1_006	AI	AI	-LRB-	-RRB-	3	3	3
+chatgpt-200-1_006	a transformative technology with the potential to revolutionize various industries	technology	NN	IN	8	17	10
+chatgpt-200-1_006	the potential to revolutionize various industries	potential	DT	TO	12	17	13
+chatgpt-200-1_006	various industries	industries	JJ	.	16	17	17
+chatgpt-200-1_006	This research project	project	NN	VBZ	19	21	21
+chatgpt-200-1_006	the ethical implications of AI	implications	JJ	IN	25	29	27
+chatgpt-200-1_006	AI	AI	IN	IN	29	29	29
+chatgpt-200-1_006	decision-making processes	processes	VBG	.	31	34	34
+chatgpt-200-1_006	ethical frameworks, decision outcomes, and stakeholder perceptions	frameworks	JJ	NN	38	46	39
+chatgpt-200-1_006	decision outcomes, and stakeholder perceptions	outcomes	NN	CC	41	46	42
+chatgpt-200-1_006	stakeholder perceptions	perceptions	NN	PRP	45	46	46
+chatgpt-200-1_006	we	we	,	MD	48	48	48
+chatgpt-200-1_006	significance testing	testing	NN	TO	51	52	52
+chatgpt-200-1_006	AI-driven decision-making processes	processes	VBG	VB	56	62	62
+chatgpt-200-1_006	fair and unbiased outcomes	outcomes	JJ	VBN	65	68	68
+chatgpt-200-1_006	traditional human-driven decision-making processes	processes	VBG	.	71	78	78
+chatgpt-200-1_006	The findings of this study	findings	DT	IN	80	84	81
+chatgpt-200-1_006	this study	study	DT	MD	83	84	84
+chatgpt-200-1_006	insights into the ethical considerations of AI adoption	insights	VB	IN	87	94	87
+chatgpt-200-1_006	the ethical considerations of AI adoption	considerations	JJ	IN	89	94	91
+chatgpt-200-1_006	AI adoption	adoption	NNP	CC	93	94	94
+chatgpt-200-1_006	policymakers and organizations	policymakers	VB	CC	97	99	97
+chatgpt-200-1_006	organizations	organizations	CC	IN	99	99	99
+chatgpt-200-1_006	responsible AI strategies	strategies	NNP	.	102	104	104
+chatgpt-200-1_007	Online learning	learning	JJ	VBZ	0	1	1
+chatgpt-200-1_007	the wake of global events that have disrupted traditional educational systems	wake	DT	IN	9	19	10
+chatgpt-200-1_007	global events that have disrupted traditional educational systems	events	JJ	WDT	12	19	13
+chatgpt-200-1_007	that	that	NNS	VBP	14	14	14
+chatgpt-200-1_007	traditional educational systems	systems	JJ	.	17	19	19
+chatgpt-200-1_007	This research project	project	NN	VBZ	21	23	23
+chatgpt-200-1_007	the effectiveness of online learning	effectiveness	DT	IN	27	31	28
+chatgpt-200-1_007	online learning	learning	JJ	VBN	30	31	31
+chatgpt-200-1_007	traditional classroom education	education	NN	.	34	36	36
+chatgpt-200-1_007	academic performance data and student satisfaction surveys	data	NN	CC	40	46	42
+chatgpt-200-1_007	student satisfaction surveys	surveys	NN	PRP	44	46	46
+chatgpt-200-1_007	we	we	,	MD	48	48	48
+chatgpt-200-1_007	significance testing	testing	NN	TO	51	52	52
+chatgpt-200-1_007	significant differences in learning outcomes and student engagement between online and traditional classroom settings	differences	JJ	IN	58	71	59
+chatgpt-200-1_007	outcomes and student engagement	outcomes	VBG	CC	62	65	62
+chatgpt-200-1_007	student engagement	engagement	NN	IN	64	65	65
+chatgpt-200-1_007	online and traditional classroom settings	settings	NN	.	67	71	71
+chatgpt-200-1_007	The findings of this study	findings	DT	IN	73	77	74
+chatgpt-200-1_007	this study	study	DT	MD	76	77	77
+chatgpt-200-1_007	valuable insights	insights	JJ	IN	80	81	81
+chatgpt-200-1_007	the strengths and limitations of online learning	strengths	DT	CC	83	89	84
+chatgpt-200-1_007	limitations	limitations	CC	IN	86	86	86
+chatgpt-200-1_007	online learning	learning	NN	CC	88	89	89
+chatgpt-200-1_007	educational institutions	institutions	JJ	IN	92	93	93
+chatgpt-200-1_007	effective hybrid or fully online learning experiences	experiences	NN	.	96	102	102
+chatgpt-200-1_008	Consumer behavior	behavior	NN	VBZ	0	1	1
+chatgpt-200-1_008	various factors, including marketing techniques and psychological triggers	factors	JJ	VBG	5	13	6
+chatgpt-200-1_008	marketing techniques and psychological triggers	techniques	NN	CC	9	13	10
+chatgpt-200-1_008	psychological triggers	triggers	JJ	.	12	13	13
+chatgpt-200-1_008	This research project	project	NN	VBZ	15	17	17
+chatgpt-200-1_008	the impact of color on consumer purchasing decisions	impact	DT	IN	21	28	22
+chatgpt-200-1_008	color	color	IN	IN	24	24	24
+chatgpt-200-1_008	consumer purchasing decisions	decisions	NN	.	26	28	28
+chatgpt-200-1_008	experiments	experiments	VBG	CC	32	32	32
+chatgpt-200-1_008	data on consumer preferences and	data	VBG	IN	35	39	35
+chatgpt-200-1_008	consumer preferences and	preferences	NN	CC	37	39	38
+chatgpt-200-1_008	patterns	patterns	VBG	PRP	41	41	41
+chatgpt-200-1_008	we	we	,	MD	43	43	43
+chatgpt-200-1_008	significance testing	testing	NN	TO	46	47	47
+chatgpt-200-1_008	color	color	IN	NNS	51	51	51
+chatgpt-200-1_008	consumer perceptions, product evaluations, and	perceptions	NN	NN	53	59	54
+chatgpt-200-1_008	product evaluations, and	evaluations	NN	CC	56	59	57
+chatgpt-200-1_008	intentions	intentions	NN	.	61	61	61
+chatgpt-200-1_008	The findings of this study	findings	DT	IN	63	67	64
+chatgpt-200-1_008	this study	study	DT	MD	66	67	67
+chatgpt-200-1_008	insights into the role of color in marketing strategies	insights	VB	IN	70	78	70
+chatgpt-200-1_008	the role of color in marketing strategies	role	DT	IN	72	78	73
+chatgpt-200-1_008	color	color	IN	IN	75	75	75
+chatgpt-200-1_008	marketing strategies	strategies	NN	CC	77	78	78
+chatgpt-200-1_008	businesses	businesses	VB	IN	81	81	81
+chatgpt-200-1_008	color	color	VBG	TO	85	85	85
+chatgpt-200-1_008	consumer behavior	behavior	NN	.	88	89	89
+chatgpt-200-1_009	The tourism industry	industry	NN	VBZ	0	2	2
+chatgpt-200-1_009	destination attractiveness and visitor experiences	attractiveness	NN	CC	6	10	7
+chatgpt-200-1_009	visitor experiences	experiences	NN	.	9	10	10
+chatgpt-200-1_009	This research project	project	NN	VBZ	12	14	14
+chatgpt-200-1_009	the influence of cultural heritage preservation on tourist satisfaction and destination loyalty	influence	DT	IN	18	29	19
+chatgpt-200-1_009	cultural heritage preservation on tourist satisfaction and destination loyalty	preservation	NN	IN	21	29	23
+chatgpt-200-1_009	tourist satisfaction and destination loyalty	satisfaction	NN	CC	25	29	26
+chatgpt-200-1_009	destination loyalty	loyalty	NN	.	28	29	29
+chatgpt-200-1_009	tourist surveys, cultural heritage preservation efforts,	surveys	NN	JJ	33	40	34
+chatgpt-200-1_009	cultural heritage preservation efforts	efforts	NN	CC	36	39	39
+chatgpt-200-1_009	visitation rates	rates	NN	PRP	43	44	44
+chatgpt-200-1_009	we	we	,	MD	46	46	46
+chatgpt-200-1_009	significance testing	testing	NN	TO	49	50	50
+chatgpt-200-1_009	destinations with well-preserved cultural heritage sites	destinations	IN	IN	54	61	54
+chatgpt-200-1_009	well-preserved cultural heritage sites	sites	NN	VBP	56	61	61
+chatgpt-200-1_009	higher levels of tourist satisfaction and loyalty	levels	JJR	IN	63	69	64
+chatgpt-200-1_009	tourist satisfaction and loyalty	satisfaction	NN	CC	66	69	67
+chatgpt-200-1_009	loyalty	loyalty	CC	VBN	69	69	69
+chatgpt-200-1_009	those with less emphasis on cultural preservation	those	IN	IN	72	78	72
+chatgpt-200-1_009	less emphasis on cultural preservation	emphasis	JJR	IN	74	78	75
+chatgpt-200-1_009	cultural preservation	preservation	JJ	.	77	78	78
+chatgpt-200-1_009	The findings of this study	findings	DT	IN	80	84	81
+chatgpt-200-1_009	this study	study	DT	MD	83	84	84
+chatgpt-200-1_009	insights	insights	VB	IN	87	87	87
+chatgpt-200-1_009	the importance of cultural heritage conservation in tourism	importance	DT	IN	89	96	90
+chatgpt-200-1_009	cultural heritage conservation in tourism	conservation	NN	IN	92	96	94
+chatgpt-200-1_009	tourism	tourism	IN	CC	96	96	96
+chatgpt-200-1_009	destination management strategies	strategies	NN	.	99	101	101
+chatgpt-200-1_010	Aging populations	populations	VBG	VBP	0	1	1
+chatgpt-200-1_010	unique challenges for healthcare systems	challenges	JJ	IN	3	7	4
+chatgpt-200-1_010	healthcare systems	systems	NN	VBG	6	7	7
+chatgpt-200-1_010	a comprehensive understanding of geriatric health and well-being	understanding	JJ	IN	10	19	12
+chatgpt-200-1_010	geriatric health and well-being	health	JJ	CC	14	19	15
+chatgpt-200-1_010	well-being	being	HYPH	.	17	19	19
+chatgpt-200-1_010	This research project	project	NN	VBZ	21	23	23
+chatgpt-200-1_010	the relationship between physical activity and cognitive function in older adults	relationship	DT	IN	27	37	28
+chatgpt-200-1_010	physical activity and cognitive function	activity	JJ	CC	30	34	31
+chatgpt-200-1_010	cognitive function	function	JJ	IN	33	34	34
+chatgpt-200-1_010	older adults	adults	JJR	.	36	37	37
+chatgpt-200-1_010	activity tracker data, cognitive assessments, and health records	data	NN	JJ	41	50	43
+chatgpt-200-1_010	cognitive assessments, and health records	assessments	JJ	CC	45	50	46
+chatgpt-200-1_010	health records	records	NN	PRP	49	50	50
+chatgpt-200-1_010	we	we	,	MD	52	52	52
+chatgpt-200-1_010	significance testing	testing	NN	TO	55	56	56
+chatgpt-200-1_010	higher levels of physical activity	levels	JJR	IN	60	64	61
+chatgpt-200-1_010	physical activity	activity	JJ	VBP	63	64	64
+chatgpt-200-1_010	better cognitive function among older adults	function	JJ	IN	68	73	70
+chatgpt-200-1_010	older adults	adults	JJR	.	72	73	73
+chatgpt-200-1_010	The findings of this study	findings	DT	IN	75	79	76
+chatgpt-200-1_010	this study	study	DT	MD	78	79	79
+chatgpt-200-1_010	insights into the potential benefits of physical activity on cognitive aging and inform interventions aimed at promoting healthy aging	insights	VB	IN	82	100	82
+chatgpt-200-1_010	the potential benefits of physical activity on cognitive aging and inform interventions aimed at promoting healthy aging	benefits	JJ	IN	84	100	86
+chatgpt-200-1_010	physical activity	activity	JJ	IN	88	89	89
+chatgpt-200-1_010	cognitive aging and inform interventions aimed at promoting healthy aging	aging	JJ	CC	91	100	92
+chatgpt-200-1_010	inform interventions aimed at promoting healthy aging	inform	CC	NNS	94	100	94
+chatgpt-200-1_010	interventions aimed at promoting healthy aging	interventions	NN	VBN	95	100	95
+chatgpt-200-1_010	healthy aging	aging	JJ	.	99	100	100
+published-S0003347214004758	All subjects that participated in our experiments	subjects	DT	WDT	0	6	1
+published-S0003347214004758	that	that	NNS	VBD	2	2	2
+published-S0003347214004758	our experiments	experiments	PRP$	VBP	5	6	6
+published-S0003347214004758	accordance with the Austrian Federal Act on the Protection of Animals (Animal Protection Act—TSchG, BGBl	accordance	IN	IN	10	28	10
+published-S0003347214004758	the Austrian Federal Act on the Protection of Animals (Animal Protection Act—TSchG, BGBl	Act	NNP	IN	12	28	15
+published-S0003347214004758	the Protection of Animals	Protection	DT	IN	17	20	18
+published-S0003347214004758	Animals	Animals	IN	-LRB-	20	20	20
+published-S0003347214004758	Animal Protection Act—TSchG, BGBl	Act	NNP	:	22	28	24
+published-S0003347214004758	TSchG, BGBl	TSchG	:	NNPS	26	28	26
+published-S0003347214004758	BGBl	BGBl	,	.	28	28	28
+published-S0003347214004758	I	I	.	VBD	30	30	30
+published-S0003347214004758	the present study	study	JJ	VBD	37	39	39
+published-S0003347214004758	behavioural observations	observations	JJ	DT	46	47	47
+published-S0003347214004758	all experiments	experiments	DT	VBD	49	50	50
+published-S0003347214004758	nonanimal experiments	experiments	JJ	IN	54	55	55
+published-S0003347214004758	accordance with the Austrian Animal Experiments Act (§ 2, Federal Law Gazette No. 501/1989)	accordance	IN	IN	57	74	57
+published-S0003347214004758	the Austrian Animal Experiments Act (§ 2, Federal Law Gazette No. 501/1989)	Act	NNPS	-LRB-	59	74	63
+published-S0003347214004758	§ 2	§	-LRB-	CD	65	66	65
+published-S0003347214004758	Federal Law Gazette No	No	NNP	NN	68	71	71
+published-S0006320715000488	The major role of tropical forests in biodiversity and climate change	role	JJ	IN	0	10	2
+published-S0006320715000488	tropical forests in biodiversity and climate change	forests	JJ	IN	4	10	5
+published-S0006320715000488	biodiversity and climate change	change	NN	VBZ	7	10	10
+published-S0006320715000488	the world	world	DT	TO	13	14	14
+published-S0006320715000488	effective ways to slow deforestation	ways	JJ	TO	18	22	19
+published-S0006320715000488	deforestation	deforestation	VB	.	22	22	22
+published-S0006320715000488	Many approaches	approaches	JJ	VBP	24	25	25
+published-S0006320715000488	fashion	fashion	IN	.	32	32	32
+published-S0006320715000488	Strictly protected areas, which prohibit most human activities,	areas	VBN	WDT	34	43	36
+published-S0006320715000488	which	which	,	VBP	38	38	38
+published-S0006320715000488	most human activities	activities	JJ	VBD	40	42	42
+published-S0006320715000488	the early days of conservation	days	JJ	IN	47	51	49
+published-S0006320715000488	conservation	conservation	IN	CC	51	51	51
+published-S0006320715000488	an alternative to strict protected areas	alternative	DT	IN	58	63	59
+published-S0006320715000488	strict protected areas	areas	VBN	NNP	61	63	63
+published-S0006320715000488	Community Forest Management (CFM)	Management	NNP	-LRB-	65	70	67
+published-S0006320715000488	(CFM	CFM	-LRB-	-RRB-	68	69	69
+published-S0006320715000488	the late 1980s	1980s	JJ	-LRB-	73	75	75
+published-S0006320715000488	virtue of involving local forest users in management	virtue	IN	IN	86	93	86
+published-S0006320715000488	local forest users in management	users	NN	IN	89	93	91
+published-S0006320715000488	management	management	IN	NNP	93	93	93
+published-S0006320715000488	CFM	CFM	,	VBZ	95	95	95
+published-S0006320715000488	the potential to benefit both forests and local livelihoods (Behera, 2009)	potential	DT	TO	100	113	101
+published-S0006320715000488	both forests and local livelihoods (Behera, 2009)	forests	DT	CC	104	113	105
+published-S0006320715000488	local livelihoods (Behera, 2009)	livelihoods	JJ	-LRB-	107	113	108
+published-S0006320715000488	Behera, 2009)	Behera	-LRB-	CD	110	113	110
+published-S0006320715000488	This potential	potential	DT	RB	115	116	116
+published-S0006320715000488	its evidence base	base	NN	VBZ	129	131	131
+published-S0006320715000488	Payments for Ecosystem Services (PES)	Payments	IN	IN	148	154	148
+published-S0006320715000488	Ecosystem Services (PES)	Services	NNP	-LRB-	150	154	151
+published-S0006320715000488	PES	PES	-LRB-	-RRB-	153	153	153
+published-S0006320715000488	the most recent fashion in efforts to reduce deforestation	fashion	JJ	IN	157	165	160
+published-S0006320715000488	efforts to reduce deforestation	efforts	IN	TO	162	165	162
+published-S0006320715000488	deforestation	deforestation	VB	NNP	165	165	165
+published-S0006320715000488	CFM	CFM	,	VBZ	167	167	167
+published-S0006320715000488	an important part of the forest management toolkit in many developing countries (Blaikie, 2006)	part	JJ	IN	169	185	171
+published-S0006320715000488	the forest management toolkit in many developing countries (Blaikie, 2006)	toolkit	NN	IN	173	185	176
+published-S0006320715000488	many developing countries (Blaikie, 2006)	countries	VBG	-LRB-	178	185	180
+published-S0006320715000488	Blaikie, 2006)	Blaikie	-LRB-	CD	182	185	182
+published-S0006320715000488	It	It	.	VBZ	187	187	187
+published-S0006320715000488	a means by which PES schemes can be implemented	means	DT	IN	192	200	193
+published-S0006320715000488	which	which	IN	NNP	195	195	195
+published-S0006320715000488	PES schemes	schemes	NNP	MD	196	197	197
+published-S0006320715000488	High quality studies evaluating the effectiveness of CFM	studies	NN	VBG	202	209	204
+published-S0006320715000488	the effectiveness of CFM	effectiveness	DT	IN	206	209	207
+published-S0006320715000488	CFM	CFM	IN	VBP	209	209	209
+published-S0006320715000488	future development and investment	development	JJ	CC	215	218	216
+published-S0006320715000488	investment	investment	CC	IN	218	218	218
+published-S0006320715000488	approaches	approaches	IN	TO	220	220	220
+published-S0006320715000488	deforestation	deforestation	VB	.	223	223	223
+published-S0006320715000488	We	We	.	VBP	225	225	225
+published-S0006320715000488	robust evidence on effectiveness of CFM	evidence	JJ	IN	229	234	230
+published-S0006320715000488	effectiveness of CFM	effectiveness	IN	IN	232	234	232
+published-S0006320715000488	CFM	CFM	IN	IN	234	234	234
+published-S0006320715000488	deforestation	deforestation	VBG	.	237	237	237
+published-S0006320715000488	Studies investigating the effectiveness of conservation interventions	Studies	.	VBG	239	245	239
+published-S0006320715000488	the effectiveness of conservation interventions	effectiveness	DT	IN	241	245	242
+published-S0006320715000488	conservation interventions	interventions	NN	RB	244	245	245
+published-S0006320715000488	factors that affect both the assignment of interventions and the outcomes of interest (Bowler et al., 2012; Ferraro and Pattanayak, 2006; Joppa and Pfaff, 2010	factors	VBG	WDT	253	284	253
+published-S0006320715000488	that	that	NNS	VBP	254	254	254
+published-S0006320715000488	both the assignment of interventions and the outcomes of interest (Bowler et al., 2012; Ferraro and Pattanayak, 2006; Joppa and Pfaff, 2010	assignment	DT	IN	256	284	258
+published-S0006320715000488	interventions	interventions	IN	CC	260	260	260
+published-S0006320715000488	the outcomes of interest (Bowler et al., 2012	outcomes	DT	IN	262	272	263
+published-S0006320715000488	interest	interest	IN	-LRB-	265	265	265
+published-S0006320715000488	Bowler et al	al	NNP	NNP	267	269	269
+published-S0006320715000488	., 2012	.	NNP	CD	270	272	270
+published-S0006320715000488	Ferraro and Pattanayak, 2006; Joppa and Pfaff, 2010	Ferraro	:	CC	274	284	274
+published-S0006320715000488	Pattanayak	Pattanayak	CC	CD	276	276	276
+published-S0006320715000488	Joppa and Pfaff, 2010	Joppa	:	CC	280	284	280
+published-S0006320715000488	Pfaff	Pfaff	CC	CD	282	282	282
+published-S0006320715000488	Recent studies investigating the effectiveness of protected areas at reducing deforestation have made progress in controlling for confounding factors by the use of statistical matching (e.g. Andam et al., 2013, 2008; Carranza et al., 2014;	studies	JJ	VBG	287	329	288
+published-S0006320715000488	the effectiveness of protected areas at reducing deforestation	effectiveness	DT	IN	290	297	291
+published-S0006320715000488	protected areas at reducing deforestation	areas	VBN	IN	293	297	294
+published-S0006320715000488	deforestation	deforestation	VBG	VBP	297	297	297
+published-S0006320715000488	progress	progress	VBN	IN	300	300	300
+published-S0006320715000488	factors	factors	VBG	IN	305	305	305
+published-S0006320715000488	the use of statistical matching (e.g. Andam et al	use	DT	IN	307	316	308
+published-S0006320715000488	statistical matching (e.g. Andam et al	matching	JJ	-LRB-	310	316	311
+published-S0006320715000488	e.g. Andam et al	al	NNP	NNP	313	316	316
+published-S0006320715000488	., 2013, 2008	.	NNP	CD	317	321	317
+published-S0006320715000488	Carranza et al., 2014;	al	NNP	NNP	323	329	325
+published-S0006320715000488	Matching	Matching	.	VBZ	338	338	338
+published-S0006320715000488	comparison areas that have pre-intervention baseline values of confounding factors most similar to intervention area values	areas	NN	WDT	340	357	341
+published-S0006320715000488	that	that	NNS	VBP	342	342	342
+published-S0006320715000488	pre-intervention baseline values of confounding factors most similar to intervention area values	values	NN	IN	344	357	348
+published-S0006320715000488	factors most similar to intervention area values	factors	VBG	RBS	351	357	351
+published-S0006320715000488	intervention area values	values	NN	CC	355	357	357
+published-S0006320715000488	it	it	VBZ	JJ	362	362	362
+published-S0006320715000488	these confounding factors (Joppa and Pfaff, 2011)	factors	VBG	-LRB-	367	376	369
+published-S0006320715000488	Joppa and Pfaff, 2011	Joppa	-LRB-	CC	371	375	371
+published-S0006320715000488	Pfaff	Pfaff	CC	CD	373	373	373
+published-S0006320715000488	we	we	,	VBP	380	380	380
+published-S0006320715000488	only one study (Somanathan et al., 2009) that has used matching to investigate the effectiveness of CFM at reducing deforestation	study	CD	-LRB-	383	406	385
+published-S0006320715000488	Somanathan et al	al	NNP	NNP	387	389	389
+published-S0006320715000488	., 2009) that has used matching to investigate the effectiveness of CFM at reducing deforestation	.	NNP	CD	390	406	390
+published-S0006320715000488	that	that	-RRB-	VBZ	394	394	394
+published-S0006320715000488	the effectiveness of CFM at reducing deforestation	effectiveness	DT	IN	400	406	401
+published-S0006320715000488	CFM	CFM	IN	IN	403	403	403
+published-S0006320715000488	deforestation	deforestation	VBG	.	406	406	406
+published-S0006320715000488	A significant challenge for evaluating the effectiveness of CFM	challenge	JJ	IN	408	416	410
+published-S0006320715000488	the effectiveness of CFM	effectiveness	DT	IN	413	416	414
+published-S0006320715000488	CFM	CFM	IN	VBZ	416	416	416
+published-S0006320715000488	the large variation in forest management practices and designs within the approach, both among and within countries (Lund et al., 2009)	variation	JJ	IN	418	443	420
+published-S0006320715000488	forest management practices and designs	practices	NN	CC	422	426	424
+published-S0006320715000488	designs	designs	CC	IN	426	426	426
+published-S0006320715000488	the approach	approach	DT	CC	428	429	429
+published-S0006320715000488	countries	countries	IN	-LRB-	435	435	435
+published-S0006320715000488	terms of practices, examples of this variation range from cases where the community has a good understanding of their rights and responsibilities to cases where CFM exists on paper only (Benjamin, 2008;	terms	IN	IN	446	481	446
+published-S0006320715000488	practices, examples of this variation range from cases where the community has a good understanding of their rights and responsibilities to cases where CFM exists on paper only (Benjamin, 2008;	practices	IN	NNS	448	481	448
+published-S0006320715000488	examples of this variation range	examples	,	IN	450	454	450
+published-S0006320715000488	this variation range	range	NN	IN	452	454	454
+published-S0006320715000488	cases where the community has a good understanding of their rights and responsibilities to cases where CFM exists on paper only (Benjamin, 2008;	cases	IN	WRB	456	481	456
+published-S0006320715000488	the community	community	DT	VBZ	458	459	459
+published-S0006320715000488	a good understanding of their rights and responsibilities	understanding	JJ	IN	461	468	463
+published-S0006320715000488	their rights and responsibilities	rights	PRP$	CC	465	468	466
+published-S0006320715000488	responsibilities	responsibilities	CC	IN	468	468	468
+published-S0006320715000488	cases where CFM exists on paper only (Benjamin, 2008;	cases	IN	WRB	470	481	470
+published-S0006320715000488	CFM	CFM	WRB	VBZ	472	472	472
+published-S0006320715000488	paper	paper	IN	RB	475	475	475
+published-S0006320715000488	An example of design variation	example	DT	IN	490	494	491
+published-S0006320715000488	design variation	variation	NN	VBZ	493	494	494
+published-S0006320715000488	some CFMs	CFMs	DT	VBP	497	498	498
+published-S0006320715000488	communities	communities	VBP	TO	500	500	500
+published-S0006320715000488	commercial use of forest resources	use	JJ	IN	504	508	505
+published-S0006320715000488	forest resources	resources	NN	IN	507	508	508
+published-S0006320715000488	their managed forests	forests	VBN	IN	510	512	512
+published-S0006320715000488	others	others	IN	VBP	514	514	514
+published-S0006320715000488	., 2011	.	NNP	CD	521	523	521
+published-S0006320715000488	Failure to consider this variation compromises the potential for learning about design and implementation factors that promote CFM effectiveness.	Failure	.	TO	526	545	526
+published-S0006320715000488	this variation	variation	DT	VBZ	529	530	530
+published-S0006320715000488	the potential for learning about design and implementation factors that promote CFM effectiveness	potential	DT	IN	532	544	533
+published-S0006320715000488	design and implementation factors that promote CFM effectiveness	design	IN	CC	537	544	537
+published-S0006320715000488	implementation factors	factors	NN	WDT	539	540	540
+published-S0006320715000488	that	that	NNS	VBP	541	541	541
+published-S0006320715000488	CFM effectiveness	effectiveness	NNP	.	543	544	544
+published-S0006320715000488	The Malagasy government	government	NNP	VBD	546	548	548
+published-S0006320715000488	CFM	CFM	VBD	IN	550	550	550
+published-S0006320715000488	the late 1990s	1990s	JJ	-LRB-	552	554	554
+published-S0006320715000488	deforestation	deforestation	VB	CC	562	562	562
+published-S0006320715000488	the significant part of the world’s biodiversity that is endemic to Madagascar (Le Saout et al., 2013)	part	JJ	IN	565	586	567
+published-S0006320715000488	the world’s biodiversity	biodiversity	POS	WDT	569	572	572
+published-S0006320715000488	that	that	NN	VBZ	573	573	573
+published-S0006320715000488	Madagascar (Le Saout et al., 2013)	Madagascar	IN	-LRB-	577	586	577
+published-S0006320715000488	(Le Saout et al., 2013)	Saout	NNP	NNP	578	586	580
+published-S0006320715000488	The number of CFM units	number	DT	IN	588	592	589
+published-S0006320715000488	CFM units	units	NNP	VBD	591	592	592
+published-S0006320715000488	Many publications	publications	JJ	VBP	608	609	609
+published-S0006320715000488	the institutional and political aspects of Madagascar’s forest decentralization process (Pollini et al., 2014; Pollini and Lassoie, 2011; Raik and Decker, 2007;	aspects	JJ	IN	611	641	615
+published-S0006320715000488	Madagascar’s forest decentralization process	process	NN	-LRB-	617	621	621
+published-S0006320715000488	Pollini et al	al	NN	NNP	623	625	625
+published-S0006320715000488	., 2014; Pollini and Lassoie, 2011	.	NNP	CD	626	634	626
+published-S0006320715000488	Pollini and Lassoie, 2011	Pollini	:	CC	630	634	630
+published-S0006320715000488	Lassoie	Lassoie	CC	CD	632	632	632
+published-S0006320715000488	Raik and Decker, 2007;	Raik	:	CC	636	641	636
+published-S0006320715000488	Decker	Decker	CC	CD	638	638	638
+published-S0006320715000488	et al	al	NNP	NNP	643	644	644
+published-S0006320715000488	., 2013	.	NNP	CD	645	647	645
+published-S0006320715000488	the performance of CFM	performance	DT	IN	665	668	666
+published-S0006320715000488	CFM	CFM	IN	IN	668	668	668
+published-S0006320715000488	terms of conservation outcomes (CIRAD, 2013;	terms	IN	IN	670	678	670
+published-S0006320715000488	conservation outcomes (CIRAD, 2013;	outcomes	NN	-LRB-	672	678	673
+published-S0006320715000488	CIRAD, 2013	CIRAD	-LRB-	CD	675	677	675
+published-S0006320715000488	Sommerville et al., 2010	Sommerville	:	NNP	679	684	679
+published-S0006320715000488	et al	al	NNP	NNP	680	681	681
+published-S0006320715000488	., 2010	.	NNP	CD	682	684	682
+published-S0006320715000488	., 2011	.	NNP	CD	689	691	689
+published-S0006320715000488	None	None	.	RB	694	694	694
+published-S0006320715000488	factors that may confound	factors	IN	WDT	698	701	698
+published-S0006320715000488	that	that	NNS	MD	699	699	699
+published-S0006320715000488	statistical matching	matching	JJ	TO	706	707	707
+published-S0006320715000488	factors that confound impact estimates	factors	IN	WDT	711	715	711
+published-S0006320715000488	that	that	NNS	JJ	712	712	712
+published-S0006320715000488	confound impact	impact	JJ	VBZ	713	714	714
+published-S0006320715000488	we	we	,	VBP	717	717	717
+published-S0006320715000488	the effectiveness of Madagascar CFM at reducing deforestation between 2000 and 2010	effectiveness	DT	IN	719	730	720
+published-S0006320715000488	Madagascar CFM	CFM	JJ	IN	722	723	723
+published-S0006320715000488	deforestation between 2000 and 2010	deforestation	VBG	IN	726	730	726
+published-S0006320715000488	our knowledge	knowledge	PRP$	DT	733	734	734
+published-S0006320715000488	this	this	,	VBZ	736	736	736
+published-S0006320715000488	the first national scale study of performance of CFM at delivering conservation outcomes	study	NN	IN	738	750	742
+published-S0006320715000488	performance of CFM	performance	IN	IN	744	746	744
+published-S0006320715000488	CFM	CFM	IN	IN	746	746	746
+published-S0006320715000488	conservation outcomes	outcomes	NN	.	749	750	750
+published-S0006320715000488	we	we	,	VBP	754	754	754
+published-S0006320715000488	the overall effectiveness of Madagascar’s forest decentralization policy at reducing deforestation by looking at all CFM units across the country	effectiveness	JJ	IN	756	776	758
+published-S0006320715000488	Madagascar’s forest decentralization policy	policy	NN	IN	760	764	764
+published-S0006320715000488	deforestation	deforestation	VBG	IN	767	767	767
+published-S0006320715000488	all CFM units across the country	units	NNP	IN	771	776	773
+published-S0006320715000488	the country	country	DT	.	775	776	776
+published-S0006320715000488	we	we	,	VBP	780	780	780
+published-S0006320715000488	study effectiveness in a subsample of CFM units where we have information to suggest that CFM was implemented on the ground	effectiveness	NN	IN	783	803	784
+published-S0006320715000488	a subsample of CFM units where we have information to suggest that CFM was implemented on the ground	subsample	DT	IN	786	803	787
+published-S0006320715000488	CFM units where we have information to suggest that CFM was implemented on the ground	units	NNP	WRB	789	803	790
+published-S0006320715000488	we	we	WRB	VBP	792	792	792
+published-S0006320715000488	information to suggest that CFM was implemented on the ground	information	VBP	TO	794	803	794
+published-S0006320715000488	CFM	CFM	IN	VBD	798	798	798
+published-S0006320715000488	the ground	ground	DT	.	802	803	803
+published-S0006320715000488	we	we	,	VBP	807	807	807
+published-S0006320715000488	CFM that allows and does not allow commercial use of forest resources and study effectiveness conditional on whether CFM permits or prohibits commercial use	CFM	IN	WDT	810	833	810
+published-S0006320715000488	that	that	NNP	VBZ	811	811	811
+published-S0006320715000488	commercial use of forest resources and study effectiveness	use	JJ	IN	817	824	818
+published-S0006320715000488	forest resources and study effectiveness	resources	NN	CC	820	824	821
+published-S0006320715000488	study effectiveness	effectiveness	NN	JJ	823	824	824
+published-S0006320715000488	CFM	CFM	IN	VBZ	828	828	828
+published-S0006320715000488	commercial use	use	JJ	.	832	833	833
+published-S0006320715000488	we	we	IN	VBP	837	837	837
+published-S0006320715000488	other important potential outcomes from CFM including impacts, positive or negative	outcomes	JJ	IN	841	852	844
+published-S0006320715000488	CFM including impacts, positive or negative	CFM	IN	VBG	846	852	846
+published-S0006320715000488	impacts, positive or negative	impacts	VBG	JJ	848	852	848
+published-S0006320715000488	human welfare	welfare	JJ	.	855	856	856
+published-S0006899318305754	Stroke	Stroke		VBZ	0	0	0
+published-S0006899318305754	the fifth leading cause of death among Americans and a leading cause of major disability	cause	VBG	IN	2	16	5
+published-S0006899318305754	death	death	IN	IN	7	7	7
+published-S0006899318305754	Americans	Americans	IN	CC	9	9	9
+published-S0006899318305754	a leading cause of major disability	cause	VBG	IN	11	16	13
+published-S0006899318305754	major disability	disability	JJ	.	15	16	16
+published-S0006899318305754	the most damaging types of ischemic stroke	types	JJ	IN	20	26	23
+published-S0006899318305754	ischemic stroke	stroke	JJ	DT	25	26	26
+published-S0006899318305754	an emergent large vessel occlusion (ELVO)	occlusion	NN	-LRB-	28	35	32
+published-S0006899318305754	ELVO	ELVO	-LRB-	-RRB-	34	34	34
+published-S0006899318305754	blood flow in a major cerebral artery	flow	NN	IN	42	48	43
+published-S0006899318305754	a major cerebral artery	artery	JJ	.	45	48	48
+published-S0006899318305754	ELVO patients	patients	NNS	VBP	50	51	51
+published-S0006899318305754	a high mortality rate	rate	NN	CC	53	56	56
+published-S0006899318305754	survivors	survivors	CC	VBP	59	59	59
+published-S0006899318305754	profound deficits in motor and cognitive function (Malhotra et al	deficits	JJ	IN	64	74	65
+published-S0006899318305754	motor and cognitive function (Malhotra et al	function	JJ	-LRB-	67	74	70
+published-S0006899318305754	Malhotra et al	al	NNP	NNP	72	74	74
+published-S0006899318305754	Intravenous administration of tissue plasminogen activator (tPA), the only FDA-approved drug for ischemic stroke,	administration	NNP	IN	80	99	81
+published-S0006899318305754	tissue plasminogen activator (tPA)	activator	NN	-LRB-	83	88	85
+published-S0006899318305754	tPA	tPA	-LRB-	-RRB-	87	87	87
+published-S0006899318305754	the only FDA-approved drug for ischemic stroke	drug	VBN	IN	90	98	95
+published-S0006899318305754	ischemic stroke	stroke	JJ	VBZ	97	98	98
+published-S0006899318305754	ELVO patients (Broderick et al	patients	NNP	-LRB-	104	109	105
+published-S0006899318305754	Broderick et al	al	NNP	NNP	107	109	109
+published-S0006899318305754	Ciccone et al., 2013; Kidwell et al., 2013), and others	Ciccone	:	NNP	114	130	114
+published-S0006899318305754	al	al	NNP	NNP	116	116	116
+published-S0006899318305754	., 2013	.	NNP	CD	117	119	117
+published-S0006899318305754	Kidwell et al., 2013)	Kidwell	:	NNP	121	127	121
+published-S0006899318305754	et al	al	NNP	NNP	122	123	123
+published-S0006899318305754	., 2013	.	NNP	CD	124	126	124
+published-S0006899318305754	others	others	CC	VBP	130	130	130
+published-S0006899318305754	endovascular thrombectomy (EVT)	thrombectomy	JJ	-LRB-	135	139	136
+published-S0006899318305754	EVT	EVT	-LRB-	-RRB-	138	138	138
+published-S0006899318305754	The permanent intraluminal middle cerebral arterial occlusion (MCAO) model of stroke	occlusion	JJ	-LRB-	141	153	147
+published-S0006899318305754	MCAO) model of stroke	model	-RRB-	IN	149	153	151
+published-S0006899318305754	stroke	stroke	IN	RBS	153	153	153
+published-S0006899318305754	ELVO without tPA administration or EVT	ELVO	VBZ	IN	156	161	156
+published-S0006899318305754	tPA administration or EVT	administration	NNP	CC	158	161	159
+published-S0006899318305754	EVT	EVT	CC	.	161	161	161
+published-S0006899318305754	This model	model	DT	VBZ	163	164	164
+published-S0006899318305754	the opportunity to discover new treatments to decrease mortality and disability resulting from ELVO	opportunity	DT	TO	166	179	167
+published-S0006899318305754	new treatments	treatments	JJ	TO	170	171	171
+published-S0006899318305754	mortality and disability	mortality	VB	CC	174	176	174
+published-S0006899318305754	disability	disability	CC	VBG	176	176	176
+published-S0006899318305754	ELVO	ELVO	IN	.	179	179	179
+published-S0006899318305754	large vessel stroke in rats	stroke	NN	IN	182	186	184
+published-S0006899318305754	rats	rats	IN	VBZ	186	186	186
+published-S0006899318305754	an agent that promotes neuroprotection and reduces peripheral inflammation	agent	DT	WDT	188	196	189
+published-S0006899318305754	that	that	NN	VBZ	190	190	190
+published-S0006899318305754	neuroprotection	neuroprotection	VBZ	CC	192	192	192
+published-S0006899318305754	peripheral inflammation	inflammation	JJ	.	195	196	196
+published-S0006899318305754	Leukemia inhibitory factor (LIF), a cytokine in the IL-6 family,	factor	JJ	-LRB-	198	211	200
+published-S0006899318305754	LIF	LIF	-LRB-	-RRB-	202	202	202
+published-S0006899318305754	a cytokine in the IL-6 family	cytokine	DT	IN	205	210	206
+published-S0006899318305754	the IL-6 family	family	NNP	VBZ	208	210	210
+published-S0006899318305754	efficacy in animal models for neurological diseases, such as multiple sclerosis and amyotrophic lateral sclerosis	efficacy	VBN	IN	214	229	214
+published-S0006899318305754	animal models	models	NN	IN	216	217	217
+published-S0006899318305754	neurological diseases, such as multiple sclerosis and amyotrophic lateral sclerosis	diseases	JJ	JJ	219	229	220
+published-S0006899318305754	multiple sclerosis and amyotrophic lateral sclerosis	sclerosis	JJ	CC	224	229	225
+published-S0006899318305754	amyotrophic lateral sclerosis	sclerosis	JJ	.	227	229	229
+published-S0006899318305754	Previous groups	groups	JJ	VBD	231	232	232
+published-S0006899318305754	LIF	LIF	IN	VBZ	235	235	235
+published-S0006899318305754	neurodegeneration	neurodegeneration	VBZ	IN	237	237	237
+published-S0006899318305754	pro-survival PI3K/	PI3K	JJ	SYM	239	243	242
+published-S0006899318305754	Akt	Akt	SYM	VBG	244	244	244
+published-S0006899318305754	the development of anti-inflammatory leukocytes	development	DT	IN	249	255	250
+published-S0006899318305754	anti-inflammatory leukocytes	leukocytes	JJ	-LRB-	252	255	255
+published-S0006899318305754	., 2002, 2006	.	NNP	CD	267	271	267
+published-S0006899318305754	al	al	NNP	NNP	275	275	275
+published-S0006899318305754	., 2007	.	NNP	CD	276	278	276
+published-S0006899318305754	., 2015	.	NNP	CD	283	285	283
+published-S0006899318305754	et al	al	NNP	NNP	288	289	289
+published-S0006899318305754	., 2008	.	NNP	CD	290	292	290
+published-S0006899318305754	., 2005	.	NNP	CD	297	299	297
+published-S0006899318305754	This laboratory	laboratory	DT	VBZ	302	303	303
+published-S0006899318305754	systemic LIF administration	administration	NNP	VBZ	307	309	309
+published-S0006899318305754	infarct volume	volume	NN	CC	314	315	315
+published-S0006899318305754	functional recovery	recovery	JJ	IN	318	319	319
+published-S0006899318305754	MCAO (Rowe et al., 2014)	MCAO	IN	-LRB-	321	329	321
+published-S0006899318305754	Rowe et al	al	NNP	NNP	323	325	325
+published-S0006899318305754	., 2014	.	NNP	CD	326	328	326
+published-S0006899318305754	This drug regimen	regimen	NN	VBZ	331	333	333
+published-S0006899318305754	an initial dose delivered intravenously starting at 6 h after MCAO followed by additional doses at 24 and 48 h with euthanization at 72 h.	dose	JJ	VBN	335	359	337
+published-S0006899318305754	6 h	h	CD	IN	342	343	343
+published-S0006899318305754	MCAO followed by additional doses at 24 and 48 h with euthanization at 72 h.	MCAO	IN	VBN	345	359	345
+published-S0006899318305754	additional doses	doses	JJ	IN	348	349	349
+published-S0006899318305754	24 and 48 h	h	CD	IN	351	354	354
+published-S0006899318305754	euthanization at 72 h.	euthanization	IN	IN	356	359	356
+published-S0006899318305754	72 h.	h.	CD	DT	358	359	359
+published-S0006899318305754	This regimen	regimen	DT	VBD	360	361	361
+published-S0006899318305754	the neuroinflammatory-induced neurodegeneration that occurs at 48 h in this model (Leonardo et al	neurodegeneration	VBN	WDT	371	387	375
+published-S0006899318305754	that	that	NN	VBZ	376	376	376
+published-S0006899318305754	48 h	h	CD	IN	379	380	380
+published-S0006899318305754	this model	model	DT	-LRB-	382	383	383
+published-S0006899318305754	Leonardo et al	al	NNP	NNP	385	387	387
+published-S0006899318305754	LIF	LIF	.	VBZ	393	393	393
+published-S0006899318305754	neurons and oligodendrocytes	neurons	VBZ	CC	395	397	395
+published-S0006899318305754	oligodendrocytes	oligodendrocytes	CC	IN	397	397	397
+published-S0006899318305754	an ischemic environment	environment	JJ	IN	399	401	401
+published-S0006899318305754	the upregulation of antioxidant enzymes (Davis et al	upregulation	DT	IN	403	411	404
+published-S0006899318305754	antioxidant enzymes (Davis et al	enzymes	NN	-LRB-	406	411	407
+published-S0006899318305754	Davis et al	al	NNP	NNP	409	411	411
+published-S0006899318305754	LIF	LIF	.	VBZ	424	424	424
+published-S0006899318305754	an anti-inflammatory cytokine that promotes the development of an anti-inflammatory phenotype in macrophages and T helper cells (Duluc et al., 2007	cytokine	JJ	WDT	427	454	431
+published-S0006899318305754	that	that	NN	VBZ	432	432	432
+published-S0006899318305754	the development of an anti-inflammatory phenotype in macrophages and T helper cells (Duluc et al., 2007	development	DT	IN	434	454	435
+published-S0006899318305754	an anti-inflammatory phenotype	phenotype	JJ	IN	437	441	441
+published-S0006899318305754	macrophages and T helper cells	macrophages	IN	CC	443	447	443
+published-S0006899318305754	T helper cells	cells	NN	-LRB-	445	447	447
+published-S0006899318305754	Duluc et al	Duluc	-LRB-	NNP	449	451	449
+published-S0006899318305754	., 2007	.	NNP	CD	452	454	452
+published-S0006899318305754	., 2009	.	NNP	CD	459	461	459
+published-S0006899318305754	Janssens et al., 2015; Metcalfe et al., 2015)	al	NNP	NNP	463	476	465
+published-S0006899318305754	Metcalfe et al., 2015)	al	NNP	NNP	470	476	472
+published-S0006899318305754	., 2015)	.	NNP	CD	473	476	473
+published-S0006899318305754	These combined actions	actions	VBN	VBP	478	480	480
+published-S0006899318305754	improved histological and functional outcomes	outcomes	JJ	IN	483	487	487
+published-S0006899318305754	this severe stroke model	model	NN	.	489	492	492
+published-S0006899318305754	Neuroprotective signaling	signaling	JJ	VBZ	494	495	495
+published-S0006899318305754	LIF	LIF	IN	VBG	498	498	498
+published-S0006899318305754	the LIF receptor (LIFR)	receptor	NNP	-LRB-	501	506	503
+published-S0006899318305754	LIFR	LIFR	-LRB-	-RRB-	505	505	505
+published-S0006899318305754	the type 1 cytokine receptor family	family	NN	-LRB-	513	518	518
+published-S0006899318305754	Gadina et al	al	NNP	NNP	520	522	522
+published-S0006899318305754	., 2001	.	NNP	CD	523	525	523
+published-S0006899318305754	downstream signaling	signaling	JJ	NNS	530	531	531
+published-S0006899318305754	LIFR	LIFR	,	MD	533	533	533
+published-S0006899318305754	the plasma membrane	membrane	NN	CC	538	540	540
+published-S0006899318305754	other IL-6	IL-6	JJ	JJ	543	544	544
+published-S0006899318305754	cytokine receptor components	components	NN	.	545	547	547
+published-S0006899318305754	LIF	LIF	IN	DT	550	550	550
+published-S0006899318305754	this receptor	receptor	DT	VBZ	552	553	553
+published-S0006899318305754	signals of two other cellular protective proteins, cardiotropin-1 and ciliary neurotrophic factor	signals	VBZ	IN	555	567	555
+published-S0006899318305754	two other cellular protective proteins, cardiotropin-1 and ciliary neurotrophic factor	proteins	JJ	-RRB-	557	567	561
+published-S0006899318305754	ciliary neurotrophic factor	factor	JJ	.	565	567	567
+published-S0006899318305754	This receptor	receptor	DT	VBZ	569	570	570
+published-S0006899318305754	it	it	IN	VBZ	575	575	575
+published-S0006899318305754	the nuclei of neuronal cells	nuclei	DT	IN	578	582	579
+published-S0006899318305754	neuronal cells	cells	JJ	IN	581	582	582
+published-S0006899318305754	an injury	injury	DT	VBZ	584	585	585
+published-S0006899318305754	., 2017	.	NNP	CD	591	593	591
+published-S0006899318305754	., 2002	.	NNP	CD	598	600	598
+published-S0006899318305754	Zhao et al., 2014)	al	NNP	NNP	602	608	604
+published-S0006899318305754	., 2014)	.	NNP	CD	605	608	605
+published-S0006899318305754	LIFR	LIFR	IN	VBZ	611	611	611
+published-S0006899318305754	a crucial role in transducing signals for these protective factors	role	JJ	IN	613	622	615
+published-S0006899318305754	signals for these protective factors	signals	VBG	IN	618	622	618
+published-S0006899318305754	these protective factors	factors	JJ	DT	620	622	622
+published-S0006899318305754	the molecular and cellular roles of this receptor	roles	JJ	IN	624	631	628
+published-S0006899318305754	this receptor	receptor	DT	VBP	630	631	631
+published-S0006899318305754	pre-clinical studies aimed at promoting post-stroke recovery	studies	JJ	VBN	640	650	643
+published-S0006899318305754	post-stroke recovery	recovery	JJ	VBP	647	650	650
+published-S0006899318305754	primarily young male rodents	rodents	JJ	.	654	657	657
+published-S0006899318305754	results from these studies	results	,	IN	661	664	661
+published-S0006899318305754	these studies	studies	DT	VBP	663	664	664
+published-S0006899318305754	success in clinical trials	success	IN	IN	669	672	669
+published-S0006899318305754	clinical trials	trials	JJ	.	671	672	672
+published-S0006899318305754	We	We	.	VBP	674	674	674
+published-S0006899318305754	favorable results with the administration of LIF	results	JJ	IN	677	683	678
+published-S0006899318305754	the administration of LIF	administration	DT	IN	680	683	681
+published-S0006899318305754	LIF	LIF	IN	IN	683	683	683
+published-S0006899318305754	a neuroprotective agent in young male rats (Davis et al., 2017	agent	JJ	IN	685	698	687
+published-S0006899318305754	young male rats (Davis et al	rats	JJ	-LRB-	689	695	691
+published-S0006899318305754	Davis et al	al	NNP	NNP	693	695	695
+published-S0006899318305754	., 2017	.	NNP	CD	696	698	696
+published-S0006899318305754	this study	study	DT	PRP	716	717	717
+published-S0006899318305754	we	we	,	VBD	719	719	719
+published-S0006899318305754	the same drug regimen and experimental design	regimen	NN	CC	721	727	724
+published-S0006899318305754	experimental design	design	JJ	VBG	726	727	727
+published-S0006899318305754	18 mo	mo	CD	-RRB-	731	732	732
+published-S0006899318305754	both sexes	sexes	DT	.	736	737	737
+published-S0006899318305754	Our study	study	PRP$	VBZ	739	740	740
+published-S0006899318305754	LIF treatment	treatment	NNP	VBZ	743	744	744
+published-S0006899318305754	neuroprotection	neuroprotection	VBG	IN	750	750	750
+published-S0006899318305754	MCAO in aged rats of both sexes, which coincides with significantly lower LIFR expression in the brain compared to young rats	MCAO	IN	IN	752	773	752
+published-S0006899318305754	aged rats of both sexes, which coincides with significantly lower LIFR expression in the brain compared to young rats	rats	JJ	IN	754	773	755
+published-S0006899318305754	both sexes, which coincides with significantly lower LIFR expression in the brain compared to young rats	sexes	DT	WDT	757	773	758
+published-S0006899318305754	which	which	,	VBZ	760	760	760
+published-S0006899318305754	significantly lower LIFR expression in the brain	expression	NNP	IN	763	769	766
+published-S0006899318305754	the brain	brain	DT	VBN	768	769	769
+published-S0006899318305754	young rats	rats	JJ	.	772	773	773
+published-S0009279717306439	It	It		VBZ	0	0	0
+published-S0009279717306439	common knowledge	knowledge	JJ	IN	2	3	3
+published-S0009279717306439	any compound	compound	DT	VBZ	5	6	6
+published-S0009279717306439	its exposure	exposure	PRP$	VBZ	10	11	11
+published-S0009279717306439	a certain threshold	threshold	JJ	.	13	15	15
+published-S0009279717306439	it	it	RB	VBZ	18	18	18
+published-S0009279717306439	that exposure below this threshold	exposure	DT	IN	22	26	23
+published-S0009279717306439	this threshold	threshold	DT	VBZ	25	26	26
+published-S0009279717306439	an adaptive response	response	JJ	RB	28	30	30
+published-S0009279717306439	hormesis	hormesis	IN	.	36	36	36
+published-S0009279717306439	The nature of the adaptive response	nature	DT	IN	38	43	39
+published-S0009279717306439	the adaptive response	response	JJ	VBZ	41	43	43
+published-S0009279717306439	time	time	IN	.	46	46	46
+published-S0009279717306439	example	example	IN	NN	49	49	49
+published-S0009279717306439	adaptation by activation of protective enzymes	adaptation	,	IN	51	56	51
+published-S0009279717306439	activation of protective enzymes	activation	IN	IN	53	56	53
+published-S0009279717306439	protective enzymes	enzymes	JJ	VBZ	55	56	56
+published-S0009279717306439	direct protection and is critical for survival of an acute exposure, while evolutionary adaptation provides long term protection and occurs when there is a long-lasting change in exposure, e.g. the introduction of oxygen in Earth's atmosphere [1]	protection	JJ	CC	58	101	59
+published-S0009279717306439	survival of an acute exposure	survival	IN	IN	64	68	64
+published-S0009279717306439	an acute exposure	exposure	JJ	IN	66	68	68
+published-S0009279717306439	evolutionary adaptation	adaptation	JJ	VBZ	71	72	72
+published-S0009279717306439	long term protection	protection	NN	CC	74	76	76
+published-S0009279717306439	a long-lasting change in exposure	change	VBG	IN	82	88	86
+published-S0009279717306439	exposure	exposure	IN	RB	88	88	88
+published-S0009279717306439	e.g. the introduction of oxygen in Earth's atmosphere [1]	introduction	DT	IN	90	101	92
+published-S0009279717306439	oxygen	oxygen	IN	IN	94	94	94
+published-S0009279717306439	Earth's atmosphere	atmosphere	POS	XX	96	98	98
+published-S0009279717306439	An elegant example of direct adaptation	example	JJ	IN	103	108	105
+published-S0009279717306439	direct adaptation	adaptation	JJ	VBZ	107	108	108
+published-S0009279717306439	the increase of glutathione S-transferase activity by acrolein	increase	DT	IN	110	119	111
+published-S0009279717306439	glutathione S-transferase activity	activity	NN	IN	113	117	117
+published-S0009279717306439	acrolein	acrolein	IN	XX	119	119	119
+published-S0009279717306439	Acrolein (propenal)	Acrolein	.	-LRB-	124	127	124
+published-S0009279717306439	propenal	propenal	-LRB-	-RRB-	126	126	126
+published-S0009279717306439	the smallest α,β-unsaturated aldehyde	aldehyde	JJ	.	129	136	136
+published-S0009279717306439	It	It	.	VBZ	138	138	138
+published-S0009279717306439	e.g. cigarette smoke and diesel exhaust	smoke	NN	CC	142	147	144
+published-S0009279717306439	diesel exhaust	exhaust	NN	XX	146	147	147
+published-S0009279717306439	addition	addition	IN	PRP	153	153	153
+published-S0009279717306439	it	it	,	VBZ	155	155	155
+published-S0009279717306439	lipid peroxidation	peroxidation	JJ	XX	161	162	162
+published-S0009279717306439	its soft electrophilic character	character	JJ	NNP	169	172	172
+published-S0009279717306439	acrolein	acrolein	,	RB	174	174	174
+published-S0009279717306439	soft nucleophilic thiols present in cysteine residues of proteins	thiols	JJ	JJ	177	185	179
+published-S0009279717306439	cysteine residues of proteins	residues	NN	IN	182	185	183
+published-S0009279717306439	proteins	proteins	IN	XX	185	185	185
+published-S0009279717306439	the toxicity of acrolein	toxicity	DT	IN	194	197	195
+published-S0009279717306439	acrolein	acrolein	IN	.	197	197	197
+published-S0009279717306439	the protection against acrolein and other electrophiles, glutathione (GSH	protection	DT	IN	200	210	201
+published-S0009279717306439	acrolein and other electrophiles, glutathione (GSH	acrolein	IN	CC	203	210	203
+published-S0009279717306439	other electrophiles, glutathione (GSH	electrophiles	JJ	NN	205	210	206
+published-S0009279717306439	glutathione (GSH	glutathione	,	-LRB-	208	210	208
+published-S0009279717306439	GSH	GSH	-LRB-	-RRB-	210	210	210
+published-S0009279717306439	a critical role	role	JJ	XX	213	215	215
+published-S0009279717306439	The thiol group in GSH	group	NN	IN	220	224	222
+published-S0009279717306439	GSH	GSH	IN	RB	224	224	224
+published-S0009279717306439	these electrophiles	electrophiles	DT	.	228	229	229
+published-S0009279717306439	The GSH	GSH	DT	VBZ	231	232	232
+published-S0009279717306439	this detoxification reaction of GSH	reaction	NN	IN	235	239	237
+published-S0009279717306439	GSH	GSH	IN	CC	239	239	239
+published-S0009279717306439	the protection by GSH	protection	DT	IN	244	247	245
+published-S0009279717306439	GSH	GSH	IN	XX	247	247	247
+published-S0009279717306439	GSH transferases	transferases	NNP	VBP	252	253	253
+published-S0009279717306439	the cytosol, mitochondria and microsomes	cytosol	DT	NNP	257	262	258
+published-S0009279717306439	mitochondria and microsomes	mitochondria	,	CC	260	262	260
+published-S0009279717306439	microsomes	microsomes	CC	.	262	262	262
+published-S0009279717306439	Microsomal GSH	GSH	JJ	NNS	264	265	265
+published-S0009279717306439	MGST	MGST	-LRB-	-RRB-	268	268	268
+published-S0009279717306439	the MAPEG (membrane-associated proteins in eicosanoid and GSH metabolism)	proteins	VBN	IN	272	284	278
+published-S0009279717306439	eicosanoid and GSH metabolism	metabolism	NNP	-RRB-	280	283	283
+published-S0009279717306439	They	They	.	VBP	287	287	287
+published-S0009279717306439	drug detoxification	detoxification	NN	CC	291	292	292
+published-S0009279717306439	an important role in leukotriene	role	JJ	IN	295	299	297
+published-S0009279717306439	leukotriene	leukotriene	IN	CC	299	299	299
+published-S0009279717306439	E synthesis	synthesis	NN	XX	302	303	303
+published-S0009279717306439	Addition of acrolein to microsomes	Addition	.	IN	308	312	308
+published-S0009279717306439	acrolein	acrolein	IN	IN	310	310	310
+published-S0009279717306439	microsomes	microsomes	IN	MD	312	312	312
+published-S0009279717306439	GSH transferase activity	activity	NN	NN	315	317	317
+published-S0009279717306439	This	This	.	VBZ	324	324	324
+published-S0009279717306439	an acute adaptive response	response	JJ	IN	326	329	329
+published-S0009279717306439	acrolein	acrolein	IN	RB	332	332	332
+published-S0009279717306439	its conjugation with GSH and thus its detoxification	conjugation	PRP$	IN	335	342	336
+published-S0009279717306439	GSH and thus its detoxification	GSH	IN	CC	338	342	338
+published-S0009279717306439	thus its detoxification	detoxification	PRP$	XX	340	342	342
+published-S0009279717306439	It	It	.	VBZ	347	347	347
+published-S0009279717306439	MGST1	MGST1	IN	DT	352	352	352
+published-S0009279717306439	the thiol group of cysteine 49	group	NN	IN	353	358	355
+published-S0009279717306439	cysteine 49	cysteine	IN	CD	357	358	357
+published-S0009279717306439	electrophiles	electrophiles	IN	CC	362	362	362
+published-S0009279717306439	this adduction	adduction	DT	VBZ	365	366	366
+published-S0009279717306439	the activity of the enzyme	activity	DT	IN	368	372	369
+published-S0009279717306439	the enzyme	enzyme	DT	XX	371	372	372
+published-S0009279717306439	It	It	.	VBZ	377	377	377
+published-S0009279717306439	this way	way	DT	NNP	383	384	384
+published-S0009279717306439	MGST	MGST	NN	VBZ	385	385	385
+published-S0009279717306439	it	it	WRB	VBZ	389	389	389
+published-S0009279717306439	electrophiles	electrophiles	VBG	VBP	396	396	396
+published-S0009279717306439	GSH-conjugation	conjugation	HYPH	XX	402	404	404
+published-S0009279717306439	Preliminary results	results	JJ	VBD	409	410	410
+published-S0009279717306439	acrolein	acrolein	IN	RB	413	413	413
+published-S0009279717306439	MGST activity	activity	NN	.	417	418	418
+published-S0009279717306439	This	This	.	VBD	420	420	420
+published-S0009279717306439	relatively high concentrations of acrolein	concentrations	JJ	IN	424	428	426
+published-S0009279717306439	acrolein	acrolein	IN	.	428	428	428
+published-S0009279717306439	This	This	.	VBD	430	430	430
+published-S0009279717306439	us	us	VBD	TO	432	432	432
+published-S0009279717306439	the effect of acrolein on MGST activity	effect	DT	IN	437	443	438
+published-S0009279717306439	acrolein	acrolein	IN	IN	440	440	440
+published-S0009279717306439	MGST activity	activity	NNP	CC	442	443	443
+published-S0009279717306439	this two faced effect of acrolein	effect	JJ	IN	449	454	452
+published-S0009279717306439	acrolein	acrolein	IN	VBZ	454	454	454
+published-S0009279717306439	the cellular response to this toxin	response	JJ	IN	457	462	459
+published-S0009279717306439	this toxin	toxin	DT	DT	461	462	462
+published-S0009279717306439	that –	that	,	:	464	465	464
+published-S0009279717306439	the level of exposure - progresses from protection into adaptation and finally toxicity	level	DT	IN	468	480	469
+published-S0009279717306439	exposure - progresses from protection into adaptation and finally toxicity	progresses	HYPH	IN	471	480	473
+published-S0009279717306439	protection	protection	IN	IN	475	475	475
+published-S0009279717306439	adaptation and finally toxicity	adaptation	IN	CC	477	480	477
+published-S0009279717306439	finally toxicity	toxicity	RB	.	479	480	480
+published-S0010945218302843	Detection of new events within a constantly fluctuating sensory input	Detection		IN	0	9	0
+published-S0010945218302843	new events within a constantly fluctuating sensory input	events	JJ	IN	2	9	3
+published-S0010945218302843	a constantly fluctuating sensory input	input	JJ	VBZ	5	9	9
+published-S0010945218302843	a fundamental challenge to organisms in dynamic environments	challenge	JJ	IN	11	18	13
+published-S0010945218302843	organisms in dynamic environments	organisms	IN	IN	15	18	15
+published-S0010945218302843	dynamic environments	environments	JJ	.	17	18	18
+published-S0010945218302843	this process	process	DT	VBZ	23	24	24
+published-S0010945218302843	a continually-refined internal model of the real-world causes of sensations, made possible by exploiting statistical structure in the sensory input (Dayan, Hinton, Neal, & Zemel, 1995; Friston & Kiebel, 2009; Rubin, Ulanovsky, Nelken, & Tishby, 2016; Winkler, Denham, & Nelken, 2009)	model	JJ	IN	26	88	31
+published-S0010945218302843	the real-world causes of sensations	causes	NN	IN	33	39	37
+published-S0010945218302843	sensations	sensations	IN	VBN	39	39	39
+published-S0010945218302843	statistical structure in the sensory input (Dayan, Hinton, Neal, & Zemel, 1995;	structure	JJ	IN	45	62	46
+published-S0010945218302843	the sensory input (Dayan, Hinton, Neal, & Zemel, 1995;	input	JJ	-LRB-	48	62	50
+published-S0010945218302843	Dayan, Hinton, Neal, & Zemel, 1995	Dayan	-LRB-	NNP	52	61	52
+published-S0010945218302843	Hinton, Neal, & Zemel, 1995	Hinton	,	NNP	54	61	54
+published-S0010945218302843	Neal, & Zemel, 1995	Neal	,	CC	56	61	56
+published-S0010945218302843	Zemel, 1995	Zemel	CC	CD	59	61	59
+published-S0010945218302843	Friston & Kiebel, 2009; Rubin, Ulanovsky, Nelken, & Tishby, 2016; Winkler, Denham, & Nelken, 2009)	Friston	:	CC	63	88	63
+published-S0010945218302843	Kiebel	Kiebel	CC	CD	65	65	65
+published-S0010945218302843	Rubin, Ulanovsky, Nelken, & Tishby, 2016	Rubin	:	NNP	69	78	69
+published-S0010945218302843	Ulanovsky, Nelken, & Tishby, 2016	Ulanovsky	,	NNP	71	78	71
+published-S0010945218302843	Nelken, & Tishby, 2016	Nelken	,	CC	73	78	73
+published-S0010945218302843	Tishby, 2016	Tishby	CC	CD	76	78	76
+published-S0010945218302843	Winkler, Denham, & Nelken, 2009)	Winkler	:	NNP	80	88	80
+published-S0010945218302843	Denham, & Nelken, 2009	Denham	,	CC	82	87	82
+published-S0010945218302843	Nelken, 2009	Nelken	CC	CD	85	87	85
+published-S0010945218302843	Evidence from multiple domains, including speech (Saffran, Aslin, & Newport, 1996), abstract sound sequences (McDermott, Schemitsch, & Simoncelli, 2013; Paavilainen et al., 2013; Saffran, Johnson, Aslin, & Newport, 1999), vision (Turk-Browne, Scholl, Chun, & Johnson, 2009) and motor control (Bestmann et al., 2008)	Evidence	.	IN	90	165	90
+published-S0010945218302843	multiple domains, including speech (Saffran, Aslin, & Newport, 1996)	domains	JJ	VBG	92	106	93
+published-S0010945218302843	speech (Saffran, Aslin, & Newport, 1996)	speech	VBG	-LRB-	96	106	96
+published-S0010945218302843	Saffran, Aslin, & Newport, 1996)	Saffran	-LRB-	NNP	98	106	98
+published-S0010945218302843	Aslin, & Newport, 1996	Aslin	,	CC	100	105	100
+published-S0010945218302843	Newport, 1996	Newport	CC	CD	103	105	103
+published-S0010945218302843	abstract sound sequences (McDermott, Schemitsch, & Simoncelli, 2013; Paavilainen et al., 2013; Saffran, Johnson, Aslin, & Newport, 1999), vision (Turk-Browne, Scholl, Chun, & Johnson, 2009) and motor control (Bestmann et al., 2008)	sequences	JJ	-LRB-	108	165	110
+published-S0010945218302843	McDermott, Schemitsch, & Simoncelli, 2013	McDermott	-LRB-	NNP	112	119	112
+published-S0010945218302843	Schemitsch, & Simoncelli, 2013	Schemitsch	,	CC	114	119	114
+published-S0010945218302843	Simoncelli, 2013	Simoncelli	CC	CD	117	119	117
+published-S0010945218302843	Paavilainen et al	al	NNP	NNP	121	123	123
+published-S0010945218302843	., 2013	.	NNP	CD	124	126	124
+published-S0010945218302843	Saffran, Johnson, Aslin, & Newport, 1999), vision (Turk-Browne, Scholl, Chun, & Johnson, 2009) and motor control (Bestmann et al., 2008)	Saffran	:	NNP	128	165	128
+published-S0010945218302843	Johnson, Aslin, & Newport, 1999	Johnson	,	NNP	130	137	130
+published-S0010945218302843	Aslin, & Newport, 1999	Aslin	,	CC	132	137	132
+published-S0010945218302843	Newport, 1999	Newport	CC	CD	135	137	135
+published-S0010945218302843	vision (Turk-Browne, Scholl, Chun, & Johnson, 2009) and motor control (Bestmann et al., 2008)	vision	,	-LRB-	140	165	140
+published-S0010945218302843	Turk-Browne, Scholl, Chun, & Johnson, 2009) and motor control (Bestmann et al., 2008)	Browne	HYPH	NNP	142	165	144
+published-S0010945218302843	Scholl, Chun, & Johnson, 2009)	Scholl	,	NNP	146	154	146
+published-S0010945218302843	Chun, & Johnson, 2009)	Chun	,	CC	148	154	148
+published-S0010945218302843	Johnson, 2009)	Johnson	CC	CD	151	154	151
+published-S0010945218302843	motor control (Bestmann et al., 2008)	control	NN	-LRB-	156	165	157
+published-S0010945218302843	Bestmann et al	al	NNP	NNP	159	161	161
+published-S0010945218302843	., 2008	.	NNP	CD	162	164	162
+published-S0010945218302843	sensitivity to environmental statistics, which in turn influences top-down, expectation-driven perceptual processing	sensitivity	VBZ	IN	167	184	167
+published-S0010945218302843	environmental statistics, which in turn influences top-down, expectation-driven perceptual processing	statistics	JJ	WDT	169	184	170
+published-S0010945218302843	which	which	,	IN	172	172	172
+published-S0010945218302843	turn	turn	IN	NNS	174	174	174
+published-S0010945218302843	top-down, expectation-driven perceptual processing	processing	JJ	.	176	184	184
+published-S0010945218302843	the organism	organism	DT	VBZ	187	188	188
+published-S0010945218302843	sensory input that is inconsistent with the established internal model,	input	JJ	WDT	190	200	191
+published-S0010945218302843	that	that	NN	VBZ	192	192	192
+published-S0010945218302843	the established internal model,	model	JJ	DT	196	200	199
+published-S0010945218302843	a ‘surprise’ response	response	''	VBZ	201	205	205
+published-S0010945218302843	a rapid reaction to the associated environmental change	reaction	JJ	IN	215	222	217
+published-S0010945218302843	the associated environmental change	change	JJ	.	219	222	222
+published-S0010945218302843	what aspects of stimuli	aspects	WP	IN	225	228	226
+published-S0010945218302843	stimuli	stimuli	IN	VBP	228	228	228
+published-S0010945218302843	they	they	WRB	VBP	236	236	236
+published-S0010945218302843	this network	network	DT	.	245	246	246
+published-S0010945218302843	The auditory system	system	JJ	VBZ	248	250	250
+published-S0010945218302843	a fertile ground for probing sensory error responses	ground	JJ	IN	253	260	255
+published-S0010945218302843	sensory error responses	responses	NN	IN	258	260	260
+published-S0010945218302843	multiple levels of the processing hierarchy (Aghamolaei, Zarnowiec, Grimm, & Escera, 2016; Ayala, Pérez-González, & Malmierca, 2016; Nelken, 2014; Parras et al., 2017)	levels	JJ	IN	263	302	264
+published-S0010945218302843	the processing hierarchy (Aghamolaei, Zarnowiec, Grimm, & Escera, 2016; Ayala, Pérez-González, & Malmierca, 2016; Nelken, 2014; Parras et al., 2017)	hierarchy	NN	-LRB-	266	302	268
+published-S0010945218302843	Parras et al., 2017)	Parras	:	NN	296	302	296
+published-S0010945218302843	et al	al	NN	NNP	297	298	298
+published-S0010945218302843	A common approach	approach	JJ	VBZ	304	306	306
+published-S0010945218302843	a stream of standard sounds	stream	DT	IN	309	313	310
+published-S0010945218302843	standard sounds	sounds	JJ	TO	312	313	313
+published-S0010945218302843	a regularity that is occasionally interrupted by ‘deviant’ sounds (Garrido, Kilner, Stephan, & Friston, 2009, 2008; Heilbron & Chait, 2017; Khouri & Nelken, 2015; Näätänen & Alho, 1995)	regularity	DT	WDT	316	358	317
+published-S0010945218302843	that	that	NN	VBZ	318	318	318
+published-S0010945218302843	Garrido, Kilner, Stephan, & Friston, 2009, 2008; Heilbron & Chait, 2017; Khouri & Nelken, 2015	Garrido	-LRB-	NNP	328	351	328
+published-S0010945218302843	Kilner, Stephan, & Friston, 2009, 2008	Kilner	,	NNP	330	339	330
+published-S0010945218302843	Stephan, & Friston, 2009, 2008	Stephan	,	CC	332	339	332
+published-S0010945218302843	Friston, 2009, 2008	Friston	CC	CD	335	339	335
+published-S0010945218302843	Heilbron & Chait, 2017; Khouri & Nelken, 2015	Heilbron	:	CC	341	351	341
+published-S0010945218302843	Chait	Chait	CC	CD	343	343	343
+published-S0010945218302843	Khouri & Nelken, 2015	Khouri	:	CC	347	351	347
+published-S0010945218302843	Nelken	Nelken	CC	CD	349	349	349
+published-S0010945218302843	Näätänen & Alho, 1995)	Näätänen	:	CC	353	358	353
+published-S0010945218302843	Alho	Alho	CC	CD	355	355	355
+published-S0010945218302843	Deviants	Deviants	.	RB	360	360	360
+published-S0010945218302843	an increased response relative to that measured for the standards (Garrido et al., 2009; Herrmann, Henry, Fromboluti, McAuley, & Obleser, 2015; Ulanovsky, Las, & Nelken, 2003	response	VBN	JJ	363	401	365
+published-S0010945218302843	that measured for the standards (Garrido et al., 2009; Herrmann, Henry, Fromboluti, McAuley, & Obleser, 2015; Ulanovsky, Las, & Nelken, 2003	that	IN	VBN	368	401	368
+published-S0010945218302843	the standards (Garrido et al., 2009; Herrmann, Henry, Fromboluti, McAuley, & Obleser, 2015; Ulanovsky, Las, & Nelken, 2003	standards	DT	-LRB-	371	401	372
+published-S0010945218302843	Garrido et al	Garrido	-LRB-	NNP	374	376	374
+published-S0010945218302843	al	al	NNP	NNP	376	376	376
+published-S0010945218302843	., 2009	.	NNP	CD	377	379	377
+published-S0010945218302843	Herrmann, Henry, Fromboluti, McAuley, & Obleser, 2015; Ulanovsky, Las, & Nelken, 2003	Herrmann	:	NNP	381	401	381
+published-S0010945218302843	Henry, Fromboluti, McAuley, & Obleser, 2015	Henry	,	NNP	383	392	383
+published-S0010945218302843	Fromboluti, McAuley, & Obleser, 2015	Fromboluti	,	NNP	385	392	385
+published-S0010945218302843	McAuley, & Obleser, 2015	McAuley	,	CC	387	392	387
+published-S0010945218302843	Obleser, 2015	Obleser	CC	CD	390	392	390
+published-S0010945218302843	Ulanovsky, Las, & Nelken, 2003	Ulanovsky	:	NNP	394	401	394
+published-S0010945218302843	Las, & Nelken, 2003	Las	,	CC	396	401	396
+published-S0010945218302843	Nelken, 2003	Nelken	CC	CD	399	401	399
+published-S0010945218302843	the investigated sequences	sequences	VBN	VBP	407	409	409
+published-S0010945218302843	often a repeated tone	tone	VBN	:	415	418	418
+published-S0010945218302843	neural adaptation is likely a major contributor to the observed deviant responses (Briley & Krumbholz, 2013; Grill-Spector, Henson, & Martin, 2006; Nelken, 2014)	adaptation	JJ	VBZ	420	453	421
+published-S0010945218302843	a major contributor to the observed deviant responses (Briley & Krumbholz, 2013	contributor	JJ	IN	424	437	426
+published-S0010945218302843	the observed deviant responses (Briley & Krumbholz, 2013	responses	JJ	-LRB-	428	437	431
+published-S0010945218302843	Briley & Krumbholz, 2013	Briley	-LRB-	CC	433	437	433
+published-S0010945218302843	Krumbholz	Krumbholz	CC	CD	435	435	435
+published-S0010945218302843	Grill-Spector, Henson, & Martin, 2006; Nelken, 2014)	Spector	HYPH	NNP	439	453	441
+published-S0010945218302843	Henson, & Martin, 2006	Henson	,	CC	443	448	443
+published-S0010945218302843	Martin, 2006	Martin	CC	CD	446	448	446
+published-S0010945218302843	Nelken, 2014)	Nelken	:	CD	450	453	450
+published-S0010945218302843	evidence	evidence	VBG	VBZ	458	458	458
+published-S0010945218302843	at least part of the deviant response	part	JJS	IN	461	467	463
+published-S0010945218302843	the deviant response	response	JJ	VBZ	465	467	467
+published-S0010945218302843	neural processes associated with computing ‘surprise’ or detecting a mismatch between expected and actual sensory input (Daikhin & Ahissar, 2012; Khouri & Nelken, 2015;	processes	JJ	VBN	470	500	471
+published-S0010945218302843	computing ‘surprise’	surprise	``	''	474	477	476
+published-S0010945218302843	a mismatch between expected and actual sensory input (Daikhin & Ahissar, 2012; Khouri & Nelken, 2015;	mismatch	DT	IN	480	500	481
+published-S0010945218302843	expected and actual sensory input (Daikhin & Ahissar, 2012; Khouri & Nelken, 2015;	input	JJ	-LRB-	483	500	487
+published-S0010945218302843	Daikhin & Ahissar, 2012	Daikhin	-LRB-	CC	489	493	489
+published-S0010945218302843	Ahissar	Ahissar	CC	CD	491	491	491
+published-S0010945218302843	Khouri & Nelken, 2015;	Khouri	:	CC	495	500	495
+published-S0010945218302843	Nelken	Nelken	CC	CD	497	497	497
+published-S0010945218302843	Parras et al., 2017; Taaseh, Yaron, & Nelken, 2011).	Parras	:	NN	501	517	501
+published-S0010945218302843	., 2017; Taaseh, Yaron, & Nelken, 2011	.	NNP	CD	504	515	504
+published-S0010945218302843	Taaseh, Yaron, & Nelken, 2011	Taaseh	:	NNP	508	515	508
+published-S0010945218302843	Yaron, & Nelken	Yaron	,	CC	510	513	510
+published-S0010945218302843	Nelken	Nelken	CC	CD	513	513	513
+published-S0010945218302843	The underlying network, consistently implicated in these processes,	network	VBG	RB	518	527	520
+published-S0010945218302843	these processes	processes	DT	VBZ	525	526	526
+published-S0010945218302843	bilateral auditory cortex (Heschl's Gyrus and superior temporal gyrus)	cortex	JJ	-LRB-	531	542	533
+published-S0010945218302843	Heschl's Gyrus and superior temporal gyrus)	Gyrus	POS	CC	535	542	537
+published-S0010945218302843	superior temporal gyrus	gyrus	JJ	-RRB-	539	541	541
+published-S0010945218302843	right inferior frontal gyrus (Barascud, Pearce, Griffiths, Friston, & Chait, 2016; Chennu et al., 2016; Garrido et	gyrus	JJ	-LRB-	544	570	547
+published-S0010945218302843	Barascud, Pearce, Griffiths, Friston, & Chait, 2016	Barascud	-LRB-	NNP	549	560	549
+published-S0010945218302843	Pearce	Pearce	,	NNP	551	551	551
+published-S0010945218302843	Griffiths, Friston, & Chait, 2016	Griffiths	,	NNP	553	560	553
+published-S0010945218302843	Friston, & Chait, 2016	Friston	,	CC	555	560	555
+published-S0010945218302843	Chait, 2016	Chait	CC	CD	558	560	558
+published-S0010945218302843	Chennu et al	al	NNP	NNP	562	564	564
+published-S0010945218302843	Garrido et	Garrido	:	NNP	569	570	569
+published-S0010945218302843	al., 2009, 2008; Heilbron & Chait, 2017; Opitz, Rinne, Mecklinger, Cramon von, & Schröger, 2002).	al	NNP	NNP	571	598	571
+published-S0010945218302843	., 2009, 2008; Heilbron & Chait, 2017; Opitz, Rinne, Mecklinger, Cramon von, & Schröger, 2002)	.	NNP	CD	572	597	572
+published-S0010945218302843	Heilbron & Chait, 2017; Opitz, Rinne, Mecklinger, Cramon von, & Schröger, 2002	Heilbron	:	CC	578	596	578
+published-S0010945218302843	Chait	Chait	CC	CD	580	580	580
+published-S0010945218302843	Opitz, Rinne, Mecklinger, Cramon von, & Schröger, 2002	Opitz	:	NNP	584	596	584
+published-S0010945218302843	Rinne, Mecklinger, Cramon von, & Schröger, 2002	Rinne	,	NNP	586	596	586
+published-S0010945218302843	Mecklinger, Cramon von, & Schröger, 2002	Mecklinger	,	NNP	588	596	588
+published-S0010945218302843	Cramon von, & Schröger, 2002	von	NNP	CC	590	596	591
+published-S0010945218302843	Schröger, 2002	Schröger	CC	CD	594	596	594
+published-S0010945218302843	What information	information	WDT	VBZ	599	600	600
+published-S0010945218302843	surprise	surprise	VBG	.	605	605	605
+published-S0010945218302843	Mounting evidence	evidence	VBG	VBZ	607	608	608
+published-S0010945218302843	the deviant response	response	JJ	VBZ	611	613	613
+published-S0010945218302843	the statistics of the sequence	statistics	DT	IN	617	621	618
+published-S0010945218302843	the sequence	sequence	DT	IN	620	621	621
+published-S0010945218302843	it	it	IN	VBZ	623	623	623
+published-S0010945218302843	Garrido, Sahani, and Dolan (2013)	Garrido	.	NNP	626	634	626
+published-S0010945218302843	Sahani, and Dolan (2013)	Sahani	,	CC	628	634	628
+published-S0010945218302843	Dolan (2013)	Dolan	CC	-LRB-	631	634	631
+published-S0010945218302843	MEG responses	responses	NNP	TO	637	638	638
+published-S0010945218302843	tones	tones	VB	VBP	641	641	641
+published-S0010945218302843	the statistical context (mean and variance of frequency) of randomly generated tone-pip sequences	context	JJ	-LRB-	645	661	647
+published-S0010945218302843	variance of frequency	variance	CC	IN	651	653	651
+published-S0010945218302843	frequency	frequency	IN	-RRB-	653	653	653
+published-S0010945218302843	randomly generated tone-pip sequences	sequences	NN	JJ	656	661	661
+published-S0010945218302843	larger responses	responses	JJR	VBD	664	665	665
+published-S0010945218302843	the same probe tone	tone	NN	WRB	668	671	671
+published-S0010945218302843	a context with low-variance	context	DT	IN	675	680	676
+published-S0010945218302843	low-variance	variance	HYPH	IN	678	680	680
+published-S0010945218302843	high-variance	variance	HYPH	.	683	685	685
+published-S0010945218302843	Rubin et al. (2016	al	NNP	.	687	692	689
+published-S0010945218302843	brain responses to two-tone sequences	responses	NN	IN	695	701	696
+published-S0010945218302843	two-tone sequences	sequences	NN	IN	698	701	701
+published-S0010945218302843	different probabilities	probabilities	JJ	.	703	704	704
+published-S0010945218302843	They	They	.	VBD	706	706	706
+published-S0010945218302843	line with conclusions from Garrido et al	line	IN	IN	710	716	710
+published-S0010945218302843	conclusions from Garrido et al	conclusions	IN	IN	712	716	712
+published-S0010945218302843	Garrido et al	Garrido	IN	NNP	714	716	714
+published-S0010945218302843	et al	al	NNP	.	715	716	716
+published-S0010945218302843	trial-wise neural responses in auditory cortex	responses	JJ	IN	723	730	727
+published-S0010945218302843	auditory cortex	cortex	JJ	VBP	729	730	730
+published-S0010945218302843	the probability of occurrence of each tone frequency	probability	DT	IN	735	742	736
+published-S0010945218302843	occurrence of each tone frequency	occurrence	IN	IN	738	742	738
+published-S0010945218302843	each tone frequency	frequency	NN	VBN	740	742	742
+published-S0010945218302843	the recent history of the sequence	history	JJ	IN	746	751	748
+published-S0010945218302843	the sequence	sequence	DT	.	750	751	751
+published-S0010945218302843	The models	models	DT	WDT	753	754	754
+published-S0010945218302843	that	that	NNS	RBS	755	755	755
+published-S0010945218302843	a relatively long stimulus history (∼10 tones)	history	NN	-LRB-	763	771	767
+published-S0010945218302843	(∼10 tones	tones	JJ	-RRB-	768	770	770
+published-S0010945218302843	a coarse representation	representation	JJ	VBG	775	777	777
+published-S0010945218302843	a small set of summary statistics	set	JJ	IN	780	785	782
+published-S0010945218302843	summary statistics	statistics	NN	.	784	785	785
+published-S0010945218302843	Most previous work investigating the effect of context on deviant processing	work	JJ	VBG	787	797	789
+published-S0010945218302843	the effect of context on deviant processing	effect	DT	IN	791	797	792
+published-S0010945218302843	context on deviant processing	context	IN	IN	794	797	794
+published-S0010945218302843	deviant processing	processing	JJ	VBZ	796	797	797
+published-S0010945218302843	simple, random frequency patterns (Garrido et al	patterns	NN	-LRB-	801	809	805
+published-S0010945218302843	(Garrido et al	Garrido	-LRB-	NNP	806	809	807
+published-S0010945218302843	these signals	signals	DT	DT	829	830	830
+published-S0010945218302843	a coarse representation, possibly underpinned by adaptation processes (Herrmann et al., 2015; Khouri & Nelken, 2015; May & Tiitinen, 2010),	representation	JJ	RB	832	861	834
+published-S0010945218302843	adaptation processes (Herrmann et al., 2015; Khouri & Nelken, 2015; May & Tiitinen, 2010)	processes	NN	-LRB-	839	860	840
+published-S0010945218302843	Herrmann et al	al	NNP	NNP	842	844	844
+published-S0010945218302843	., 2015	.	NNP	CD	845	847	845
+published-S0010945218302843	Khouri & Nelken, 2015; May & Tiitinen, 2010)	Khouri	:	CC	849	860	849
+published-S0010945218302843	Nelken	Nelken	CC	CD	851	851	851
+published-S0010945218302843	May & Tiitinen, 2010	May	:	CC	855	859	855
+published-S0010945218302843	Tiitinen	Tiitinen	CC	CD	857	857	857
+published-S0010945218302843	relevant attributes	attributes	JJ	.	868	869	869
+published-S0010945218302843	it	it	,	VBZ	873	873	873
+published-S0010945218302843	the brain	brain	DT	RB	877	878	878
+published-S0010945218302843	track of a detailed history of past sensory experience	track	VBZ	IN	881	889	881
+published-S0010945218302843	a detailed history of past sensory experience	history	JJ	IN	883	889	885
+published-S0010945218302843	past sensory experience	experience	JJ	.	887	889	889
+published-S0010945218302843	these processes	processes	DT	DT	893	894	894
+published-S0010945218302843	the stimulus	stimulus	DT	MD	896	897	897
+published-S0010945218302843	some structural regularity	regularity	JJ	.	900	902	902
+published-S0010945218302843	previous research (Koelsch, Gunter, Friederici, & Schröger, 2000; Koelsch, Busch, Jentschke, Rohrmeier, & 2016; Maess, Koelsch, Gunter, & Friederici, 2001; Pearce, Ruiz, Kapasi, Wiggins, & Bhattacharya, 2010; Vaz Pato, Jones, Perez, & Sprague, 2002), investigated complex sequence structure, the experiments mostly involved fixed patterns and exposure over very long durations, likely reflecting long-term structure learning	research	JJ	-LRB-	905	991	906
+published-S0010945218302843	Koelsch, Gunter, Friederici, & Schröger, 2000; Koelsch, Busch, Jentschke, Rohrmeier, & 2016; Maess, Koelsch, Gunter, & Friederici, 2001; Pearce, Ruiz, Kapasi, Wiggins, & Bhattacharya, 2010	Koelsch	-LRB-	NNP	908	952	908
+published-S0010945218302843	Gunter, Friederici, & Schröger, 2000	Gunter	,	NNP	910	917	910
+published-S0010945218302843	Friederici, & Schröger, 2000	Friederici	,	CC	912	917	912
+published-S0010945218302843	Schröger, 2000	Schröger	CC	CD	915	917	915
+published-S0010945218302843	Koelsch, Busch, Jentschke, Rohrmeier, & 2016	Koelsch	:	NNP	919	928	919
+published-S0010945218302843	Busch, Jentschke, Rohrmeier, & 2016	Busch	,	NNP	921	928	921
+published-S0010945218302843	Jentschke, Rohrmeier, & 2016	Jentschke	,	NNP	923	928	923
+published-S0010945218302843	Rohrmeier, & 2016	Rohrmeier	,	CC	925	928	925
+published-S0010945218302843	Maess, Koelsch, Gunter, & Friederici, 2001; Pearce, Ruiz, Kapasi, Wiggins, & Bhattacharya, 2010	Maess	:	NNP	930	952	930
+published-S0010945218302843	Koelsch, Gunter, & Friederici, 2001	Koelsch	,	NNP	932	939	932
+published-S0010945218302843	Gunter, & Friederici, 2001	Gunter	,	CC	934	939	934
+published-S0010945218302843	Friederici, 2001	Friederici	CC	CD	937	939	937
+published-S0010945218302843	Pearce, Ruiz, Kapasi, Wiggins, & Bhattacharya, 2010	Pearce	:	NNP	941	952	941
+published-S0010945218302843	Ruiz, Kapasi, Wiggins, & Bhattacharya, 2010	Ruiz	,	NNP	943	952	943
+published-S0010945218302843	Kapasi, Wiggins, & Bhattacharya, 2010	Kapasi	,	NNP	945	952	945
+published-S0010945218302843	Wiggins, & Bhattacharya, 2010	Wiggins	,	CC	947	952	947
+published-S0010945218302843	Bhattacharya, 2010	Bhattacharya	CC	CD	950	952	950
+published-S0010945218302843	Vaz Pato, Jones, Perez, & Sprague, 2002), investigated complex sequence structure, the experiments mostly involved fixed patterns and exposure over very long durations,	Pato	NNP	NNP	954	984	955
+published-S0010945218302843	Jones, Perez, & Sprague, 2002	Jones	,	NNP	957	964	957
+published-S0010945218302843	Perez, & Sprague, 2002	Perez	,	CC	959	964	959
+published-S0010945218302843	Sprague, 2002	Sprague	CC	CD	962	964	962
+published-S0010945218302843	investigated complex sequence structure	structure	NN	DT	967	970	970
+published-S0010945218302843	the experiments mostly involved fixed patterns and exposure over very long durations	experiments	DT	RB	972	983	973
+published-S0010945218302843	mostly involved fixed patterns and exposure over very long durations	patterns	VBN	CC	974	983	977
+published-S0010945218302843	exposure	exposure	CC	IN	979	979	979
+published-S0010945218302843	very long durations	durations	JJ	RB	981	983	983
+published-S0010945218302843	long-term structure learning	learning	NN	.	987	991	991
+published-S0010945218302843	contrast	contrast	IN	RB	994	994	994
+published-S0010945218302843	we	we	RB	VBP	997	997	997
+published-S0010945218302843	structure which emerges anew in each sequence	structure	IN	WDT	1000	1006	1000
+published-S0010945218302843	which	which	NN	VBZ	1001	1001	1001
+published-S0010945218302843	each sequence	sequence	DT	.	1005	1006	1006
+published-S0010945218302843	We	We	.	VBP	1008	1008	1008
+published-S0010945218302843	the brain	brain	DT	VBZ	1013	1014	1014
+published-S0010945218302843	this structure	structure	DT	CC	1016	1017	1017
+published-S0010945218302843	the underlying brain networks	networks	NN	.	1021	1024	1024
+published-S0010945218302843	We	We	.	VBD	1026	1026	1026
+published-S0010945218302843	fast tone-pip sequences, unique on each trial,	sequences	NN	JJ	1028	1038	1032
+published-S0010945218302843	each trial	trial	DT	WDT	1036	1037	1037
+published-S0010945218302843	that	that	,	RB	1039	1039	1039
+published-S0010945218302843	a frequency outlier presented outside of the spectral region occupied by the standards	outlier	NN	VBN	1042	1054	1044
+published-S0010945218302843	the spectral region occupied by the standards	region	JJ	VBN	1048	1054	1050
+published-S0010945218302843	the standards	standards	DT	.	1053	1054	1054
+published-S0010945218302843	the deviant response	response	JJ	RB	1059	1061	1061
+published-S0010945218302843	an unexpected change in frequency between the standards and outlier	change	JJ	IN	1064	1073	1066
+published-S0010945218302843	frequency	frequency	IN	IN	1068	1068	1068
+published-S0010945218302843	the standards and outlier	standards	DT	CC	1070	1073	1071
+published-S0010945218302843	it	it	IN	VBZ	1077	1077	1077
+published-S0010945218302843	the specific order of elements in the sequence	order	JJ	IN	1082	1089	1084
+published-S0010945218302843	elements	elements	IN	IN	1086	1086	1086
+published-S0010945218302843	the sequence	sequence	DT	PRP	1088	1089	1089
+published-S0010945218302843	we	we	,	VBD	1091	1091	1091
+published-S0010945218302843	standards	standards	IN	CC	1094	1094	1094
+published-S0010945218302843	either regular (REG) or random (RAND) sequences of otherwise matched frequencies (see Fig. 1),	sequences	-RRB-	IN	1095	1116	1105
+published-S0010945218302843	otherwise matched frequencies	frequencies	VBN	-LRB-	1107	1109	1109
+published-S0010945218302843	Fig	Fig	VB	NNP	1112	1112	1112
+published-S0010945218302843	the frequency span	span	JJ	VBZ	1119	1121	1121
+published-S0010945218302843	the precision of the available information regarding successive frequencies	precision	DT	IN	1125	1133	1126
+published-S0010945218302843	the available information regarding successive frequencies	information	JJ	VBG	1128	1133	1130
+published-S0010945218302843	successive frequencies	frequencies	JJ	VBZ	1132	1133	1133
+published-S0010945218302843	either low (RAND) or high (REG)	RAND	-LRB-	-RRB-	1135	1144	1138
+published-S0010945218302843	(REG	REG	-LRB-	-RRB-	1142	1143	1143
+published-S0010945218302843	the sound sequences	sequences	NN	VBD	1148	1150	1150
+published-S0010945218302843	(20 tones per second)	tones	CD	IN	1154	1159	1156
+published-S0010945218302843	second	second	IN	-RRB-	1158	1158	1158
+published-S0010945218302843	such that conscious reasoning about the sequence order	reasoning	JJ	IN	1160	1167	1163
+published-S0010945218302843	the sequence order	order	NN	VBZ	1165	1167	1167
+published-S0010945218302843	the hypothesis that the human brain tracks and evaluates incoming sensory information against the specific pattern established by the sequence context, we expect outlier tones to be more readily detectable in REG than in RAND sequences	hypothesis	DT	IN	1176	1212	1177
+published-S0010945218302843	incoming sensory information against the specific pattern established by the sequence context	information	JJ	IN	1185	1196	1187
+published-S0010945218302843	the specific pattern established by the sequence context	pattern	JJ	VBN	1189	1196	1191
+published-S0010945218302843	the sequence context	context	NN	PRP	1194	1196	1196
+published-S0010945218302843	we	we	,	VBP	1198	1198	1198
+published-S0010945218302843	outlier tones	tones	JJR	TO	1200	1201	1201
+published-S0010945218302843	REG	REG	IN	IN	1208	1208	1208
+published-S0010945218302843	RAND sequences	sequences	NNP	.	1211	1212	1212
+published-S0010945218302843	The experiments reported below	experiments	DT	VBN	1214	1217	1215
+published-S0010945218302843	this assertion	assertion	DT	IN	1219	1220	1220
+published-S0010945218302843	deviance-evoked EEG responses in naïve, distracted listeners (Experiment 1)	responses	NNP	IN	1223	1236	1227
+published-S0010945218302843	naïve,	naïve	IN	JJ	1229	1230	1229
+published-S0010945218302843	distracted listeners (Experiment 1)	listeners	JJ	-LRB-	1231	1236	1232
+published-S0010945218302843	Experiment 1)	Experiment	-LRB-	CD	1234	1236	1234
+published-S0010945218302843	listeners	listeners	WRB	RB	1239	1239	1239
+published-S0010945218302843	the sequences	sequences	DT	IN	1242	1243	1243
+published-S0010945218302843	outlier tones (Experiment 2)	tones	JJR	-LRB-	1245	1250	1246
+published-S0010945218302843	Experiment 2)	Experiment	-LRB-	CD	1248	1250	1248
+published-S0012821X15000709	Seawater circulation through, and reaction with	circulation	NN	RB	0	6	1
+published-S0012821X15000709	reaction with	reaction	CC	IN	5	6	5
+published-S0012821X15000709	the ocean crust	crust	NN	VBZ	8	10	10
+published-S0012821X15000709	a fundamental Earth process that controls the magmatic accretion of new oceanic crust	process	NNP	WDT	12	24	15
+published-S0012821X15000709	that	that	NN	VBZ	16	16	16
+published-S0012821X15000709	the magmatic accretion of new oceanic crust	accretion	JJ	IN	18	24	20
+published-S0012821X15000709	new oceanic crust	crust	JJ	VBZ	22	24	24
+published-S0012821X15000709	the composition of ocean crust and seawater	composition	DT	IN	27	33	28
+published-S0012821X15000709	ocean crust and seawater	crust	NN	CC	30	33	31
+published-S0012821X15000709	seawater	seawater	CC	CC	33	33	33
+published-S0012821X15000709	subduction transports surficial geochemical signatures to the mantle	signatures	JJ	IN	37	44	41
+published-S0012821X15000709	the mantle	mantle	DT	.	43	44	44
+published-S0012821X15000709	mid ocean ridges	ridges	NN	-LRB-	47	49	49
+published-S0012821X15000709	MOR) hydrothermal circulation	circulation	NN	VBZ	51	54	54
+published-S0012821X15000709	high temperature	temperature	JJ	-LRB-	60	61	61
+published-S0012821X15000709	the ridge axis and ridge flanks,	flanks	NN	JJR	74	80	79
+published-S0012821X15000709	lower temperature (<150 °C) hydrothermal circulation	circulation	NN	VBZ	81	90	90
+published-S0012821X15000709	vent fluids	fluids	NN	VBP	96	97	97
+published-S0012821X15000709	only limited information on the subsurface	information	JJ	IN	99	104	101
+published-S0012821X15000709	the subsurface	subsurface	DT	PRP	103	104	104
+published-S0012821X15000709	we	we	,	VBP	106	106	106
+published-S0012821X15000709	improved knowledge on sub-surface fluid flow pathways, and	knowledge	VBN	IN	108	118	109
+published-S0012821X15000709	sub-surface fluid flow pathways	pathways	NN	CC	111	116	116
+published-S0012821X15000709	the vigour and longevity of seafloor hydrothermal alteration	vigour	DT	CC	119	126	120
+published-S0012821X15000709	longevity	longevity	CC	IN	122	122	122
+published-S0012821X15000709	seafloor hydrothermal alteration	alteration	NN	TO	124	126	126
+published-S0012821X15000709	magmatic accretion at MOR	accretion	JJ	IN	130	133	131
+published-S0012821X15000709	MOR	MOR	IN	-LRB-	133	133	133
+published-S0012821X15000709	., 1993	.	NNP	CD	140	142	140
+published-S0012821X15000709	Kelemen et al., 1997) and better quantify the influence of seawater-basalt exchange on global chemical cycles (e.g., Vance et al., 2009)	Kelemen	:	NNP	144	174	144
+published-S0012821X15000709	et al	al	NNP	NNP	145	146	146
+published-S0012821X15000709	., 1997	.	NNP	CD	147	149	147
+published-S0012821X15000709	the influence of seawater-basalt exchange on global chemical cycles (	influence	DT	IN	154	165	155
+published-S0012821X15000709	seawater-basalt exchange on global chemical cycles	exchange	NN	IN	157	164	160
+published-S0012821X15000709	global chemical cycles	cycles	NN	-LRB-	162	164	164
+published-S0012821X15000709	date	date	IN	JJ	177	177	177
+published-S0012821X15000709	our knowledge of MOR hydrothermal circulation	knowledge	PRP$	IN	181	186	182
+published-S0012821X15000709	MOR hydrothermal circulation	circulation	NN	VBZ	184	186	186
+published-S0012821X15000709	conceptual cartoons developed from active and passive seismic observations	cartoons	JJ	VBN	190	198	191
+published-S0012821X15000709	active and passive seismic observations	observations	JJ	-LRB-	194	198	198
+published-S0012821X15000709	Tolstoy et al., 2008), measurements of vent fluid chemistry, thermal models, and core descriptions from ocean crust “reference site” DSDP Hole 504B (Alt, 1995)	measurements	,	IN	209	243	217
+published-S0012821X15000709	vent fluid chemistry, thermal models, and core descriptions from ocean crust “reference site”	chemistry	NN	JJ	219	235	221
+published-S0012821X15000709	thermal models, and core descriptions from ocean crust “reference site”	models	JJ	CC	223	235	224
+published-S0012821X15000709	core descriptions from ocean crust “reference site”	descriptions	NN	IN	227	235	228
+published-S0012821X15000709	ocean crust “reference site”	site	NN	''	230	235	234
+published-S0012821X15000709	DSDP Hole 504B (Alt, 1995)	504B	NNP	-LRB-	236	243	238
+published-S0012821X15000709	observations from ophiolites	observations	,	IN	247	249	247
+published-S0012821X15000709	ophiolites	ophiolites	IN	VBP	249	249	249
+published-S0012821X15000709	MOR hydrothermal systems (e.g., Alt and Teagle, 2000; Bickle and Teagle, 1992)	systems	NN	-LRB-	253	270	255
+published-S0012821X15000709	Bickle and Teagle, 1992)	Bickle	:	CC	265	270	265
+published-S0012821X15000709	Teagle	Teagle	CC	CD	267	267	267
+published-S0012821X15000709	key questions	questions	JJ	VBP	273	274	274
+published-S0012821X15000709	a dearth of direct information from intact ocean crust	dearth	DT	IN	280	288	281
+published-S0012821X15000709	direct information from intact ocean crust	information	JJ	IN	283	288	284
+published-S0012821X15000709	intact ocean crust	crust	NN	.	286	288	288
+published-S0012821X15000709	example	example	IN	JJ	291	291	291
+published-S0012821X15000709	many sketches of MOR hydrothermal circulation	sketches	JJ	IN	293	298	294
+published-S0012821X15000709	MOR hydrothermal circulation	circulation	NN	VBP	296	298	298
+published-S0012821X15000709	focused lateral fluid movement along the top of axial magma chambers,	movement	NN	IN	300	311	303
+published-S0012821X15000709	the top of axial magma chambers	top	DT	IN	305	310	306
+published-S0012821X15000709	axial magma chambers	chambers	JJ	CC	308	310	310
+published-S0012821X15000709	date	date	IN	EX	314	314	314
+published-S0012821X15000709	only limited evidence for such flow	evidence	JJ	IN	317	322	319
+published-S0012821X15000709	such flow	flow	JJ	.	321	322	322
+published-S0012821X15000709	Sheeted sill-type models of ocean crust accretion	models	NN	IN	324	332	328
+published-S0012821X15000709	ocean crust accretion	accretion	NN	VBP	330	332	332
+published-S0012821X15000709	deep hydrothermal fluid circulation	circulation	JJ	TO	334	337	337
+published-S0012821X15000709	latent and sensible heat	latent	VB	CC	340	343	340
+published-S0012821X15000709	sensible heat	heat	JJ	IN	342	343	343
+published-S0012821X15000709	the lower crust (Maclennan et al., 2004)	crust	JJR	-LRB-	345	355	347
+published-S0012821X15000709	Maclennan et al	al	NNP	NNP	349	351	351
+published-S0012821X15000709	., 2004	.	NNP	CD	352	354	352
+published-S0012821X15000709	the conduits for the downwelling of cool seawater-derived fluid	conduits	DT	IN	357	367	358
+published-S0012821X15000709	the downwelling of cool seawater-derived fluid	downwelling	DT	IN	360	367	361
+published-S0012821X15000709	cool seawater-derived fluid	fluid	VBN	VBP	363	367	367
+published-S0012821X15000709	Borehole observations and sampling by scientific ocean drilling	observations	NN	CC	371	378	372
+published-S0012821X15000709	sampling by scientific ocean drilling	sampling	CC	IN	374	378	374
+published-S0012821X15000709	scientific ocean drilling	drilling	NN	VBZ	376	378	378
+published-S0012821X15000709	ocean floor hydrothermal systems	systems	NN	CC	384	387	387
+published-S0012821X15000709	the paucity of deep holes into ocean crust	paucity	DT	IN	389	396	390
+published-S0012821X15000709	deep holes	holes	JJ	IN	392	393	393
+published-S0012821X15000709	ocean crust	crust	NN	VBZ	395	396	396
+published-S0012821X15000709	our knowledge of seafloor basalt-hydrothermal alteration	knowledge	PRP$	IN	398	405	399
+published-S0012821X15000709	seafloor basalt-hydrothermal alteration	alteration	NN	.	401	405	405
+published-S0012821X15000709	we	we	RB	VBP	408	408	408
+published-S0012821X15000709	a high spatial resolution whole rock and mineral Sr isotope profile for ODP Site 1256	rock	JJ	CC	410	424	415
+published-S0012821X15000709	mineral Sr isotope profile for ODP Site 1256	profile	NN	IN	417	424	420
+published-S0012821X15000709	ODP Site 1256	Site	NNP	CD	422	424	423
+published-S0012821X15000709	the first borehole to sample a complete section down to gabbros of intact upper ocean crust	borehole	JJ	TO	426	441	428
+published-S0012821X15000709	a complete section	section	JJ	RP	431	433	433
+published-S0012821X15000709	gabbros of intact upper ocean crust	gabbros	IN	IN	436	441	436
+published-S0012821X15000709	intact upper ocean crust	crust	NN	VBN	438	441	441
+published-S0012821X15000709	a fast spreading rate (Teagle et al	rate	NN	-LRB-	444	451	447
+published-S0012821X15000709	Teagle et al	al	NNP	NNP	449	451	451
+published-S0012821X15000709	., 2006	.	NNP	CD	452	454	452
+published-S0012821X15000709	., 2006	.	NNP	CD	459	461	459
+published-S0012821X15000709	Our interpretations from this profile	interpretations	PRP$	IN	464	468	465
+published-S0012821X15000709	this profile	profile	DT	VBP	467	468	468
+published-S0012821X15000709	detailed petrography and geochemistry of the drill cores (Alt et al., 2010;	petrography	JJ	CC	473	488	474
+published-S0012821X15000709	geochemistry	geochemistry	CC	IN	476	476	476
+published-S0012821X15000709	the drill cores (Alt et al	cores	NN	-LRB-	478	484	480
+published-S0012821X15000709	Alt et al	al	NNP	NNP	482	484	484
+published-S0012821X15000709	., 2010	.	NNP	CD	485	487	485
+published-S0012821X15000709	et al	al	NNP	NNP	497	498	498
+published-S0012821X15000709	., 2003)	.	NNP	CD	499	502	499
+published-S0012821X15000709	Tominaga et al	Tominaga	-LRB-	NNP	508	510	508
+published-S0012821X15000709	., 2009	.	NNP	CD	511	513	511
+published-S0012821X15000709	We	We	.	VBP	522	522	522
+published-S0012821X15000709	-horizontal and sub-vertical channelling of seawater-derived hydrothermal fluids at different levels in the ocean crust	channelling	JJ	IN	525	544	531
+published-S0012821X15000709	seawater-derived hydrothermal fluids	fluids	NN	IN	533	537	537
+published-S0012821X15000709	different levels in the ocean crust	levels	JJ	IN	539	544	540
+published-S0012821X15000709	the ocean crust	crust	NN	CC	542	544	544
+published-S0012821X15000709	a temporal model for the evolving hydrothermal system	model	JJ	IN	548	555	550
+published-S0012821X15000709	the evolving hydrothermal system	system	NN	IN	552	555	555
+published-S0012821X15000709	Site 1256	Site	IN	CD	557	558	557
+published-S0012821X19306843	Erosion	Erosion		VBZ	0	0	0
+published-S0012821X19306843	the transfer of Particulate Organic Carbon (POC)	transfer	DT	IN	2	10	3
+published-S0012821X19306843	Particulate Organic Carbon (POC)	Carbon	NNP	-LRB-	5	10	7
+published-S0012821X19306843	(POC)	POC	-LRB-	-RRB-	8	10	9
+published-S0012821X19306843	geological basins, where its long-term preservation is helped by rapid burial and/or anoxic conditions (France-Lanord and Derry, 1997;	basins	JJ	WRB	12	37	13
+published-S0012821X19306843	its long-term preservation	preservation	NN	VBZ	16	20	20
+published-S0012821X19306843	rapid burial and/or anoxic conditions (France-Lanord and Derry, 1997	burial	JJ	CC	24	36	25
+published-S0012821X19306843	anoxic conditions	conditions	NNP	-LRB-	27	28	28
+published-S0012821X19306843	France-Lanord and Derry, 1997	Lanord	HYPH	CC	30	36	32
+published-S0012821X19306843	Derry	Derry	CC	CD	34	34	34
+published-S0012821X19306843	., 2007	.	NNP	CD	41	43	41
+published-S0012821X19306843	., 2015	.	NNP	CD	48	50	48
+published-S0012821X19306843	., 1981)	.	NNP	CD	55	58	55
+published-S0012821X19306843	This	This	.	VBZ	60	60	60
+published-S0012821X19306843	a key feature of the global carbon cycle	feature	JJ	IN	62	69	64
+published-S0012821X19306843	the global carbon cycle	cycle	NN	VBG	66	69	69
+published-S0012821X19306843	large amounts of atmospheric carbon	amounts	JJ	IN	72	76	73
+published-S0012821X19306843	atmospheric carbon	carbon	JJ	IN	75	76	76
+published-S0012821X19306843	the lithosphere	lithosphere	DT	.	78	79	79
+published-S0012821X19306843	Erosion	Erosion	.	RB	81	81	81
+published-S0012821X19306843	previously buried petrogenic carbon (OCpetro)	carbon	JJ	-LRB-	84	90	87
+published-S0012821X19306843	OCpetro	OCpetro	-LRB-	-RRB-	89	89	89
+published-S0012821X19306843	the Earth's surface	surface	POS	VBG	92	95	95
+published-S0012821X19306843	the release of CO2 via microbial or chemical degradation (Hemingway et al., 2018	release	DT	IN	98	113	99
+published-S0012821X19306843	CO2	CO2	IN	IN	101	101	101
+published-S0012821X19306843	microbial or chemical degradation (Hemingway et al	degradation	JJ	-LRB-	103	110	106
+published-S0012821X19306843	Hemingway et al	al	NNP	NNP	108	110	110
+published-S0012821X19306843	., 2018	.	NNP	CD	111	113	111
+published-S0012821X19306843	Petsch et al., 2000)	Petsch	:	NNP	115	121	115
+published-S0012821X19306843	the organic pathway to carbon sequestration to be effective on geological time scales	pathway	JJ	IN	124	136	126
+published-S0012821X19306843	carbon sequestration	sequestration	NN	TO	128	129	129
+published-S0012821X19306843	geological time scales	scales	NN	DT	134	136	136
+published-S0012821X19306843	a net transfer	transfer	JJ	VBZ	138	140	140
+published-S0012821X19306843	the atmosphere-surface system	system	NN	IN	145	149	149
+published-S0012821X19306843	geological storage	storage	JJ	.	151	152	152
+published-S0012821X19306843	this transfer appears to be efficient in mountain belts where short, steep transport lines connect source and sink (Galy et al., 2007;	transfer	DT	VBZ	155	181	156
+published-S0012821X19306843	mountain belts where short, steep transport lines connect source and sink	belts	NN	WRB	162	173	163
+published-S0012821X19306843	short, steep transport lines	lines	NN	VBP	165	169	169
+published-S0012821X19306843	source and sink	source	VBP	CC	171	173	171
+published-S0012821X19306843	sink	sink	CC	-LRB-	173	173	173
+published-S0012821X19306843	., 2007;	.	NNP	CD	178	181	178
+published-S0012821X19306843	Hilton et al., 2008	al	NNP	NNP	182	187	184
+published-S0012821X19306843	., 2008	.	NNP	CD	185	187	185
+published-S0012821X19306843	., 2014)	.	NNP	CD	192	195	192
+published-S0012821X19306843	these settings	settings	DT	VBP	197	198	198
+published-S0012821X19306843	rapid tectonic recycling	recycling	JJ	CC	202	204	204
+published-S0012821X19306843	carbon	carbon	CC	MD	207	207	207
+published-S0012821X19306843	the atmosphere	atmosphere	DT	RB	211	212	212
+published-S0012821X19306843	the OCpetro	OCpetro	DT	VBZ	216	217	217
+published-S0012821X19306843	physical decay	decay	JJ	.	225	226	226
+published-S0012821X19306843	Graphitization by deep burial	Graphitization	.	IN	228	231	228
+published-S0012821X19306843	deep burial	burial	JJ	VBZ	230	231	231
+published-S0012821X19306843	carbon	carbon	VBZ	RBR	233	233	233
+published-S0012821X19306843	which	which	,	MD	237	237	237
+published-S0012821X19306843	losses	losses	VB	IN	240	240	240
+published-S0012821X19306843	orogenic recycling (e.g. Galy et al., 2008)	recycling	JJ	-LRB-	242	252	243
+published-S0012821X19306843	e.g. Galy et al	al	NNP	NNP	245	248	248
+published-S0012821X19306843	Survival rates of OCpetro during single cycles of erosion and deposition	rates	NN	IN	254	264	255
+published-S0012821X19306843	OCpetro	OCpetro	IN	IN	257	257	257
+published-S0012821X19306843	single cycles of erosion and deposition	cycles	JJ	IN	259	264	260
+published-S0012821X19306843	erosion and deposition	erosion	IN	CC	262	264	262
+published-S0012821X19306843	deposition	deposition	CC	VBP	264	264	264
+published-S0012821X19306843	shorter distances between source and sink leading to better preservation (Galy et al., 2008; Hilton et al., 2008; Bouchez et al., 2010)	distances	JJR	IN	277	308	278
+published-S0012821X19306843	source and sink	source	IN	CC	280	282	280
+published-S0012821X19306843	sink	sink	CC	VBG	282	282	282
+published-S0012821X19306843	better preservation (Galy et al., 2008; Hilton et al., 2008; Bouchez et al., 2010)	preservation	JJR	-LRB-	285	308	286
+published-S0012821X19306843	Galy et al	al	NNP	NNP	288	290	290
+published-S0012821X19306843	Bouchez et al	al	NNP	NNP	302	304	304
+published-S0012821X19306843	high survival rates	rates	NN	DT	311	313	313
+published-S0012821X19306843	the ability for OCpetro to persist over multiple cycles of burial and exhumation	ability	DT	IN	315	327	316
+published-S0012821X19306843	OCpetro	OCpetro	IN	TO	318	318	318
+published-S0012821X19306843	multiple cycles of burial and exhumation	cycles	JJ	IN	322	327	323
+published-S0012821X19306843	burial and exhumation	burial	IN	CC	325	327	325
+published-S0012821X19306843	exhumation	exhumation	CC	VBZ	327	327	327
+published-S0012821X19306843	we	we	,	VBP	339	339	339
+published-S0012821X19306843	this knowledge gap	gap	NN	VBG	341	343	343
+published-S0012821X19306843	the rapidly exhuming mountains of Taiwan	mountains	VBG	IN	348	353	351
+published-S0012821X19306843	Taiwan	Taiwan	IN	RB	353	353	353
+published-S0012821X19306843	highly graphitized OCpetro	OCpetro	JJ	MD	355	357	357
+published-S0012821X19306843	degradation	degradation	VB	IN	360	360	360
+published-S0012821X19306843	repeated erosional cycles	cycles	JJ	.	362	364	364
+published-S0012821X19306843	This	This	.	VBZ	366	366	366
+published-S0012821X19306843	the prospect of progressive accumulation of POC in geological basins	prospect	DT	IN	368	377	369
+published-S0012821X19306843	progressive accumulation of POC in geological basins	accumulation	JJ	IN	371	377	372
+published-S0012821X19306843	POC	POC	IN	IN	374	374	374
+published-S0012821X19306843	geological basins	basins	JJ	VBN	376	377	377
+published-S0012821X19306843	tectonic burial	burial	JJ	VBZ	381	382	382
+published-S0012821X19306843	graphitization	graphitization	VB	.	388	388	388
+published-S0016703718305271	Barnacles	Barnacles		VBP	0	0	0
+published-S0016703718305271	long-standing scientific interest with detailed work on taxonomy and fossil forms reaching back to Charles Darwin (e.g., Darwin, 1851, 1854)	interest	JJ	IN	4	30	8
+published-S0016703718305271	detailed work on taxonomy and fossil forms reaching back to Charles Darwin (e.g., Darwin, 1851, 1854)	work	JJ	IN	10	30	11
+published-S0016703718305271	taxonomy and fossil forms	taxonomy	IN	CC	13	16	13
+published-S0016703718305271	fossil forms	forms	NN	VBG	15	16	16
+published-S0016703718305271	Charles Darwin (e.g., Darwin, 1851, 1854)	Darwin	NNP	-LRB-	20	30	21
+published-S0016703718305271	Thoracican barnacles (subclass Cirripedia)	barnacles	JJ	-LRB-	32	37	33
+published-S0016703718305271	subclass Cirripedia	Cirripedia	NNP	-RRB-	35	36	36
+published-S0016703718305271	the Early Paleozoic (Briggs et al	Paleozoic	NNP	-LRB-	41	47	43
+published-S0016703718305271	Briggs et al	al	NNP	NNP	45	47	47
+published-S0016703718305271	developed shells of phosphatic composition (Gale and Schweigert, 2016)	shells	VBN	IN	62	73	63
+published-S0016703718305271	phosphatic composition (Gale and Schweigert, 2016	composition	JJ	-LRB-	65	72	66
+published-S0016703718305271	Gale and Schweigert, 2016	Gale	-LRB-	CC	68	72	68
+published-S0016703718305271	Schweigert	Schweigert	CC	CD	70	70	70
+published-S0016703718305271	This basal clade	clade	NN	VBZ	75	77	77
+published-S0016703718305271	the living genus Ibla, which has shell plates composed of a poorly ordered hydrogen-phosphate-like material (Reid et al., 2012)	Ibla	NNP	WDT	81	108	84
+published-S0016703718305271	which	which	,	VBZ	86	86	86
+published-S0016703718305271	shell plates composed of a poorly ordered hydrogen-phosphate-like material (Reid et al., 2012)	plates	JJ	VBN	88	108	89
+published-S0016703718305271	a poorly ordered hydrogen-phosphate-like material (Reid et al., 2012)	material	JJ	-LRB-	92	108	100
+published-S0016703718305271	Reid et al	al	NNP	NNP	102	104	104
+published-S0016703718305271	., 2012	.	NNP	CD	105	107	105
+published-S0016703718305271	Thoracicans	Thoracicans	.	VBD	110	110	110
+published-S0016703718305271	shells of calcite	shells	VBD	IN	112	114	112
+published-S0016703718305271	calcite	calcite	IN	IN	114	114	114
+published-S0016703718305271	the Jurassic	Jurassic	DT	CC	116	117	117
+published-S0016703718305271	a monophyletic clade called the Thoracicalcarea Gale (2016), which are abundant in the World’s oceans today	clade	JJ	VBN	121	140	123
+published-S0016703718305271	the Thoracicalcarea Gale (2016), which are abundant in the World’s oceans today	Gale	NNP	-LRB-	125	140	127
+published-S0016703718305271	which	which	,	VBP	132	132	132
+published-S0016703718305271	the World’s oceans	oceans	POS	NN	136	139	139
+published-S0016703718305271	Calcareous barnacles	barnacles	JJ	RB	142	143	143
+published-S0016703718305271	the Bathonian (mid-Jurassic	Bathonian	DT	-LRB-	147	152	148
+published-S0016703718305271	mid	mid	-LRB-	NNP	150	150	150
+published-S0016703718305271	-	-	NNP	NNP	151	151	151
+published-S0016703718305271	Jurassic	Jurassic	NNP	-RRB-	152	152	152
+published-S0016703718305271	the end of the Jurassic (Tithonian) forms referred to the family	end	DT	IN	157	169	158
+published-S0016703718305271	the Jurassic (Tithonian) forms referred to the family	forms	-RRB-	VBD	160	169	165
+published-S0016703718305271	the family	family	DT	NNP	168	169	169
+published-S0016703718305271	Zeugmatolepadidae	Zeugmatolepadidae	NN	VBD	170	170	170
+published-S0016703718305271	epifauna	epifauna	IN	VBN	178	178	178
+published-S0016703718305271	shells and driftwood (Gale, 2014, in press	shells	JJ	CC	182	191	182
+published-S0016703718305271	driftwood (Gale, 2014,	driftwood	CC	-LRB-	184	189	184
+published-S0016703718305271	(Gale, 2014,	Gale	-LRB-	CD	185	189	186
+published-S0016703718305271	press	press	IN	-RRB-	191	191	191
+published-S0016703718305271	the Lower Cretaceous (Aptian	Aptian	-LRB-	-RRB-	195	199	199
+published-S0016703718305271	benthonic cirripedes of the extant families	cirripedes	JJ	IN	202	207	203
+published-S0016703718305271	the extant families	families	JJ	NNP	205	207	207
+published-S0016703718305271	Calanticidae and Scalpellidae	Calanticidae	NNS	CC	208	210	208
+published-S0016703718305271	Scalpellidae	Scalpellidae	CC	VBD	210	210	210
+published-S0016703718305271	which	which	,	VBP	213	213	213
+published-S0016703718305271	deeper marine habitats	habitats	JJ	IN	216	218	218
+published-S0016703718305271	the present day (Gale, 2015)	day	JJ	-LRB-	220	227	222
+published-S0016703718305271	Gale, 2015)	Gale	-LRB-	CD	224	227	224
+published-S0016703718305271	One group of stalked calcareous barnacles	group	CD	IN	229	234	230
+published-S0016703718305271	stalked calcareous barnacles	barnacles	JJ	VBD	232	234	234
+published-S0016703718305271	epiplanktonic (lepadomorphs)	lepadomorphs	-LRB-	-RRB-	236	239	238
+published-S0016703718305271	Calcareous cirripedes	cirripedes	JJ	RB	241	242	242
+published-S0016703718305271	marine hard substrates	substrates	JJ	IN	247	249	249
+published-S0016703718305271	the Late Cretaceous (Gale and Sørensen, 2015	Gale	-LRB-	CC	251	259	255
+published-S0016703718305271	Sørensen, 2015	Sørensen	CC	CD	257	259	257
+published-S0016703718305271	neobalanomorphs	neobalanomorphs	CC	VBD	262	262	262
+published-S0016703718305271	the Paleogene	Paleogene	DT	.	265	266	266
+published-S0016703718305271	These	These	.	VBD	268	268	268
+published-S0016703718305271	the Miocene	Miocene	DT	DT	274	275	275
+published-S0016703718305271	these sessile forms	forms	NN	VBD	276	278	278
+published-S0016703718305271	shallow marine habitats	habitats	JJ	.	288	290	290
+published-S0016703718305271	they	they	NN	VBP	293	293	293
+published-S0016703718305271	a wide range of habitats from the intertidal zone	range	JJ	IN	295	303	297
+published-S0016703718305271	habitats from the intertidal zone	habitats	IN	IN	299	303	299
+published-S0016703718305271	the intertidal zone	zone	JJ	RP	301	303	303
+published-S0016703718305271	deep sea trenches in the modern oceans (Foster, 1987)	trenches	NN	IN	306	317	308
+published-S0016703718305271	the modern oceans (Foster, 1987)	oceans	JJ	-LRB-	310	317	312
+published-S0016703718305271	Foster, 1987)	Foster	-LRB-	CD	314	317	314
+published-S0016703718305271	Calcareous barnacles	barnacles	JJ	VBP	319	320	320
+published-S0016703718305271	their shells	shells	PRP$	IN	322	323	323
+published-S0016703718305271	a chitinous cuticle in a succession of very thin layers in synchronicity with the tidal cycle (Bourget, 1987) or endogenous semi-diurnal rhythm (Bourget and Crisp, 1975)	cuticle	JJ	IN	325	358	327
+published-S0016703718305271	a succession of very thin layers in synchronicity with the tidal cycle (Bourget, 1987) or endogenous semi-diurnal rhythm (Bourget and Crisp, 1975)	succession	DT	IN	329	358	330
+published-S0016703718305271	very thin layers	layers	JJ	IN	332	334	334
+published-S0016703718305271	synchronicity with the tidal cycle (Bourget, 1987) or endogenous semi-diurnal rhythm (Bourget and Crisp, 1975)	synchronicity	IN	IN	336	358	336
+published-S0016703718305271	the tidal cycle (Bourget, 1987) or endogenous semi-diurnal rhythm (Bourget and Crisp, 1975)	cycle	JJ	-LRB-	338	358	340
+published-S0016703718305271	Bourget, 1987) or endogenous semi-diurnal rhythm (Bourget and Crisp, 1975	Bourget	-LRB-	CD	342	357	342
+published-S0016703718305271	endogenous semi-diurnal rhythm (Bourget and Crisp, 1975	rhythm	JJ	-LRB-	347	357	351
+published-S0016703718305271	Bourget and Crisp, 1975	Bourget	-LRB-	CC	353	357	353
+published-S0016703718305271	Crisp	Crisp	CC	CD	355	355	355
+published-S0016703718305271	The thin layers	layers	JJ	VBP	360	362	362
+published-S0016703718305271	polycrystalline calcite crystals enveloped in organic macromolecules (Gal et al., 2015)	crystals	NN	VBD	366	380	368
+published-S0016703718305271	organic macromolecules (Gal et al	macromolecules	JJ	-LRB-	371	376	372
+published-S0016703718305271	Gal et al	al	NNP	NNP	374	376	376
+published-S0016703718305271	hierarchical patterns	patterns	JJ	.	383	384	384
+published-S0016703718305271	These hierarchical patterns	patterns	JJ	VBP	386	388	388
+published-S0016703718305271	seasonal changes in growth rate and	changes	JJ	IN	391	396	392
+published-S0016703718305271	growth rate and	rate	NN	CC	394	396	395
+published-S0016703718305271	band	band	VBG	IN	398	398	398
+published-S0016703718305271	ontogeny modulating the thickness of growth bands (Bourget and Crisp, 1975	modulating	NN	DT	401	413	402
+published-S0016703718305271	the thickness of growth bands (Bourget and Crisp, 1975	thickness	DT	IN	403	413	404
+published-S0016703718305271	growth bands (Bourget and Crisp, 1975	bands	NN	-LRB-	406	413	407
+published-S0016703718305271	Bourget and Crisp, 1975	Bourget	-LRB-	CC	409	413	409
+published-S0016703718305271	Crisp	Crisp	CC	CD	411	411	411
+published-S0016703718305271	an initial planktic life stage	stage	NN	NNS	417	421	421
+published-S0016703718305271	barnacles	barnacles	,	VBP	423	423	423
+published-S0016703718305271	their final larval stage	stage	NN	CC	426	429	429
+published-S0016703718305271	environmental conditions	conditions	JJ	IN	440	441	441
+published-S0016703718305271	their growth site	site	NN	IN	443	445	445
+published-S0016703718305271	their adult life	life	NN	.	447	449	449
+published-S0016703718305271	Particular interest has been focussed on their attachment to various surfaces due to the negative economic impact of barnacle fouling (e.g., Christie and Dalley, 1987; Swain et al., 1998)	interest	JJ	VBZ	451	486	452
+published-S0016703718305271	their attachment to various surfaces	attachment	PRP$	IN	457	461	458
+published-S0016703718305271	various surfaces	surfaces	JJ	IN	460	461	461
+published-S0016703718305271	the negative economic impact of barnacle fouling (e.g., Christie and Dalley, 1987	impact	JJ	IN	464	478	467
+published-S0016703718305271	barnacle fouling (e.g., Christie and Dalley, 1987	fouling	NN	-LRB-	469	478	470
+published-S0016703718305271	Swain et al., 1998)	al	NNP	NNP	480	486	482
+published-S0016703718305271	The shells of barnacles	shells	DT	IN	488	491	489
+published-S0016703718305271	barnacles	barnacles	IN	VBP	491	491	491
+published-S0016703718305271	use in ecological and environmental studies	use	VBD	IN	498	503	498
+published-S0016703718305271	ecological and environmental studies	studies	JJ	:	500	503	503
+published-S0016703718305271	δ18O values of turtle and whale barnacles	values	NNP	IN	507	513	508
+published-S0016703718305271	turtle and whale barnacles	barnacles	NN	VBP	510	513	513
+published-S0016703718305271	the movement patterns of their host animals (Killingley, 1980;	patterns	NN	IN	519	530	521
+published-S0016703718305271	their host animals	animals	NN	-LRB-	523	525	525
+published-S0016703718305271	Killingley, 1980;	Killingley	-LRB-	CD	527	530	527
+published-S0016703718305271	Killingley and Lutcavage, 1983) and a barnacle oxygen isotope thermometer has been established (Killingley and Newman, 1982)	Killingley	:	CC	531	552	531
+published-S0016703718305271	Lutcavage	Lutcavage	CC	CD	533	533	533
+published-S0016703718305271	a barnacle oxygen isotope thermometer	thermometer	NN	VBZ	538	542	542
+published-S0016703718305271	Killingley and Newman, 1982)	Killingley	-LRB-	CC	547	552	547
+published-S0016703718305271	Newman	Newman	CC	CD	549	549	549
+published-S0016703718305271	This barnacle thermometer	thermometer	NN	VBZ	554	556	556
+published-S0016703718305271	example	example	IN	VBN	560	560	560
+published-S0016703718305271	habitats of turtle barnacles (Detjen et al	habitats	VBG	IN	566	573	566
+published-S0016703718305271	turtle barnacles	barnacles	NN	-LRB-	568	569	569
+published-S0016703718305271	Detjen et al	al	NNP	NNP	571	573	573
+published-S0016703718305271	the point of origin of museum specimens (Newman and Killingley, 1985)	point	DT	IN	581	594	582
+published-S0016703718305271	origin of museum specimens (Newman and Killingley, 1985)	origin	IN	IN	584	594	584
+published-S0016703718305271	museum specimens (Newman and Killingley, 1985)	specimens	NN	-LRB-	586	594	587
+published-S0016703718305271	Newman and Killingley, 1985	Newman	-LRB-	CC	589	593	589
+published-S0016703718305271	Killingley	Killingley	CC	CD	591	591	591
+published-S0016703718305271	carbon isotope ratios in body tissues of intertidal barnacles	ratios	NN	IN	598	606	600
+published-S0016703718305271	body tissues of intertidal barnacles	tissues	NN	IN	602	606	603
+published-S0016703718305271	intertidal barnacles	barnacles	JJ	VBP	605	606	606
+published-S0016703718305271	a potential proxy for habitat elevation with respect to the tidal level (Craven et al., 2008)	proxy	JJ	IN	611	630	613
+published-S0016703718305271	habitat elevation	elevation	NN	IN	615	616	616
+published-S0016703718305271	respect to the tidal level (Craven et al., 2008)	respect	IN	IN	618	630	618
+published-S0016703718305271	the tidal level (Craven et al., 2008)	level	JJ	-LRB-	620	630	622
+published-S0016703718305271	Craven et al	al	NNP	NNP	624	626	626
+published-S0016703718305271	., 2008	.	NNP	CD	627	629	627
+published-S0016703718305271	/Ca	Ca	SYM	NNS	633	634	634
+published-S0016703718305271	barnacle shells	shells	NN	VBP	637	638	638
+published-S0016703718305271	tracers of salinity (Gordon et al., 1970) and shore level (Pilkey and Harriss, 1966; Bourget, 1974)	tracers	IN	IN	645	669	645
+published-S0016703718305271	salinity (Gordon et al	salinity	IN	-LRB-	647	651	647
+published-S0016703718305271	Gordon et al	al	NNP	NNP	649	651	651
+published-S0016703718305271	., 1970	.	NNP	CD	652	654	652
+published-S0016703718305271	shore level (Pilkey and Harriss, 1966; Bourget, 1974)	level	NN	-LRB-	657	669	658
+published-S0016703718305271	Pilkey and Harriss, 1966	Pilkey	-LRB-	CC	660	664	660
+published-S0016703718305271	Harriss	Harriss	CC	CD	662	662	662
+published-S0016703718305271	Bourget, 1974)	Bourget	:	CD	666	669	666
+published-S0016703718305271	Significant inter-specimen differences in shell composition across different localities	differences	JJ	IN	671	681	675
+published-S0016703718305271	shell composition	composition	JJ	IN	677	678	678
+published-S0016703718305271	different localities	localities	JJ	VBP	680	681	681
+published-S0016703718305271	fingerprinting tool	tool	NN	TO	687	688	688
+published-S0016703718305271	harvest points of edible goose barnacles (Albuquerque et al	points	NN	IN	691	700	692
+published-S0016703718305271	edible goose barnacles (Albuquerque et al	barnacles	NN	-LRB-	694	700	696
+published-S0016703718305271	Albuquerque et al	al	NNP	NNP	698	700	700
+published-S0016703718305271	such encouraging studies	studies	JJ	RB	707	709	709
+published-S0016703718305271	the chemical composition of barnacle shell material	composition	NN	IN	716	722	718
+published-S0016703718305271	barnacle shell material	material	NN	CC	720	722	722
+published-S0016703718305271	compilations of barnacle shell chemistry	compilations	CC	IN	725	729	725
+published-S0016703718305271	barnacle shell chemistry	chemistry	NN	VBP	727	729	729
+published-S0016703718305271	very few samples (Chave, 1954; Dodd, 1967)	samples	JJ	-LRB-	732	743	734
+published-S0016703718305271	Chave, 1954	Chave	-LRB-	CD	736	738	736
+published-S0016703718305271	Dodd, 1967)	Dodd	:	CD	740	743	740
+published-S0016703718305271	the few available data	data	JJ	PRP	746	749	749
+published-S0016703718305271	it	it	NNS	VBZ	750	750	750
+published-S0016703718305271	barnacle shell calcite	calcite	NN	VBZ	755	757	757
+published-S0016703718305271	most commonly studied biogenic calcite as its very high Sr concentrations	calcite	JJ	IN	761	771	765
+published-S0016703718305271	its very high Sr concentrations	concentrations	NNP	VBP	767	771	771
+published-S0016703718305271	it	it	VBP	VBZ	773	773	773
+published-S0016703718305271	a proposed correlation line of Sr versus Mg content (Carpenter and Lohmann, 1992	line	NN	IN	776	790	779
+published-S0016703718305271	Sr versus Mg content (Carpenter and Lohmann, 1992	Sr	IN	IN	781	790	781
+published-S0016703718305271	Mg content (	content	NNP	-LRB-	783	785	784
+published-S0016703718305271	Carpenter and Lohmann	Carpenter	-LRB-	CC	786	788	786
+published-S0016703718305271	Lohmann	Lohmann	CC	CD	788	788	788
+published-S0016703718305271	barnacles	barnacles	IN	VBP	794	794	794
+published-S0016703718305271	any species-specific element signatures	signatures	NN	CC	796	801	801
+published-S0016703718305271	differences in element concentrations in their shell plates	differences	VBP	IN	806	813	806
+published-S0016703718305271	element concentrations	concentrations	NN	IN	808	809	809
+published-S0016703718305271	their shell plates	plates	NN	VBZ	811	813	813
+published-S0016703718305271	Iglikowska et al	al	NNP	NNP	825	827	827
+published-S0016703718305271	., 2018a	.	NNP	CD	828	830	828
+published-S0016703718305271	we	we	RB	VBP	834	834	834
+published-S0016703718305271	δ18O values as well as Mg/Ca, Sr/Ca,	values	NN	RB	838	850	839
+published-S0016703718305271	Mg/Ca, Sr/Ca,	Ca	SYM	NNP	843	850	845
+published-S0016703718305271	Sr/Ca,	Ca	NNP	NNP	847	850	849
+published-S0016703718305271	42 modern barnacle species of the Lepadiformes, Scalpelliformes, Verruciformes and Balaniformes	species	NN	IN	860	872	863
+published-S0016703718305271	the Lepadiformes, Scalpelliformes, Verruciformes and Balaniformes	Lepadiformes	DT	NNP	865	872	866
+published-S0016703718305271	Scalpelliformes, Verruciformes and Balaniformes	Scalpelliformes	,	NNP	868	872	868
+published-S0016703718305271	Verruciformes and Balaniformes	Verruciformes	,	CC	870	872	870
+published-S0016703718305271	Balaniformes	Balaniformes	CC	-LRB-	872	872	872
+published-S0016703718305271	Pérez-Losada et al	al	NNP	NNP	875	879	879
+published-S0016703718305271	., 2008	.	NNP	CD	880	882	880
+published-S0016703718305271	taxonomic scheme	scheme	JJ	-RRB-	884	885	885
+published-S0016703718305271	the first large survey of shell geochemistry in cirripedes	survey	JJ	IN	889	897	892
+published-S0016703718305271	shell geochemistry	geochemistry	JJ	IN	894	895	895
+published-S0016703718305271	cirripedes	cirripedes	IN	.	897	897	897
+published-S0016703718305271	These analyses	analyses	DT	VBP	899	900	900
+published-S0016703718305271	XRD analyses of 27 specimens to confirm the calcitic nature of the shell material	analyses	NNP	IN	904	917	905
+published-S0016703718305271	27 specimens	specimens	CD	TO	907	908	908
+published-S0016703718305271	the calcitic nature of the shell material	nature	JJ	IN	911	917	913
+published-S0016703718305271	the shell material	material	NN	.	915	917	917
+published-S0016703718305271	We	We	.	VBP	919	919	919
+published-S0016703718305271	the geochemical signatures of the shells with environmental parameters	signatures	JJ	IN	921	929	923
+published-S0016703718305271	the shells with environmental parameters	shells	DT	IN	925	929	926
+published-S0016703718305271	environmental parameters	parameters	JJ	CC	928	929	929
+published-S0016703718305271	taxonomic trends in shell composition	trends	JJ	IN	932	936	933
+published-S0016703718305271	shell composition	composition	JJ	.	935	936	936
+published-S0016703718305271	we	we	,	VBP	940	940	940
+published-S0016703718305271	intra-shell chemical variability to address overall compositional heterogeneity and plate-specific chemical fingerprints	variability	NN	TO	942	957	946
+published-S0016703718305271	overall compositional heterogeneity and plate-specific chemical fingerprints	heterogeneity	JJ	CC	949	957	951
+published-S0016703718305271	plate-specific chemical fingerprints	fingerprints	NN	.	953	957	957
+published-S0021997515003138	a newly emerged disease of the ovine digit	disease	VBN	IN	3	10	6
+published-S0021997515003138	the ovine digit	digit	NNP	VBD	8	10	10
+published-S0021997515003138	the UK,	UK	DT	DT	14	16	15
+published-S0021997515003138	the lesions of which	lesions	DT	IN	17	20	18
+published-S0021997515003138	which	which	IN	VBD	20	20	20
+published-S0021997515003138	severe clinical signs in affected animals (Harwood et al., 1997	signs	JJ	IN	23	35	25
+published-S0021997515003138	affected animals (Harwood et al	animals	VBN	-LRB-	27	32	28
+published-S0021997515003138	Harwood et al	Harwood	-LRB-	NNP	30	32	30
+published-S0021997515003138	., 1997	.	NNP	CD	33	35	33
+published-S0021997515003138	The distinction between this disease and ovine foot rot was made by the differences in clinical appearance, the failure to respond to conventional foot rot therapies, and the isolation of Treponema spp	distinction	DT	IN	38	71	39
+published-S0021997515003138	this disease and ovine foot rot	disease	DT	CC	41	46	42
+published-S0021997515003138	ovine foot rot	rot	NN	VBD	44	46	46
+published-S0021997515003138	the differences in clinical appearance	differences	DT	IN	50	54	51
+published-S0021997515003138	clinical appearance	appearance	JJ	DT	53	54	54
+published-S0021997515003138	the failure to respond to conventional foot rot therapies, and the isolation of Treponema spp	failure	DT	TO	56	71	57
+published-S0021997515003138	conventional foot rot therapies	therapies	NN	CC	61	64	64
+published-S0021997515003138	the isolation of Treponema spp	isolation	DT	IN	67	71	68
+published-S0021997515003138	Treponema spp	spp	NNP	.	70	71	71
+published-S0021997515003138	the lesions	lesions	DT	IN	74	75	75
+published-S0021997515003138	concurrent detection of the causative agent of foot rot	detection	JJ	IN	80	88	81
+published-S0021997515003138	the causative agent of foot rot	agent	JJ	IN	83	88	85
+published-S0021997515003138	foot rot	rot	NN	NNP	87	88	88
+published-S0021997515003138	Naylor et al	al	NNP	NNP	93	95	95
+published-S0021997515003138	., 1998	.	NNP	CD	96	98	96
+published-S0021997515003138	et al	al	NNP	NNP	101	102	102
+published-S0021997515003138	., 1999	.	NNP	CD	103	105	103
+published-S0021997515003138	Lewis et al., 2001).	al	NNP	NNP	107	114	109
+published-S0021997515003138	., 2001)	.	NNP	CD	110	113	110
+published-S0021997515003138	The disease	disease	DT	VBD	115	116	116
+published-S0021997515003138	contagious ovine digital dermatitis (CODD)	dermatitis	NNP	-LRB-	119	125	122
+published-S0021997515003138	CODD	CODD	-LRB-	-RRB-	124	124	124
+published-S0021997515003138	(Davies et al., 1999) and further work has since identified three Treponema phylogroups to be associated with clinical disease, namely Treponema medium/Treponema vincentii-like,	Davies	-LRB-	NNP	126	158	127
+published-S0021997515003138	., 1999	.	NNP	CD	130	132	130
+published-S0021997515003138	further work	work	JJ	VBZ	135	136	136
+published-S0021997515003138	clinical disease, namely Treponema medium/Treponema vincentii-like,	disease	JJ	RB	147	158	148
+published-S0021997515003138	These same three Treponema phylogroups	phylogroups	NNP	VBP	175	179	179
+published-S0021997515003138	the cause of bovine digital dermatitis (BDD) (Evans et al., 2008)	cause	DT	IN	184	200	185
+published-S0021997515003138	bovine digital dermatitis (BDD) (Evans et al., 2008	dermatitis	NNP	-LRB-	187	199	189
+published-S0021997515003138	(BDD)	BDD	-LRB-	-RRB-	190	192	191
+published-S0021997515003138	Evans	Evans	-LRB-	NNP	194	194	194
+published-S0021997515003138	et al	al	NNP	NNP	195	196	196
+published-S0021997515003138	., 2008	.	NNP	CD	197	199	197
+published-S0021997515003138	not all BDD lesions	lesions	NNP	MD	203	206	206
+published-S0021997515003138	all three phylogroups (Evans et al., 2009)	phylogroups	CD	-LRB-	210	220	212
+published-S0021997515003138	Evans et al	al	NNP	NNP	214	216	216
+published-S0021997515003138	., 2009	.	NNP	CD	217	219	217
+published-S0021997515003138	the clinical presentation of CODD	presentation	JJ	IN	224	228	226
+published-S0021997515003138	CODD	CODD	IN	VBD	228	228	228
+published-S0021997515003138	detail	detail	IN	IN	232	232	232
+published-S0021997515003138	the first time	time	JJ	CC	234	236	236
+published-S0021997515003138	a five-point lesion grading system	system	VBG	VBD	239	245	245
+published-S0021997515003138	that study	study	DT	DT	258	259	259
+published-S0021997515003138	the range of lesions	range	DT	IN	261	264	262
+published-S0021997515003138	lesions	lesions	IN	VBD	264	264	264
+published-S0021997515003138	a clinical progression of disease such that lesions progressed from grade 1 to 5	progression	JJ	IN	268	281	270
+published-S0021997515003138	disease	disease	IN	JJ	272	272	272
+published-S0021997515003138	lesions	lesions	IN	VBN	275	275	275
+published-S0021997515003138	grade 1	grade	IN	CD	278	279	278
+published-S0021997515003138	the disease	disease	DT	VBZ	285	286	286
+published-S0021997515003138	the coronary band	band	JJ	CC	289	291	291
+published-S0021997515003138	the dorsal hoof wall	wall	JJ	.	306	309	309
+published-S0021997515003138	The lesions	lesions	DT	MD	311	312	312
+published-S0021997515003138	new horn	horn	JJ	RB	316	317	317
+published-S0021997515003138	the horn lost in the fulminant stage of the disease	horn	DT	VBN	320	329	321
+published-S0021997515003138	the fulminant stage of the disease	stage	JJ	IN	324	329	326
+published-S0021997515003138	the disease	disease	DT	IN	328	329	329
+published-S0021997515003138	some deformity of the regrown hoof	deformity	DT	IN	332	337	333
+published-S0021997515003138	the regrown hoof	hoof	JJ	.	335	337	337
+published-S0021997515003138	date	date	IN	EX	340	340	340
+published-S0021997515003138	no histopathological characterization of these lesions or immunohistochemical investigation of the presence of Treponema spp	characterization	JJ	IN	345	359	347
+published-S0021997515003138	these lesions or immunohistochemical investigation of the presence of Treponema spp	lesions	DT	CC	349	359	350
+published-S0021997515003138	immunohistochemical investigation	investigation	JJ	IN	352	353	353
+published-S0021997515003138	the presence of Treponema spp	presence	DT	IN	355	359	356
+published-S0021997515003138	Treponema spp	spp	NNP	.	358	359	359
+published-S0021997515003138	the pathological changes	changes	JJ	.	363	365	365
+published-S0021997515003138	cattle	cattle	IN	NN	368	368	368
+published-S0021997515003138	immunohistochemistry (IHC)	immunohistochemistry	,	-LRB-	370	373	370
+published-S0021997515003138	IHC	IHC	-LRB-	-RRB-	372	372	372
+published-S0021997515003138	Treponema-like organisms in BDD lesions	organisms	JJ	IN	379	385	382
+published-S0021997515003138	BDD lesions	lesions	NNP	CC	384	385	385
+published-S0021997515003138	these are associated with hair follicles and sebaceous glands (Evans et al., 2009	these	CC	VBP	388	403	388
+published-S0021997515003138	hair follicles and sebaceous glands	follicles	NN	CC	392	396	393
+published-S0021997515003138	sebaceous glands	glands	JJ	-LRB-	395	396	396
+published-S0021997515003138	., 2009	.	NNP	CD	401	403	401
+published-S0021997515003138	the present study	study	JJ	NNP	407	409	409
+published-S0021997515003138	IHC	IHC	,	VBD	411	411	411
+published-S0021997515003138	the presence/absence of CODD-associated Treponema spp	absence	SYM	IN	416	425	419
+published-S0021997515003138	CODD-associated Treponema spp	spp	NNP	.	421	425	425
+published-S0021997515003138	It	It	.	VBD	427	427	427
+published-S0021997515003138	that Treponema spp	spp	NNP	.	430	432	432
+published-S0021997515003138	earlier grades of lesion, particularly those of grade 1	grades	JJR	IN	440	449	441
+published-S0021997515003138	lesion	lesion	IN	RB	443	443	443
+published-S0021997515003138	particularly those of grade 1	those	RB	IN	445	449	446
+published-S0021997515003138	grade 1	grade	IN	CD	448	449	448
+published-S0021997515003138	The organisms	organisms	DT	MD	451	452	452
+published-S0021997515003138	all of the stages of the clinical disease	all	IN	IN	456	463	456
+published-S0021997515003138	the stages of the clinical disease	stages	DT	IN	458	463	459
+published-S0021997515003138	the clinical disease	disease	JJ	CC	461	463	463
+published-S0021997515003138	competition by secondary invaders, tissue necrosis or damage/removal by the immune system	competition	IN	IN	472	486	472
+published-S0021997515003138	secondary invaders, tissue necrosis or damage/removal by the immune system	invaders	JJ	NN	474	486	475
+published-S0021997515003138	tissue necrosis or damage/removal by the immune system	necrosis	NN	CC	477	486	478
+published-S0021997515003138	damage/removal	removal	SYM	IN	480	482	482
+published-S0021997515003138	the immune system	system	JJ	.	484	486	486
+published-S0021997515003138	The aims of this study	aims	DT	IN	488	492	489
+published-S0021997515003138	this study	study	DT	VBD	491	492	492
+published-S0021997515003138	the histopathological changes observed for each grade of clinical lesion	changes	JJ	VBN	500	509	502
+published-S0021997515003138	each grade of clinical lesion	grade	DT	IN	505	509	506
+published-S0021997515003138	clinical lesion	lesion	JJ	CC	508	509	509
+published-S0021997515003138	these grades	grades	DT	VBD	514	515	515
+published-S0021997515003138	a progression of disease	progression	DT	IN	517	520	518
+published-S0021997515003138	disease	disease	IN	CC	520	520	520
+published-S0021997515003138	the spirochaetes of the three phylogroups,	spirochaetes	DT	IN	529	535	530
+published-S0021997515003138	the three phylogroups	phylogroups	CD	NNP	532	534	534
+published-S0021997515003138	clinical disease	disease	JJ	.	555	556	556
+published-S0028390818300613	High-frequency action potential firing is essential for rapid information processing in the central nervous system, and in particular in the auditory system, which must encode complex auditory information with high fidelity (Carr, 1993; Joris and Yin, 2007; King et al., 2001)	firing	JJ	VBZ	0	52	5
+published-S0028390818300613	rapid information processing in the central nervous system	processing	NN	IN	9	16	11
+published-S0028390818300613	the central nervous system	system	JJ	CC	13	16	16
+published-S0028390818300613	the auditory system, which must encode complex auditory information with high fidelity (Carr, 1993; Joris and Yin, 2007	system	JJ	WDT	22	44	24
+published-S0028390818300613	which	which	,	MD	26	26	26
+published-S0028390818300613	complex auditory information with high fidelity (Carr, 1993; Joris and Yin, 2007	information	JJ	IN	29	44	31
+published-S0028390818300613	high fidelity (Carr, 1993; Joris and Yin, 2007	fidelity	JJ	-LRB-	33	44	34
+published-S0028390818300613	Carr, 1993	Carr	-LRB-	CD	36	38	36
+published-S0028390818300613	Joris and Yin, 2007	Joris	:	CC	40	44	40
+published-S0028390818300613	Yin	Yin	CC	CD	42	42	42
+published-S0028390818300613	King et al., 2001)	al	NNP	NNP	46	52	48
+published-S0028390818300613	Kv3.1 K+ channels	channels	JJ	VBP	54	56	56
+published-S0028390818300613	currents with a high activation threshold and fast activation and deactivation kinetics, allowing for rapid action potential repolarization and short inter-spike intervals (Erisir et al., 1999; Rudy et al., 1999; Rudy and McBain, 2001)	currents	VBP	IN	58	103	58
+published-S0028390818300613	a high activation threshold and fast activation and deactivation kinetics	activation	JJ	CC	60	69	66
+published-S0028390818300613	deactivation kinetics	kinetics	NN	VBG	68	69	69
+published-S0028390818300613	rapid action potential repolarization and short inter-spike intervals	repolarization	JJ	CC	73	82	76
+published-S0028390818300613	short inter-spike intervals	intervals	JJ	-LRB-	78	82	82
+published-S0028390818300613	., 1999	.	NNP	CD	87	89	87
+published-S0028390818300613	al	al	NNP	NNP	93	93	93
+published-S0028390818300613	Rudy and McBain, 2001)	Rudy	:	CC	98	103	98
+published-S0028390818300613	McBain	McBain	CC	CD	100	100	100
+published-S0028390818300613	Kv3.1 K+ current activation and deactivation properties	activation	JJ	CC	105	111	108
+published-S0028390818300613	deactivation properties	properties	NN	VBP	110	111	111
+published-S0028390818300613	those currents	currents	DT	VBP	114	115	115
+published-S0028390818300613	high frequency firing of neurons	firing	NN	IN	120	124	122
+published-S0028390818300613	neurons	neurons	IN	.	124	124	124
+published-S0028390818300613	accordance with this observation	accordance	IN	IN	127	130	127
+published-S0028390818300613	this observation	observation	DT	JJ	129	130	130
+published-S0028390818300613	Kv3.1 K+ currents are expressed in neurones firing at high frequency such as in the spinal cord (Deuchars et al., 2001), cortex (Erisir et al., 1999), cerebellum (Joho and Hurlock, 2009) and auditory nuclei (Wang et al., 1998)	currents	NN	VBP	132	186	134
+published-S0028390818300613	neurones firing at high frequency such as in the spinal cord	neurones	IN	VBG	138	148	138
+published-S0028390818300613	high frequency	frequency	JJ	JJ	141	142	142
+published-S0028390818300613	the spinal cord	cord	JJ	-LRB-	146	148	148
+published-S0028390818300613	Erisir et al	al	NNP	NNP	160	162	162
+published-S0028390818300613	cerebellum (Joho and Hurlock, 2009) and auditory nuclei (Wang et al., 1998)	cerebellum	,	-LRB-	168	186	168
+published-S0028390818300613	Joho and Hurlock, 2009) and auditory nuclei	Joho	-LRB-	CC	170	178	170
+published-S0028390818300613	Hurlock	Hurlock	CC	CD	172	172	172
+published-S0028390818300613	auditory nuclei	nuclei	JJ	-LRB-	177	178	178
+published-S0028390818300613	Wang et al	al	NNP	NNP	180	182	182
+published-S0028390818300613	., 1998	.	NNP	CD	183	185	183
+published-S0028390818300613	The dorsal	dorsal	DT	VBP	188	189	189
+published-S0028390818300613	DCN	DCN	-LRB-	-RRB-	193	193	193
+published-S0028390818300613	an auditory brainstem structure playing a pivotal role in the integration of information from multiple sensory pathways (Wu and Martel, 2016) and in acoustic cues related to vertical sound source localization (May, 2000)	structure	NN	VBG	196	234	199
+published-S0028390818300613	a pivotal role in the integration of information from multiple sensory pathways (Wu and Martel, 2016) and in acoustic cues related to vertical sound source localization (May, 2000)	role	JJ	IN	201	234	203
+published-S0028390818300613	the integration of information from multiple sensory pathways (Wu and Martel, 2016)	integration	DT	IN	205	219	206
+published-S0028390818300613	information	information	IN	IN	208	208	208
+published-S0028390818300613	multiple sensory pathways (Wu and Martel, 2016)	pathways	JJ	-LRB-	210	219	212
+published-S0028390818300613	Wu and Martel, 2016	Wu	-LRB-	CC	214	218	214
+published-S0028390818300613	Martel	Martel	CC	CD	216	216	216
+published-S0028390818300613	acoustic cues related to vertical sound source localization (May, 2000)	cues	JJ	VBN	222	234	223
+published-S0028390818300613	vertical sound source localization (May, 2000)	localization	NN	-LRB-	226	234	229
+published-S0028390818300613	May, 2000	May	-LRB-	CD	231	233	231
+published-S0028390818300613	DCN principal fusiform cells	cells	NN	VBP	236	239	239
+published-S0028390818300613	reliable and precise trains of action potentials	trains	JJ	IN	241	247	244
+published-S0028390818300613	action potentials	potentials	NN	IN	246	247	247
+published-S0028390818300613	response to depolarizations	response	IN	IN	249	251	249
+published-S0028390818300613	depolarizations	depolarizations	IN	-LRB-	251	251	251
+published-S0028390818300613	Hancock and Voigt, 2002a, b; Manis, 1990; Oertel and Wu, 1989; Pilati et al., 2008)	Hancock	:	CC	260	284	260
+published-S0028390818300613	Voigt,	Voigt	CC	CD	262	263	262
+published-S0028390818300613	b	b	,	:	266	266	266
+published-S0028390818300613	Manis, 1990	Manis	:	CD	268	270	268
+published-S0028390818300613	Oertel and Wu, 1989	Oertel	:	CC	272	276	272
+published-S0028390818300613	Wu	Wu	CC	CD	274	274	274
+published-S0028390818300613	Pilati et al	al	NNP	NNP	278	280	280
+published-S0028390818300613	., 2008	.	NNP	CD	281	283	281
+published-S0028390818300613	Our previous study	study	JJ	VBZ	286	288	288
+published-S0028390818300613	that acoustic over-exposure triggers hearing loss	triggers	NN	VBG	291	298	296
+published-S0028390818300613	loss	loss	VBG	CC	298	298	298
+published-S0028390818300613	this	this	CC	VBD	301	301	301
+published-S0028390818300613	profound changes in the firing pattern and frequency of DCN fusiform cells	changes	JJ	IN	304	315	305
+published-S0028390818300613	the firing pattern and frequency of DCN fusiform cells	pattern	NN	CC	307	315	309
+published-S0028390818300613	frequency	frequency	CC	IN	311	311	311
+published-S0028390818300613	DCN fusiform cells	cells	NN	-LRB-	313	315	315
+published-S0028390818300613	., 2012	.	NNP	CD	320	322	320
+published-S0028390818300613	acoustic over-exposure	exposure	HYPH	DT	326	329	329
+published-S0028390818300613	a proportion (∼40%) of DCN fusiform cells	proportion	DT	-LRB-	331	340	332
+published-S0028390818300613	∼40	∼40	-LRB-	UH	334	334	334
+published-S0028390818300613	DCN fusiform cells	cells	NN	VBP	338	340	340
+published-S0028390818300613	a distinct bursting firing pattern which has been associated with reduced Kv3.1 K+ currents	pattern	NN	WDT	342	355	346
+published-S0028390818300613	which	which	NN	VBZ	347	347	347
+published-S0028390818300613	reduced Kv3.1 K+ currents	currents	NN	VBG	352	355	355
+published-S0028390818300613	the ability to fire regularly and	ability	DT	TO	358	363	359
+published-S0028390818300613	high firing frequencies (Finlayson and Kaltenbach, 2009	frequencies	NN	-LRB-	365	373	367
+published-S0028390818300613	Finlayson and Kaltenbach, 2009	Finlayson	-LRB-	CC	369	373	369
+published-S0028390818300613	Kaltenbach	Kaltenbach	CC	CD	371	371	371
+published-S0028390818300613	., 2012	.	NNP	CD	378	380	378
+published-S0028390818300613	DCN fusiform cells	cells	NN	RB	383	385	385
+published-S0028390818300613	increased spontaneous firing rates (Brozoski et al., 2002; Dehmel et al., 2012;	rates	NN	-LRB-	388	406	391
+published-S0028390818300613	Brozoski et al	al	NNP	NNP	393	395	395
+published-S0028390818300613	., 2002	.	NNP	CD	396	398	396
+published-S0028390818300613	Dehmel et al	al	NNP	NNP	400	402	402
+published-S0028390818300613	., 2012	.	NNP	CD	403	405	403
+published-S0028390818300613	spontaneous firing which correlate with behavioural measures of tinnitus (Finlayson and Kaltenbach, 2009	firing	JJ	WDT	423	437	424
+published-S0028390818300613	which	which	NN	VBP	425	425	425
+published-S0028390818300613	behavioural measures of tinnitus (Finlayson and Kaltenbach, 2009	measures	JJ	IN	428	437	429
+published-S0028390818300613	tinnitus (Finlayson and Kaltenbach, 2009	tinnitus	IN	-LRB-	431	437	431
+published-S0028390818300613	Finlayson and Kaltenbach, 2009	Finlayson	-LRB-	CC	433	437	433
+published-S0028390818300613	Kaltenbach	Kaltenbach	CC	CD	435	435	435
+published-S0028390818300613	Wu and Martel, 2016).	Wu	:	CC	446	452	446
+published-S0028390818300613	Martel	Martel	CC	CD	448	448	448
+published-S0028390818300613	evidence demonstrating firing frequency modulation	evidence	IN	VBG	454	458	454
+published-S0028390818300613	frequency modulation	modulation	JJ	CC	457	458	458
+published-S0028390818300613	induction within the DCN (Finlayson and Kaltenbach, 2009	induction	VBP	IN	461	470	461
+published-S0028390818300613	the DCN (Finlayson and Kaltenbach, 2009	DCN	DT	-LRB-	463	470	464
+published-S0028390818300613	(Finlayson and Kaltenbach, 2009	Finlayson	-LRB-	CC	465	470	466
+published-S0028390818300613	Kaltenbach	Kaltenbach	CC	CD	468	468	468
+published-S0028390818300613	Pilati et al., 2012)	al	NNP	NNP	472	478	474
+published-S0028390818300613	the role of Kv3.1 K+ currents in DCN fusiform cell spike-timing	role	DT	IN	480	492	481
+published-S0028390818300613	Kv3.1 K+ currents in DCN fusiform cell	currents	NN	IN	483	489	485
+published-S0028390818300613	DCN fusiform cell	cell	NN	NN	487	489	489
+published-S0028390818300613	this study	study	DT	PRP	497	498	498
+published-S0028390818300613	we	we	NN	VBP	499	499	499
+published-S0028390818300613	the effects of Kv3.1 K+ currents on the firing frequency and spike-timing of DCN fusiform cells	effects	DT	IN	501	518	502
+published-S0028390818300613	Kv3.1 K+ currents on the firing frequency and spike-timing of DCN fusiform cells	currents	NN	IN	504	518	506
+published-S0028390818300613	the firing frequency and spike-timing of DCN fusiform cells	frequency	NN	CC	508	518	510
+published-S0028390818300613	spike-timing of DCN fusiform cells	timing	HYPH	IN	512	518	514
+published-S0028390818300613	DCN fusiform cells	cells	NN	.	516	518	518
+published-S0028390818300613	We	We	.	VBD	520	520	520
+published-S0028390818300613	tetraethylammonium (TEA)	tetraethylammonium	VBD	-LRB-	522	525	522
+published-S0028390818300613	TEA	TEA	-LRB-	-RRB-	524	524	524
+published-S0028390818300613	a K+ channel blocker known to inhibit the Kv3 K+ currents at low concentrations (IC50 ∼0.3 mm)	blocker	NN	VBN	527	545	530
+published-S0028390818300613	the Kv3 K+ currents	currents	NNP	IN	534	537	537
+published-S0028390818300613	low concentrations (IC50 ∼0.3 mm)	concentrations	JJ	-LRB-	539	545	540
+published-S0028390818300613	IC50 ∼0.3 mm)	IC50	-LRB-	:	542	545	542
+published-S0028390818300613	mm	mm	:	-RRB-	544	544	544
+published-S0028390818300613	., 1993	.	NNP	CD	550	552	550
+published-S0028390818300613	al	al	NNP	NNP	556	556	556
+published-S0028390818300613	., 1994	.	NNP	CD	557	559	557
+published-S0028390818300613	Hernandez-Pineda et al	al	NNP	NNP	561	565	565
+published-S0028390818300613	., 1999	.	NNP	CD	566	568	566
+published-S0028390818300613	., 2010	.	NNP	CD	573	575	573
+published-S0028390818300613	Kanemasa et al	al	NNP	NNP	577	579	579
+published-S0028390818300613	., 1995	.	NNP	CD	580	582	580
+published-S0028390818300613	a down-regulation of high voltage-activated (Kv3 type)	regulation	HYPH	IN	591	603	594
+published-S0028390818300613	high voltage-activated (Kv3 type	type	NNP	-RRB-	596	602	602
+published-S0028390818300613	K+ currents (Pilati et al	currents	NN	-LRB-	604	609	605
+published-S0028390818300613	Pilati et al	al	NNP	NNP	607	609	609
+published-S0028390818300613	the disruptive effects on spike timing	effects	JJ	IN	617	622	619
+published-S0028390818300613	spike timing	timing	JJ	.	621	622	622
+published-S0028390818300613	precision of DCN fusiform cells	precision	VBG	IN	625	629	625
+published-S0028390818300613	DCN fusiform cells	cells	NN	VBD	627	629	629
+published-S0028390818300613	an analysis of the coefficient of variation (Pilati et al., 2012), and	analysis	DT	IN	633	649	634
+published-S0028390818300613	the coefficient of variation (Pilati et al	coefficient	DT	IN	636	643	637
+published-S0028390818300613	variation	variation	IN	-LRB-	639	639	639
+published-S0028390818300613	(Pilati et al	al	NNP	NNP	640	643	643
+published-S0028390818300613	spike-time reliability	reliability	NN	VBD	650	653	653
+published-S0028390818300613	the ability of the fusiform cell to fire consistently across repeated trials with the same current stimulus (Joris et al., 2006)	ability	DT	IN	658	682	659
+published-S0028390818300613	the fusiform cell	cell	NN	TO	661	663	663
+published-S0028390818300613	repeated trials	trials	VBN	IN	668	669	669
+published-S0028390818300613	the same current stimulus (Joris et al., 2006)	stimulus	JJ	-LRB-	671	682	674
+published-S0028390818300613	Joris et al	al	NNP	NNP	676	678	678
+published-S0028390818300613	., 2006	.	NNP	CD	679	681	679
+published-S0028390818300613	the exploration of the role of Kv3 K+ channels in neurophysiology	exploration	DT	IN	687	697	688
+published-S0028390818300613	the role of Kv3 K+ channels in neurophysiology	role	DT	IN	690	697	691
+published-S0028390818300613	Kv3	Kv3	IN	NNP	693	693	693
+published-S0028390818300613	K+ channels in neurophysiology	channels	NNP	IN	694	697	695
+published-S0028390818300613	neurophysiology	neurophysiology	IN	VBZ	697	697	697
+published-S0028390818300613	the absence of pharmacological tools	absence	DT	IN	702	706	703
+published-S0028390818300613	pharmacological tools	tools	JJ	.	705	706	706
+published-S0028390818300613	the compound (5R)-5-ethyl-3-(6-((4-methyl-3-(methyloxy)phenyl)oxy)-3-pyridinyl)-2,4-imidazolidinedione, (AUT1)	compound	DT	-LRB-	710	725	711
+published-S0028390818300613	5R)-5-ethyl-3-(6-((4-methyl-3-(methyloxy)phenyl)oxy)-3-pyridinyl)-2,4-imidazolidinedione	imidazolidinedione	HYPH	-LRB-	713	721	721
+published-S0028390818300613	AUT1	AUT1	-LRB-	-RRB-	724	724	724
+published-S0028390818300613	a selective Kv3.1/3.2 K+ channel modulator (Rosato-Siri et al., 2015) increasing the open probability of Kv3 K+ channels, and shifting the voltage-dependence of activation of Kv3.1/3.2 K+ currents to more negative potentials (Brown et al., 2016; Rosato-Siri et al., 2015; Taskin et al., 2015)	modulator	NN	-LRB-	731	795	736
+published-S0028390818300613	Rosato-Siri et al	al	NNP	NNP	738	742	742
+published-S0028390818300613	.	.	NNP	CD	743	743	743
+published-S0028390818300613	the open probability of Kv3 K+ channels	probability	JJ	IN	748	754	750
+published-S0028390818300613	Kv3 K+ channels	channels	NNP	CC	752	754	754
+published-S0028390818300613	the voltage-dependence of activation of Kv3.1/3.2 K+ currents	dependence	HYPH	IN	758	767	761
+published-S0028390818300613	activation of Kv3.1/3.2 K+ currents	activation	IN	IN	763	767	763
+published-S0028390818300613	Kv3.1/3.2 K+ currents	currents	NN	IN	765	767	767
+published-S0028390818300613	more negative potentials (Brown et al., 2016	potentials	JJ	-LRB-	769	778	771
+published-S0028390818300613	Brown et al	al	NNP	NNP	773	775	775
+published-S0028390818300613	Rosato-Siri et al	al	NNP	NNP	780	784	784
+published-S0028390818300613	., 2015	.	NNP	CD	785	787	785
+published-S0028390818300613	Taskin et al., 2015)	Taskin	:	NNP	789	795	789
+published-S0028390818300613	et al	al	NNP	NNP	790	791	791
+published-S0028390818300613	., 2015	.	NNP	CD	792	794	792
+published-S0028390818300613	we	we	,	VBD	799	799	799
+published-S0028390818300613	AUT1	AUT1	VBD	IN	801	801	801
+published-S0028390818300613	the presence of a low concentration of TEA	presence	DT	IN	803	810	804
+published-S0028390818300613	a low concentration of TEA	concentration	JJ	IN	806	810	808
+published-S0028390818300613	TEA	TEA	IN	CC	810	810	810
+published-S0028390818300613	acoustic over-exposure	exposure	HYPH	TO	814	817	817
+published-S0028390818300613	positive modulation of Kv3.1 K+ currents	modulation	JJ	IN	822	827	823
+published-S0028390818300613	Kv3.1 K+ currents	currents	NN	MD	825	827	827
+published-S0028390818300613	impaired DCN fusiform cell firing precision and spike-time reliability	precision	VBG	CC	830	840	835
+published-S0028390818300613	spike-time reliability	reliability	NN	.	837	840	840
+published-S0028390818300613	Spike-timing depends upon various factors including the membrane time constant (Azouz and Gray, 2000), voltage-gated ion channels (Azouz and Gray, 2000; Fricker and Miles, 2000; Higgs and Spain, 2011; Jaeger and Bower, 1999), the coincident activation of pre-synaptic neurones (Diesmann et al., 1999; Gauck and Jaeger, 2003; Grande et al., 2004; Grothe and Sanes, 1994), and/or baseline spontaneous membrane voltage fluctuations (Dorval and White, 2005; Jaeger and Bower, 1999)	timing	HYPH	VBZ	842	947	844
+published-S0028390818300613	various factors including the membrane time constant (Azouz and Gray, 2000)	factors	JJ	VBG	847	860	848
+published-S0028390818300613	the membrane time constant (Azouz and Gray, 2000)	time	NN	JJ	850	860	852
+published-S0028390818300613	(Azouz and Gray, 2000)	Azouz	-LRB-	CC	854	860	855
+published-S0028390818300613	Gray	Gray	CC	CD	857	857	857
+published-S0028390818300613	Azouz and Gray, 2000	Azouz	-LRB-	CC	868	872	868
+published-S0028390818300613	Gray	Gray	CC	CD	870	870	870
+published-S0028390818300613	the coincident activation of pre-synaptic neurones (Diesmann et al., 1999; Gauck and Jaeger, 2003; Grande et al., 2004; Grothe and Sanes, 1994), and/or baseline spontaneous membrane voltage fluctuations (Dorval and White, 2005; Jaeger and Bower, 1999)	activation	NN	IN	893	947	895
+published-S0028390818300613	pre-synaptic neurones	neurones	JJ	-LRB-	897	900	900
+published-S0028390818300613	Diesmann et al	al	NNP	NNP	902	904	904
+published-S0028390818300613	Gauck and Jaeger, 2003	Gauck	:	CC	909	913	909
+published-S0028390818300613	Jaeger, 2003	Jaeger	CC	CD	911	913	911
+published-S0028390818300613	Grande et al., 2004; Grothe and Sanes, 1994), and/or baseline spontaneous membrane voltage fluctuations (Dorval and White, 2005; Jaeger and Bower, 1999)	Grande	:	NNP	915	947	915
+published-S0028390818300613	et al	al	NNP	NNP	916	917	917
+published-S0028390818300613	., 2004; Grothe and Sanes, 1994)	.	NNP	CD	918	927	918
+published-S0028390818300613	Grothe and Sanes, 1994)	Grothe	:	CC	922	927	922
+published-S0028390818300613	Sanes	Sanes	CC	CD	924	924	924
+published-S0028390818300613	spontaneous membrane voltage fluctuations (Dorval and White, 2005	fluctuations	NN	-LRB-	931	940	934
+published-S0028390818300613	Dorval and White, 2005	Dorval	-LRB-	CC	936	940	936
+published-S0028390818300613	White	White	CC	CD	938	938	938
+published-S0028390818300613	Jaeger and Bower, 1999)	Jaeger	:	CC	942	947	942
+published-S0028390818300613	Bower	Bower	CC	CD	944	944	944
+published-S0028390818300613	We	We	.	RB	949	949	949
+published-S0028390818300613	modulation on spike-timing	modulation	IN	IN	953	957	953
+published-S0028390818300613	spike-timing	timing	HYPH	VBD	955	957	957
+published-S0028390818300613	baseline spontaneous membrane voltage fluctuations	fluctuations	NN	.	961	965	965
+published-S0028390818300613	TEA (Erisir et al., 1999;	TEA	IN	-LRB-	968	976	968
+published-S0028390818300613	Erisir et al	al	NNP	NNP	970	972	972
+published-S0028390818300613	., 1999	.	NNP	CD	973	975	973
+published-S0028390818300613	Wang et al	al	NNP	NNP	977	979	979
+published-S0028390818300613	., 1998) and acoustic over-exposure (Pilati et al., 2012)	.	NNP	CD	980	996	980
+published-S0028390818300613	acoustic over-exposure (Pilati et al	exposure	HYPH	-LRB-	985	992	988
+published-S0028390818300613	(Pilati et al	al	NNP	NNP	989	992	992
+published-S0028390818300613	., 2012)	.	NNP	CD	993	996	993
+published-S0028390818300613	the amplitude of DCN fusiform cell action potential after-hyperpolarization	amplitude	DT	IN	998	1008	999
+published-S0028390818300613	DCN fusiform cell action potential after-hyperpolarization	hyperpolarization	HYPH	PRP	1001	1008	1008
+published-S0028390818300613	we	we	,	RB	1010	1010	1010
+published-S0028390818300613	precision and spike-time reliability	precision	VBG	CC	1015	1020	1015
+published-S0028390818300613	spike-time reliability	reliability	NN	VBD	1017	1020	1020
+published-S0028390818300613	the action potential	potential	NN	IN	1024	1026	1026
+published-S0028390818300613	hyperpolarization	hyperpolarization	IN	.	1028	1028	1028
+published-S0028390818300613	Our study	study	PRP$	VBZ	1030	1031	1031
+published-S0028390818300613	Kv3.1 K+ currents	currents	NN	VBP	1034	1036	1036
+published-S0028390818300613	the spike-timing in DCN fusiform cells	timing	HYPH	IN	1038	1045	1041
+published-S0028390818300613	DCN fusiform cells	cells	NN	IN	1043	1045	1045
+published-S0028390818300613	an effect on the action potential	effect	DT	IN	1048	1053	1049
+published-S0028390818300613	the action potential	potential	NN	IN	1051	1053	1053
+published-S0028390818300613	spontaneous membrane voltage fluctuations	fluctuations	NN	.	1059	1062	1062
+published-S0028390818300613	Our study	study	PRP$	RB	1064	1065	1065
+published-S0028390818300613	Kv3.1 K+ currents	currents	NNP	VBP	1068	1070	1070
+published-S0028390818300613	a potential target	target	JJ	TO	1073	1075	1075
+published-S0028390818300613	action potential fidelity	fidelity	JJ	VBG	1078	1080	1080
+published-S0028390818300613	acoustic trauma	trauma	JJ	.	1082	1083	1083

@@ -1,0 +1,2256 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.549">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="David Brown &amp; Alex Reinhart">
+
+<title>Student Writing and Expertise in the Age of AI</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="jsdse_chatgpt_files/libs/clipboard/clipboard.min.js"></script>
+<script src="jsdse_chatgpt_files/libs/quarto-html/quarto.js"></script>
+<script src="jsdse_chatgpt_files/libs/quarto-html/popper.min.js"></script>
+<script src="jsdse_chatgpt_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="jsdse_chatgpt_files/libs/quarto-html/anchor.min.js"></script>
+<link href="jsdse_chatgpt_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="jsdse_chatgpt_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="jsdse_chatgpt_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="jsdse_chatgpt_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="jsdse_chatgpt_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Student Writing and Expertise in the Age of AI</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>David Brown &amp; Alex Reinhart </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="background-data" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Background &amp; data</h1>
+<p>This notebook includes the code and data that were used to produce the results of our study, which was submitted to the Journal of Statistics and Data Science Education.</p>
+<p>Note that the complete raw text data is not being made available to protect the privacy of the student writers. However, samples from the published and ChatGPT-generated data are included in order to demonstrate the processing pipeline.</p>
+<section id="load-packages" class="level3" data-number="1.0.1">
+<h3 data-number="1.0.1" class="anchored" data-anchor-id="load-packages"><span class="header-section-number">1.0.1</span> Load packages</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="load-data" class="level3" data-number="1.0.2">
+<h3 data-number="1.0.2" class="anchored" data-anchor-id="load-data"><span class="header-section-number">1.0.2</span> Load data</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"data/chatgpt_data.rda"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="create-a-composition-table" class="level3" data-number="1.0.3">
+<h3 data-number="1.0.3" class="anchored" data-anchor-id="create-a-composition-table"><span class="header-section-number">1.0.3</span> Create a composition table</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>corpus_comp <span class="ot">&lt;-</span> stats_freq <span class="sc">%&gt;%</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> AF_chatgpt<span class="sc">:</span>AF_student, <span class="at">names_to =</span> <span class="st">"Author_Type"</span>, <span class="at">values_to =</span> <span class="st">"AF"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Author_Type) <span class="sc">%&gt;%</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">Texts =</span> <span class="dv">100</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">Tokens =</span> <span class="fu">sum</span>(AF)) <span class="sc">%&gt;%</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Author_Type =</span> <span class="fu">c</span>(<span class="st">"ChatGPT"</span>, <span class="st">"Published"</span>, <span class="st">"Student"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Say stuff…</p>
+<div class="cell">
+<div id="tbl-corpus" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-corpus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Composition of corpus.
+</figcaption>
+<div aria-describedby="tbl-corpus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div id="kbfwnbswyr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#kbfwnbswyr table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#kbfwnbswyr thead, #kbfwnbswyr tbody, #kbfwnbswyr tfoot, #kbfwnbswyr tr, #kbfwnbswyr td, #kbfwnbswyr th {
+  border-style: none;
+}
+
+#kbfwnbswyr p {
+  margin: 0;
+  padding: 0;
+}
+
+#kbfwnbswyr .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#kbfwnbswyr .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#kbfwnbswyr .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#kbfwnbswyr .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#kbfwnbswyr .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kbfwnbswyr .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kbfwnbswyr .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kbfwnbswyr .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#kbfwnbswyr .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#kbfwnbswyr .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#kbfwnbswyr .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#kbfwnbswyr .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#kbfwnbswyr .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#kbfwnbswyr .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#kbfwnbswyr .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#kbfwnbswyr .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#kbfwnbswyr .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#kbfwnbswyr .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#kbfwnbswyr .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kbfwnbswyr .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#kbfwnbswyr .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#kbfwnbswyr .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#kbfwnbswyr .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kbfwnbswyr .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#kbfwnbswyr .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#kbfwnbswyr .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kbfwnbswyr .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kbfwnbswyr .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#kbfwnbswyr .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kbfwnbswyr .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#kbfwnbswyr .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kbfwnbswyr .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kbfwnbswyr .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kbfwnbswyr .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kbfwnbswyr .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kbfwnbswyr .gt_left {
+  text-align: left;
+}
+
+#kbfwnbswyr .gt_center {
+  text-align: center;
+}
+
+#kbfwnbswyr .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#kbfwnbswyr .gt_font_normal {
+  font-weight: normal;
+}
+
+#kbfwnbswyr .gt_font_bold {
+  font-weight: bold;
+}
+
+#kbfwnbswyr .gt_font_italic {
+  font-style: italic;
+}
+
+#kbfwnbswyr .gt_super {
+  font-size: 65%;
+}
+
+#kbfwnbswyr .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#kbfwnbswyr .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#kbfwnbswyr .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#kbfwnbswyr .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#kbfwnbswyr .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#kbfwnbswyr .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#kbfwnbswyr .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="<strong>Author Type</strong>" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Author Type</strong></th>
+<th id="<strong>Texts</strong>" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"><strong>Texts</strong></th>
+<th id="<strong>Tokens</strong>" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"><strong>Tokens</strong></th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td id="stub_1_1" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row"></td>
+<td class="gt_row gt_left" headers="stub_1_1 Author_Type">ChatGPT</td>
+<td class="gt_row gt_right" headers="stub_1_1 Texts">100</td>
+<td class="gt_row gt_right" headers="stub_1_1 Tokens">9,625</td>
+</tr>
+<tr class="even">
+<td id="stub_1_2" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row"></td>
+<td class="gt_row gt_left" headers="stub_1_2 Author_Type">Published</td>
+<td class="gt_row gt_right" headers="stub_1_2 Texts">100</td>
+<td class="gt_row gt_right" headers="stub_1_2 Tokens">62,961</td>
+</tr>
+<tr class="odd">
+<td id="stub_1_3" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row"></td>
+<td class="gt_row gt_left" headers="stub_1_3 Author_Type">Student</td>
+<td class="gt_row gt_right" headers="stub_1_3 Texts">100</td>
+<td class="gt_row gt_right" headers="stub_1_3 Tokens">13,676</td>
+</tr>
+<tr class="even">
+<td id="grand_summary_stub_1" class="gt_row gt_left gt_stub gt_grand_summary_row gt_first_grand_summary_row gt_last_summary_row" data-quarto-table-cell-role="th" scope="row">Total</td>
+<td class="gt_row gt_left gt_grand_summary_row gt_first_grand_summary_row gt_last_summary_row" headers="grand_summary_stub_1 Author_Type">—</td>
+<td class="gt_row gt_right gt_grand_summary_row gt_first_grand_summary_row gt_last_summary_row" headers="grand_summary_stub_1 Texts">300</td>
+<td class="gt_row gt_right gt_grand_summary_row gt_first_grand_summary_row gt_last_summary_row" headers="grand_summary_stub_1 Tokens">86,262</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="multiple-univariate-regression" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Multiple univariate regression</h1>
+<p>Say stuff…</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>z_means <span class="ot">&lt;-</span> stats_biber <span class="sc">%&gt;%</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>doc_id) <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate_if</span>(is.numeric, scale) <span class="sc">%&gt;%</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="sc">!</span>Group, <span class="at">names_to =</span> <span class="st">"variable"</span>, <span class="at">values_to =</span> <span class="st">"z_score"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Group, variable) <span class="sc">%&gt;%</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">mean_z =</span> <span class="fu">mean</span>(z_score)) <span class="sc">%&gt;%</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> Group, <span class="at">values_from =</span> mean_z)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>lm_biber <span class="ot">&lt;-</span> stats_biber <span class="sc">%&gt;%</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>doc_id) <span class="sc">%&gt;%</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="sc">!</span>Group, <span class="at">names_to =</span> <span class="st">"variable"</span>, <span class="at">values_to =</span> <span class="st">"value"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(variable) <span class="sc">%&gt;%</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="at">.by_group =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nest</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">models =</span> <span class="fu">map</span>(data, <span class="sc">~</span> <span class="fu">lm</span>(value <span class="sc">~</span> Group, <span class="at">data =</span> .)),</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>         <span class="at">glance =</span> <span class="fu">map</span>(models, broom<span class="sc">::</span>glance)) <span class="sc">%&gt;%</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest</span>(glance) <span class="sc">%&gt;%</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(data, models)) <span class="sc">%&gt;%</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(z_means) <span class="sc">%&gt;%</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(variable, ChatGPT<span class="sc">:</span>Student, <span class="fu">everything</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>ld1_tbl <span class="ot">&lt;-</span> lm_biber <span class="sc">%&gt;%</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ChatGPT<span class="sc">:</span>r.squared, p.value) <span class="sc">%&gt;%</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">direction =</span> <span class="fu">ifelse</span>(ChatGPT <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> Published <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> Student <span class="sc">&lt;</span><span class="dv">0</span>, <span class="st">"machine"</span>, <span class="cn">NA</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">direction =</span> <span class="fu">ifelse</span>(ChatGPT <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> Published <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> Student <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="st">"human"</span>, direction)) <span class="sc">%&gt;%</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(direction)) <span class="sc">%&gt;%</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(r.squared <span class="sc">&gt;</span> <span class="fl">0.1</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(direction, <span class="sc">-</span>r.squared)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>ld2_tbl <span class="ot">&lt;-</span> lm_biber <span class="sc">%&gt;%</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ChatGPT<span class="sc">:</span>r.squared, p.value) <span class="sc">%&gt;%</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">direction =</span> <span class="fu">ifelse</span>(Published <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> ChatGPT <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> Student <span class="sc">&lt;</span><span class="dv">0</span>, <span class="st">"expert"</span>, <span class="cn">NA</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">direction =</span> <span class="fu">ifelse</span>(Student <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> ChatGPT <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> Published <span class="sc">&lt;</span> <span class="dv">0</span>, <span class="st">"novice"</span>, direction)) <span class="sc">%&gt;%</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(direction)) <span class="sc">%&gt;%</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(r.squared <span class="sc">&gt;</span> <span class="fl">0.1</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(direction, <span class="sc">-</span>r.squared)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div id="tbl-ld1" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ld1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Caption describing table.
+</figcaption>
+<div aria-describedby="tbl-ld1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div id="rtaddpaqkf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#rtaddpaqkf table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#rtaddpaqkf thead, #rtaddpaqkf tbody, #rtaddpaqkf tfoot, #rtaddpaqkf tr, #rtaddpaqkf td, #rtaddpaqkf th {
+  border-style: none;
+}
+
+#rtaddpaqkf p {
+  margin: 0;
+  padding: 0;
+}
+
+#rtaddpaqkf .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#rtaddpaqkf .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#rtaddpaqkf .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#rtaddpaqkf .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#rtaddpaqkf .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#rtaddpaqkf .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rtaddpaqkf .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#rtaddpaqkf .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#rtaddpaqkf .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#rtaddpaqkf .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#rtaddpaqkf .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#rtaddpaqkf .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#rtaddpaqkf .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#rtaddpaqkf .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#rtaddpaqkf .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#rtaddpaqkf .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#rtaddpaqkf .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#rtaddpaqkf .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#rtaddpaqkf .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rtaddpaqkf .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#rtaddpaqkf .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#rtaddpaqkf .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#rtaddpaqkf .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rtaddpaqkf .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#rtaddpaqkf .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#rtaddpaqkf .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rtaddpaqkf .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rtaddpaqkf .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#rtaddpaqkf .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rtaddpaqkf .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#rtaddpaqkf .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rtaddpaqkf .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#rtaddpaqkf .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rtaddpaqkf .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#rtaddpaqkf .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rtaddpaqkf .gt_left {
+  text-align: left;
+}
+
+#rtaddpaqkf .gt_center {
+  text-align: center;
+}
+
+#rtaddpaqkf .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#rtaddpaqkf .gt_font_normal {
+  font-weight: normal;
+}
+
+#rtaddpaqkf .gt_font_bold {
+  font-weight: bold;
+}
+
+#rtaddpaqkf .gt_font_italic {
+  font-style: italic;
+}
+
+#rtaddpaqkf .gt_super {
+  font-size: 65%;
+}
+
+#rtaddpaqkf .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#rtaddpaqkf .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#rtaddpaqkf .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#rtaddpaqkf .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#rtaddpaqkf .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#rtaddpaqkf .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#rtaddpaqkf .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="<strong>ChatGPT<br>n:100</strong>" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"><strong>ChatGPT<br>
+n:100</strong></th>
+<th id="<strong>Published<br>n:100</strong>" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"><strong>Published<br>
+n:100</strong></th>
+<th id="<strong>Student<br>n:100</strong>" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"><strong>Student<br>
+n:100</strong></th>
+<th id="<strong><em>R</em><sup>2</sup></strong>" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"><strong><em>R</em><sup>2</sup></strong></th>
+<th id="<strong><em>p</em>-value</strong>" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"><strong><em>p</em>-value</strong></th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd gt_group_heading_row">
+<td colspan="6" id="Features indicating human-generated writing" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Features indicating human-generated writing</td>
+</tr>
+<tr class="even gt_row_group_first">
+<td class="gt_row gt_left" headers="Features indicating human-generated writing  variable">adverbs</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  ChatGPT" style="background-color: #FF6C6B; color: #FFFFFF">−0.97</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Published" style="background-color: #EBEEF4; color: #000000">0.23</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Student" style="background-color: #94A8C7; color: #000000">0.74</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  r.squared">0.52</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  p.value">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Features indicating human-generated writing  variable">conjuncts</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  ChatGPT" style="background-color: #FF8D88; color: #000000">−0.75</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Published" style="background-color: #A9B9D2; color: #000000">0.62</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Student" style="background-color: #FDFEFE; color: #000000">0.13</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  r.squared">0.32</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  p.value">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Features indicating human-generated writing  variable">modal possibility</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  ChatGPT" style="background-color: #FF928C; color: #000000">−0.71</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Published" style="background-color: #FFF5F4; color: #000000">0.04</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Student" style="background-color: #A1B2CD; color: #000000">0.66</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  r.squared">0.32</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  p.value">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Features indicating human-generated writing  variable">pronoun it</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  ChatGPT" style="background-color: #FFA69F; color: #000000">−0.56</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Published" style="background-color: #FFF5F3; color: #000000">0.04</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Student" style="background-color: #B8C5DA; color: #000000">0.53</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  r.squared">0.20</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  p.value">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Features indicating human-generated writing  variable">verb private</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  ChatGPT" style="background-color: #FFA7A0; color: #000000">−0.56</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Published" style="background-color: #FFF5F4; color: #000000">0.04</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Student" style="background-color: #BBC7DB; color: #000000">0.51</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  r.squared">0.19</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  p.value">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Features indicating human-generated writing  variable">split auxiliary</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  ChatGPT" style="background-color: #FFA6A0; color: #000000">−0.56</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Published" style="background-color: #D3DBE8; color: #000000">0.37</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Student" style="background-color: #F3F5F8; color: #000000">0.19</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  r.squared">0.16</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  p.value">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Features indicating human-generated writing  variable">that verb comp</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  ChatGPT" style="background-color: #FFB1AB; color: #000000">−0.48</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Published" style="background-color: #C1CCDE; color: #000000">0.48</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Student" style="background-color: #FFF0EE; color: #000000">0.00</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  r.squared">0.15</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  p.value">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Features indicating human-generated writing  variable">prepositions</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  ChatGPT" style="background-color: #FFB4AD; color: #000000">−0.46</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Published" style="background-color: #D9E0EB; color: #000000">0.34</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Student" style="background-color: #FEFEFF; color: #000000">0.12</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  r.squared">0.11</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  p.value">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Features indicating human-generated writing  variable">verb suasive</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  ChatGPT" style="background-color: #FFB5AE; color: #000000">−0.45</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Published" style="background-color: #FFFFFF; color: #000000">0.12</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Student" style="background-color: #D9E0EB; color: #000000">0.34</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  r.squared">0.11</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  p.value">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Features indicating human-generated writing  variable">verb public</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  ChatGPT" style="background-color: #FFB3AC; color: #000000">−0.47</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Published" style="background-color: #ECEFF5; color: #000000">0.23</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  Student" style="background-color: #EAEEF4; color: #000000">0.24</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  r.squared">0.11</td>
+<td class="gt_row gt_right" headers="Features indicating human-generated writing  p.value">0.00</td>
+</tr>
+<tr class="even gt_group_heading_row">
+<td colspan="6" id="Features indicating machine-generated writing" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Features indicating machine-generated writing</td>
+</tr>
+<tr class="odd gt_row_group_first">
+<td class="gt_row gt_left" headers="Features indicating machine-generated writing  variable">mean word length</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  ChatGPT" style="background-color: #4C74A3; color: #FFFFFF">1.14</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  Published" style="background-color: #FFDFDB; color: #000000">−0.13</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  Student" style="background-color: #FF6666; color: #FFFFFF">−1.01</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  r.squared">0.78</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  p.value">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Features indicating machine-generated writing  variable">modal predictive</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  ChatGPT" style="background-color: #39699B; color: #FFFFFF">1.22</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  Published" style="background-color: #FF918B; color: #000000">−0.72</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  Student" style="background-color: #FFADA7; color: #000000">−0.51</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  r.squared">0.76</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  p.value">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Features indicating machine-generated writing  variable">gerunds</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  ChatGPT" style="background-color: #5177A5; color: #FFFFFF">1.11</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  Published" style="background-color: #FFA7A1; color: #000000">−0.56</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  Student" style="background-color: #FFA7A1; color: #000000">−0.55</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  r.squared">0.62</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  p.value">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Features indicating machine-generated writing  variable">other adv sub</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  ChatGPT" style="background-color: #718EB5; color: #FFFFFF">0.94</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  Published" style="background-color: #FF948E; color: #000000">−0.70</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  Student" style="background-color: #FFD1CC; color: #000000">−0.24</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  r.squared">0.47</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  p.value">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Features indicating machine-generated writing  variable">demonstratives</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  ChatGPT" style="background-color: #7B95BA; color: #FFFFFF">0.88</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  Published" style="background-color: #FF948E; color: #000000">−0.70</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  Student" style="background-color: #FFD7D3; color: #000000">−0.19</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  r.squared">0.43</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  p.value">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Features indicating machine-generated writing  variable">nominalizations</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  ChatGPT" style="background-color: #98ABC9; color: #000000">0.71</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  Published" style="background-color: #FFEFED; color: #000000">0.00</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  Student" style="background-color: #FF928C; color: #000000">−0.71</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  r.squared">0.34</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  p.value">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Features indicating machine-generated writing  variable">phrasal coordination</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  ChatGPT" style="background-color: #A3B4CE; color: #000000">0.65</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  Published" style="background-color: #FFD5D1; color: #000000">−0.20</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  Student" style="background-color: #FFB5AF; color: #000000">−0.45</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  r.squared">0.22</td>
+<td class="gt_row gt_right" headers="Features indicating machine-generated writing  p.value">0.00</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="cell">
+<div id="tbl-ld2" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ld2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: Caption describing table.
+</figcaption>
+<div aria-describedby="tbl-ld2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div id="kejnrbxoxc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#kejnrbxoxc table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#kejnrbxoxc thead, #kejnrbxoxc tbody, #kejnrbxoxc tfoot, #kejnrbxoxc tr, #kejnrbxoxc td, #kejnrbxoxc th {
+  border-style: none;
+}
+
+#kejnrbxoxc p {
+  margin: 0;
+  padding: 0;
+}
+
+#kejnrbxoxc .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#kejnrbxoxc .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#kejnrbxoxc .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#kejnrbxoxc .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#kejnrbxoxc .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kejnrbxoxc .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kejnrbxoxc .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kejnrbxoxc .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#kejnrbxoxc .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#kejnrbxoxc .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#kejnrbxoxc .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#kejnrbxoxc .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#kejnrbxoxc .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#kejnrbxoxc .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#kejnrbxoxc .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#kejnrbxoxc .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#kejnrbxoxc .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#kejnrbxoxc .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#kejnrbxoxc .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kejnrbxoxc .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#kejnrbxoxc .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#kejnrbxoxc .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#kejnrbxoxc .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kejnrbxoxc .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#kejnrbxoxc .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#kejnrbxoxc .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kejnrbxoxc .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kejnrbxoxc .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#kejnrbxoxc .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kejnrbxoxc .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#kejnrbxoxc .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kejnrbxoxc .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kejnrbxoxc .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kejnrbxoxc .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kejnrbxoxc .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kejnrbxoxc .gt_left {
+  text-align: left;
+}
+
+#kejnrbxoxc .gt_center {
+  text-align: center;
+}
+
+#kejnrbxoxc .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#kejnrbxoxc .gt_font_normal {
+  font-weight: normal;
+}
+
+#kejnrbxoxc .gt_font_bold {
+  font-weight: bold;
+}
+
+#kejnrbxoxc .gt_font_italic {
+  font-style: italic;
+}
+
+#kejnrbxoxc .gt_super {
+  font-size: 65%;
+}
+
+#kejnrbxoxc .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#kejnrbxoxc .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#kejnrbxoxc .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#kejnrbxoxc .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#kejnrbxoxc .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#kejnrbxoxc .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#kejnrbxoxc .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="<strong>ChatGPT<br>n:100</strong>" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"><strong>ChatGPT<br>
+n:100</strong></th>
+<th id="<strong>Published<br>n:100</strong>" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"><strong>Published<br>
+n:100</strong></th>
+<th id="<strong>Student<br>n:100</strong>" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"><strong>Student<br>
+n:100</strong></th>
+<th id="<strong><em>R</em><sup>2</sup></strong>" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"><strong><em>R</em><sup>2</sup></strong></th>
+<th id="<strong><em>p</em>-value</strong>" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"><strong><em>p</em>-value</strong></th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd gt_group_heading_row">
+<td colspan="6" id="Features indicating expert writing" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Features indicating expert writing</td>
+</tr>
+<tr class="even gt_row_group_first">
+<td class="gt_row gt_left" headers="Features indicating expert writing  variable">agentless passives</td>
+<td class="gt_row gt_right" headers="Features indicating expert writing  ChatGPT" style="background-color: #FFADA7; color: #000000">−0.56</td>
+<td class="gt_row gt_right" headers="Features indicating expert writing  Published" style="background-color: #6585AF; color: #FFFFFF">0.78</td>
+<td class="gt_row gt_right" headers="Features indicating expert writing  Student" style="background-color: #FFDFDB; color: #000000">−0.22</td>
+<td class="gt_row gt_right" headers="Features indicating expert writing  r.squared">0.32</td>
+<td class="gt_row gt_right" headers="Features indicating expert writing  p.value">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Features indicating expert writing  variable">past tense</td>
+<td class="gt_row gt_right" headers="Features indicating expert writing  ChatGPT" style="background-color: #FFAFA9; color: #000000">−0.55</td>
+<td class="gt_row gt_right" headers="Features indicating expert writing  Published" style="background-color: #7A94B9; color: #FFFFFF">0.68</td>
+<td class="gt_row gt_right" headers="Features indicating expert writing  Student" style="background-color: #FFECE9; color: #000000">−0.13</td>
+<td class="gt_row gt_right" headers="Features indicating expert writing  r.squared">0.26</td>
+<td class="gt_row gt_right" headers="Features indicating expert writing  p.value">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Features indicating expert writing  variable">time adverbials</td>
+<td class="gt_row gt_right" headers="Features indicating expert writing  ChatGPT" style="background-color: #FFC2BC; color: #000000">−0.42</td>
+<td class="gt_row gt_right" headers="Features indicating expert writing  Published" style="background-color: #A3B4CE; color: #000000">0.47</td>
+<td class="gt_row gt_right" headers="Features indicating expert writing  Student" style="background-color: #FFF7F6; color: #000000">−0.05</td>
+<td class="gt_row gt_right" headers="Features indicating expert writing  r.squared">0.13</td>
+<td class="gt_row gt_right" headers="Features indicating expert writing  p.value">0.00</td>
+</tr>
+<tr class="odd gt_group_heading_row">
+<td colspan="6" id="Features indicating novice writing" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Features indicating novice writing</td>
+</tr>
+<tr class="even gt_row_group_first">
+<td class="gt_row gt_left" headers="Features indicating novice writing  variable">be main verb</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  ChatGPT" style="background-color: #FF8F89; color: #000000">−0.76</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  Published" style="background-color: #FFE6E3; color: #000000">−0.17</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  Student" style="background-color: #4470A0; color: #FFFFFF">0.93</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  r.squared">0.49</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  p.value">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Features indicating novice writing  variable">present tense</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  ChatGPT" style="background-color: #FFAAA4; color: #000000">−0.58</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  Published" style="background-color: #FFDDD9; color: #000000">−0.23</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  Student" style="background-color: #5F81AC; color: #FFFFFF">0.81</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  r.squared">0.35</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  p.value">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Features indicating novice writing  variable">emphatics</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  ChatGPT" style="background-color: #FFB5AF; color: #000000">−0.51</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  Published" style="background-color: #FFD8D4; color: #000000">−0.27</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  Student" style="background-color: #6786B0; color: #FFFFFF">0.77</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  r.squared">0.31</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  p.value">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Features indicating novice writing  variable">third person pronouns</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  ChatGPT" style="background-color: #FFC0BA; color: #000000">−0.43</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  Published" style="background-color: #FFD6D2; color: #000000">−0.28</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  Student" style="background-color: #738FB6; color: #FFFFFF">0.71</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  r.squared">0.26</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  p.value">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Features indicating novice writing  variable">clausal coordination</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  ChatGPT" style="background-color: #FFB9B3; color: #000000">−0.48</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  Published" style="background-color: #FFEFED; color: #000000">−0.11</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  Student" style="background-color: #8CA2C3; color: #FFFFFF">0.59</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  r.squared">0.20</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  p.value">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Features indicating novice writing  variable">wh clause</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  ChatGPT" style="background-color: #FFD0CB; color: #000000">−0.32</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  Published" style="background-color: #FFE0DD; color: #000000">−0.21</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  Student" style="background-color: #97AAC8; color: #000000">0.53</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  r.squared">0.14</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  p.value">0.00</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Features indicating novice writing  variable">if</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  ChatGPT" style="background-color: #FFD1CC; color: #000000">−0.31</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  Published" style="background-color: #FFEEEC; color: #000000">−0.12</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  Student" style="background-color: #AABAD2; color: #000000">0.43</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  r.squared">0.10</td>
+<td class="gt_row gt_right" headers="Features indicating novice writing  p.value">0.00</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
