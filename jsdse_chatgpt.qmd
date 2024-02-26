@@ -59,6 +59,63 @@ corpus_comp |>
     )
 ```
 
+# Linear discriminant analysis (LDA)
+
+Say stuff....
+
+```{r message=F, warning=FALSE}
+# Scale variables
+biber_scaled <- stats_biber %>%
+  select(-doc_id) %>%
+  mutate_if(is.numeric, scale)
+  
+stats_lda <- MASS::lda(Group ~ ., biber_scaled)
+```
+
+Function for plotting...
+
+```{r message=F, warning=FALSE}
+lda_scatter <- function(lda){
+  
+  var_ex <- (lda$svd)^2/sum(lda$svd^2) * 100
+  
+  per_ex_1 <- paste0("(", round(var_ex[1], 2), "%)")
+  per_ex_2 <- paste0("(", round(var_ex[2], 2), "%)")
+  
+  scores <- predict(lda) %>%
+    data.frame() %>%
+    select(class, x.LD1, x.LD2)
+  
+  max_x <- scores[,2] %>% abs() %>% max() %>% ceiling()+.5
+  max_y <- scores[,3] %>% abs() %>% max() %>% ceiling()+.5
+  
+  p1 <- ggplot() +
+    geom_hline(yintercept = 0, linewidth = .25) +
+    geom_vline(xintercept = 0, linewidth = .25) +
+    geom_point(data = scores, aes(x = x.LD1, y = x.LD2, fill = class),
+               shape = 21, size = 1.5) +
+    viridis::scale_fill_viridis(discrete = T) +
+    xlab(paste0("LD1", " ", per_ex_1)) +
+    ylab(paste0("LD2", " ", per_ex_2)) +
+    ylim(-max_y, max_y) +
+    xlim(-max_x, max_x) +
+    theme_linedraw() +
+    theme(panel.grid.minor.x = element_blank()) +
+    theme(panel.grid.minor.y = element_blank()) +
+    theme(panel.grid.major.x = element_blank()) +
+    theme(panel.grid.major.y = element_blank()) +
+    theme(legend.position = "none")
+  return(p1)
+}
+```
+
+```{r echo=F}
+#| label: fig-lda
+#| fig-cap: "Caption describing plot."
+
+lda_scatter(stats_lda)
+```
+
 # Multiple univariate regression
 
 Say stuff...
@@ -130,7 +187,18 @@ ld1_tbl |>
     colors = scales::col_numeric(
       palette = c(
         "#FF6666", "white", "#336699"),
-      domain = c(-1.01, 0, 1.25))
+      domain = c(pmin(ld1_tbl$ChatGPT, ld1_tbl$Published, ld1_tbl$Student), 
+                 0, 
+                 pmax(ld1_tbl$ChatGPT, ld1_tbl$Published, ld1_tbl$Student)))
+  ) |>
+  tab_style(
+    style = list(
+      cell_text(style = "italic",
+                align = "right")
+      ),
+    locations = cells_body(
+      columns = variable,
+    )
   )
 ```
 
@@ -161,5 +229,62 @@ ld2_tbl |>
       palette = c(
         "#FF6666", "white", "#336699"),
       domain = c(-1, 0, 1))
+  ) |>
+  tab_style(
+    style = list(
+      cell_text(style = "italic",
+                align = "right")
+      ),
+    locations = cells_body(
+      columns = variable,
+    )
   )
 ```
+
+# Modal verb frequencies
+
+Say stuff...
+
+```{r echo=F, warning=F, message=F}
+stats_freq |> 
+  filter(tag == "md") |>
+  select(-tag) |>
+  mutate(modal_type = ifelse(str_detect(token, "will|would|'ll"), "Prediction", NA)) |>
+  mutate(modal_type = ifelse(str_detect(token, "can|may|could|might"), "Possiblity", modal_type)) |>
+  mutate(modal_type = ifelse(is.na(modal_type), "Necessity", modal_type)) |>
+  gt(groupname_col = 'modal_type') |>
+  cols_label(
+    token = md("Modal verb"),
+    AF_chatgpt = md("ChatGPT"),
+    AF_published = md("Published"),
+    AF_student = md("Student"),
+    RF_chatgpt = md("ChatGPT"),
+    RF_published = md("Published"),
+    RF_student = md("Student"),
+  ) |> 
+  tab_spanner(
+    label = "Absolute Frequency",
+    columns = c(AF_chatgpt, AF_published, AF_student)
+  ) |>
+  tab_spanner(
+    label = md("Relative Frequency (per 10^5^ words)"),
+    columns = c(RF_chatgpt, RF_published, RF_student)
+  ) |>
+  fmt_number(
+    columns = c(RF_chatgpt, RF_published, RF_student),
+    decimals = 2
+  ) |>
+  tab_style(
+    style = list(
+      cell_text(style = "italic",
+                align = "right")
+      ),
+    locations = cells_body(
+      columns = token,
+    )
+  )
+```
+
+# Noun phrases
+
+Say stuff...
