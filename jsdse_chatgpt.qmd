@@ -12,20 +12,20 @@ This notebook includes the code and data that were used to produce the results o
 
 Note that the complete raw text data is not being made available to protect the privacy of the student writers. However, samples from the published and ChatGPT-generated data are included in order to demonstrate the processing pipeline.
 
-### Load packages
+## Load packages
 
 ```{r message=F, warning=F}
 library(tidyverse)
 library(gt)
 ```
 
-### Load data
+## Load data
 
 ```{r warning=FALSE, message=FALSE}
 load("data/chatgpt_data.rda")
 ```
 
-### Create a composition table
+## Create a composition table
 
 ```{r}
 corpus_comp <- stats_freq %>% 
@@ -246,6 +246,9 @@ ld2_tbl |>
 Say stuff...
 
 ```{r echo=F, warning=F, message=F}
+#| label: tbl-modals
+#| tbl-cap: "Caption describing table."
+
 stats_freq |> 
   filter(tag == "md") |>
   select(-tag) |>
@@ -288,3 +291,222 @@ stats_freq |>
 # Noun phrases
 
 Say stuff...
+
+```{r}
+count_pre <- function(np, root){
+  np_vector <- stringi::stri_extract_all_words(np) %>% unlist()
+  n_pre <- match(root, np_vector) - 1
+  n_pre <- unlist(unname(n_pre))
+  return(n_pre)
+}
+
+count_post <- function(np, root){
+  np_vector <- stringi::stri_extract_all_words(np) %>% unlist()
+  n_post <- length(np_vector) - match(root, np_vector)
+  n_post <- unlist(unname(n_post))
+  return(n_post)
+}
+```
+
+```{r warning=F, message=F}
+pre_counts <- stats_nps %>%
+  group_by(author_type, pre_nom) %>%
+  summarize(count = n()) %>%
+  ungroup() %>%
+  group_by(author_type) %>%
+  mutate(proportion = count/sum(count) * 100) %>%
+  arrange(-proportion)
+
+post_counts <- stats_nps %>%
+  group_by(author_type, post_nom) %>%
+  summarize(count = n()) %>%
+  ungroup() %>%
+  group_by(author_type) %>%
+  mutate(proportion = count/sum(count) * 100) %>%
+  arrange(-proportion)
+
+```
+
+We actually don't have these in the study, but they're interesting?
+
+```{r}
+#| label: tbl-prenominal
+#| tbl-cap: "Caption describing table."
+
+pre_counts |> 
+  pivot_wider(
+    names_from = author_type,
+    values_from = c(count, proportion),
+    values_fill = 0
+  ) |>
+  gt() |>
+  cols_label(
+    pre_nom = md("Pre-nominal POS"),
+    count_chatgpt = md("ChatGPT"),
+    count_published = md("Published"),
+    count_student = md("Student"),
+    proportion_chatgpt = md("ChatGPT"),
+    proportion_published = md("Published"),
+    proportion_student = md("Student"),
+  ) |> 
+  tab_spanner(
+    label = "Absolute Frequency",
+    columns = c(count_chatgpt, count_published, count_student)
+  ) |>
+  tab_spanner(
+    label = md("Relative Frequency (per 10^2^ words)"),
+    columns = c(proportion_chatgpt, proportion_published, proportion_student)
+  ) |>
+  fmt_number(
+    columns = c(proportion_chatgpt, proportion_published, proportion_student),
+    decimals = 2
+  ) |>
+  tab_style(
+    style = list(
+      cell_text(align = "right")
+      ),
+    locations = cells_body(
+      columns = pre_nom,
+    )
+  )
+```
+
+```{r}
+#| label: tbl-postnominal
+#| tbl-cap: "Caption describing table."
+
+post_counts |> 
+  pivot_wider(
+    names_from = author_type,
+    values_from = c(count, proportion),
+    values_fill = 0
+  ) |>
+  gt() |>
+  cols_label(
+    post_nom = md("Post-nominal POS"),
+    count_chatgpt = md("ChatGPT"),
+    count_published = md("Published"),
+    count_student = md("Student"),
+    proportion_chatgpt = md("ChatGPT"),
+    proportion_published = md("Published"),
+    proportion_student = md("Student"),
+  ) |> 
+  tab_spanner(
+    label = "Absolute Frequency",
+    columns = c(count_chatgpt, count_published, count_student)
+  ) |>
+  tab_spanner(
+    label = md("Relative Frequency (per 10^2^ words)"),
+    columns = c(proportion_chatgpt, proportion_published, proportion_student)
+  ) |>
+  fmt_number(
+    columns = c(proportion_chatgpt, proportion_published, proportion_student),
+    decimals = 2
+  ) |>
+  tab_style(
+    style = list(
+      cell_text(align = "right")
+      ),
+    locations = cells_body(
+      columns = post_nom,
+    )
+  )
+```
+
+```{r warning=F, message=F}
+df_plot <- stats_nps  %>% 
+  filter(!is.na(n_pre) | !is.na(n_post)) %>%
+  group_by(author_type) %>%
+  summarize(np_len = mean(np_len),
+            pre_root = mean(n_pre),
+            post_root = mean(n_post)) %>%
+  mutate(author_type = c("ChatGPT", "Published", "Student"))
+
+df_plot <- within(df_plot, author_type <- factor(author_type, levels = c('Student', 'ChatGPT', 'Published')))
+
+```
+
+## Build plot
+
+```{r}
+text_center <- grid::textGrob("Root noun", gp= grid::gpar(fontsize=10, fontface="bold"))
+text_left <- grid::textGrob("Pre-nominal", gp= grid::gpar(fontsize=10, fontface="bold"))
+text_right <- grid::textGrob("Post-nominal", gp= grid::gpar(fontsize=10, fontface="bold"))
+
+g.mid <- ggplot(df_plot, aes(x=1, y=author_type)) + 
+  geom_text(aes(label = paste0("- ", author_type, " -")), lineheight = 1) +
+  ggtitle("") +
+  ylab(NULL) +
+  annotation_custom(text_center, xmin=1, xmax=1, ymin=-0.5, ymax=1.5) +
+  coord_cartesian(clip = "off") + 
+  theme(axis.title=element_blank(),
+        panel.grid=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank(),
+        panel.background=element_blank(),
+        axis.text.x=element_text(color=NA),
+        axis.ticks.x=element_line(color=NA),
+        plot.margin = unit(c(1, -1, 1.25, -1), "lines"))
+
+g1 <- ggplot(data = df_plot, aes(x = author_type, y = pre_root, fill = author_type)) +
+  geom_col(width = 0.5) + ggtitle("") +
+  scale_fill_manual(values = c(
+    "Published" = viridis::viridis(3)[2], 
+    "ChatGPT"   = viridis::viridis(3)[1], 
+    "Student"   = viridis::viridis(3)[3])
+    ) +
+  geom_text(
+    aes(y = .55, label = paste0("← ", round(pre_root, 2), " words")),
+    nudge_x = .5
+  ) +
+  theme(axis.title.x = element_blank(), 
+        axis.title.y = element_blank(), 
+        axis.text.y = element_blank(), 
+        axis.ticks.y = element_blank(), 
+        axis.text.x = element_blank(), 
+        legend.position = "none",
+        axis.ticks.x = element_blank(), 
+        panel.background = element_blank(),
+        plot.margin = unit(c(1, -1, 2, 0), "lines")) +
+  annotation_custom(text_left, xmin=-0.5, xmax=1.5, ymin=-0.5, ymax=-0.5) +
+  scale_y_reverse() + 
+  coord_flip()
+
+g2 <- ggplot(data = df_plot, aes(x = author_type, y = post_root, fill = author_type)) +
+  xlab(NULL) +
+  geom_col(width = 0.5) + ggtitle("") +
+  scale_fill_manual(values = c(
+    "Published" = viridis::viridis(3)[2], 
+    "ChatGPT"   = viridis::viridis(3)[1], 
+    "Student"   = viridis::viridis(3)[3])
+  ) +
+  geom_text(
+    aes(y = .5, label = paste0(round(post_root, 2), " words →")),
+    nudge_x = .5
+  ) +
+  theme(axis.title.x = element_blank(), 
+        axis.title.y = element_blank(), 
+        axis.text.y = element_blank(), 
+        axis.ticks.y = element_blank(),
+        axis.text.x = element_blank(), 
+        axis.ticks.x = element_blank(), 
+        legend.position = "none",
+        panel.background = element_blank(),
+        plot.margin = unit(c(1, 0, 2, -1), "lines")) +
+  annotation_custom(text_right, xmin=-0.5, xmax=1.5, ymin=0.5, ymax=0.5) +
+  coord_flip()
+
+
+gg1 <- ggplot_gtable(ggplot_build(g1))
+gg2 <- ggplot_gtable(ggplot_build(g2))
+gg.mid <- ggplot_gtable(ggplot_build(g.mid))
+```
+
+## Plot
+
+```{r}
+#| label: fig-nps
+#| fig-cap: "Caption describing plot."
+
+gridExtra::grid.arrange(gg1, gg.mid, gg2, ncol=3, widths=c(2.2/10, 1.7/10, 6.1/10))
+```
