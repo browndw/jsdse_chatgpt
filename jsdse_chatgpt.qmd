@@ -121,7 +121,7 @@ p1 +
   annotate("text", x = 9.25, y = -6, label = "Expert\n↓", size = 3.5) +
   annotate("text", x = -8, y = -6, label = "← Machine-generated", size = 3.5) +
   annotate("text", x = 6, y = 3.75, label = "Student", size = 3.5) +
-  annotate("text", x = 6, y = -3.75, label = "Expert", size = 3.5) +
+  annotate("text", x = 6, y = -3.75, label = "Published", size = 3.5) +
   annotate("text", x = -6, y = -2.5, label = "ChatGPT", size = 3.5)
 ```
 
