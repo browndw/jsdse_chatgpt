@@ -15,6 +15,15 @@ This notebook includes the code and data that were used to produce the results o
 Note that the complete raw text data is not being made available to protect the privacy of the student writers. However, samples from the published and ChatGPT-generated data are included in order to demonstrate the processing pipeline.
 ```
 
+## Preparing the data
+
+The text data were first processed using [**spacyr**](https://spacyr.quanteda.io/]). The resulting output was then tagged using [**psuedobibeR**](https://cmu-textstat-docs.readthedocs.io/en/latest/pseudobibeR/pseudobibeR.html). The latter is an R package that aggregates the lexicogrammatical and functonal features described by [Biber (1985)](https://books.google.mw/books?id=acTLCgAAQBAJ&printsec=frontcover#v=onepage&q&f=false) and widely used for text-type, register, and genre classification tasks.
+
+```         
+:::{.callout-note}
+For a primer on Biber's tags and their applications in describing language variation, see [this overview](https://www.uni-bamberg.de/fileadmin/eng-ling/fs/Chapter_21/Index.html?23DimensionsofEnglish.html) of his original study.
+```
+
 ## Load packages
 
 ```{r message=F, warning=F}
