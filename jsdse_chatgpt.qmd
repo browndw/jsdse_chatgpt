@@ -10,7 +10,10 @@ format:
 
 This notebook includes the code and data that were used to produce the results of our study, which was submitted to the Journal of Statistics and Data Science Education.
 
+```         
+:::{.callout-note}
 Note that the complete raw text data is not being made available to protect the privacy of the student writers. However, samples from the published and ChatGPT-generated data are included in order to demonstrate the processing pipeline.
+```
 
 ## Load packages
 
