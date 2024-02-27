@@ -113,7 +113,16 @@ lda_scatter <- function(lda){
 #| label: fig-lda
 #| fig-cap: "Caption describing plot."
 
-lda_scatter(stats_lda)
+p1 <- lda_scatter(stats_lda)
+
+p1 +
+  annotate("text", x = -9.25, y = 6, label = "↑\nNovice", size = 3.5) +
+  annotate("text", x = 8, y = 6, label = "Human-generated →", size = 3.5) +
+  annotate("text", x = 9.25, y = -6, label = "Expert\n↓", size = 3.5) +
+  annotate("text", x = -8, y = -6, label = "← Machine-generated", size = 3.5) +
+  annotate("text", x = 6, y = 3.75, label = "Student", size = 3.5) +
+  annotate("text", x = 6, y = -3.75, label = "Expert", size = 3.5) +
+  annotate("text", x = -6, y = -2.5, label = "ChatGPT", size = 3.5)
 ```
 
 # Multiple univariate regression
@@ -158,7 +167,7 @@ ld2_tbl <- lm_biber %>%
   mutate(direction = ifelse(Student > 0 & ChatGPT < 0 & Published < 0, "novice", direction)) %>%
   filter(!is.na(direction)) %>%
   filter(r.squared > 0.1) %>%
-  arrange(direction, -r.squared)
+  arrange(desc(direction), -r.squared)
 ```
 
 ```{r echo=F, warning=F, message=F}
