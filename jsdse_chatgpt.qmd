@@ -1,6 +1,6 @@
 ---
 title: "Student Writing and Expertise in the Age of AI"
-author: "David Brown & Alex Reinhart"
+author: "Laura DeLuca, Alex Reinhart, Gordon Weinberg, Michael Laudenbach, Sydney Miller, and David West Brown"
 format:
   html: 
     number-sections: true
@@ -10,20 +10,16 @@ format:
 
 This notebook includes the code and data that were used to produce the results of our study, which was submitted to the Journal of Statistics and Data Science Education.
 
-:::{.callout-note}
-
-Note that the complete raw text data is not being made available to protect the privacy of the student writers. However, samples from the published and ChatGPT-generated data are included in order to demonstrate the processing pipeline.
-
+::: callout-note
+Note that the complete raw text data is not being made available to protect the privacy of the student writers. Features extracted from the text and used for analysis are included here. Samples of text from the published and ChatGPT-generated data are included in order to demonstrate the processing pipeline.
 :::
 
 ## Preparing the data
 
-The text data were first processed using [**spacyr**](https://spacyr.quanteda.io/]). The resulting output was then tagged using [**psuedobibeR**](https://cmu-textstat-docs.readthedocs.io/en/latest/pseudobibeR/pseudobibeR.html). The latter is an R package that aggregates the lexicogrammatical and functonal features described by [Biber (1985)](https://books.google.mw/books?id=acTLCgAAQBAJ&printsec=frontcover#v=onepage&q&f=false) and widely used for text-type, register, and genre classification tasks.
+The text data were first processed using [**spacyr**](https://spacyr.quanteda.io/%5D). The resulting output was then tagged using [**psuedobibeR**](https://cmu-textstat-docs.readthedocs.io/en/latest/pseudobibeR/pseudobibeR.html). The latter is an R package that aggregates the lexicogrammatical and functonal features described by [Biber (1985)](https://books.google.mw/books?id=acTLCgAAQBAJ&printsec=frontcover#v=onepage&q&f=false) and widely used for text-type, register, and genre classification tasks.
 
-:::{.callout-tip}
-
+::: callout-tip
 For a primer on Biber's tags and their applications in describing language variation, see [this overview](https://www.uni-bamberg.de/fileadmin/eng-ling/fs/Chapter_21/Index.html?23DimensionsofEnglish.html) of his original study.
-
 :::
 
 ## Load packages
@@ -31,6 +27,9 @@ For a primer on Biber's tags and their applications in describing language varia
 ```{r message=F, warning=F}
 library(tidyverse)
 library(gt)
+
+# PDF output supporting special characters
+library(Cairo)
 ```
 
 ## Load data
@@ -50,7 +49,7 @@ corpus_comp <- stats_freq %>%
   mutate(Author_Type = c("ChatGPT", "Published", "Student"))
 ```
 
-Say stuff...
+Used as Table 1 of the manuscript:
 
 ```{r echo=F, warning=F, message=F}
 #| label: tbl-corpus
@@ -74,8 +73,6 @@ corpus_comp |>
 ```
 
 # Linear discriminant analysis (LDA)
-
-Say stuff....
 
 ```{r message=F, warning=FALSE}
 # Scale variables
@@ -123,25 +120,30 @@ lda_scatter <- function(lda){
 }
 ```
 
+Used as Figure 2 of the manuscript:
+
 ```{r echo=F}
-#| label: fig-lda
-#| fig-cap: "Caption describing plot."
 
 p1 <- lda_scatter(stats_lda)
+CairoFonts(regular = "Source Sans Pro:style=Regular")
 
-p1 +
+out <- p1 +
   annotate("text", x = -9.25, y = 6, label = "↑\nNovice", size = 3.5) +
-  annotate("text", x = 8, y = 6, label = "Human-generated →", size = 3.5) +
+  annotate("text", x = 7.25, y = 6, label = "Human-generated →", size = 3.5) + 
   annotate("text", x = 9.25, y = -6, label = "Expert\n↓", size = 3.5) +
-  annotate("text", x = -8, y = -6, label = "← Machine-generated", size = 3.5) +
-  annotate("text", x = 6, y = 3.75, label = "Student", size = 3.5) +
+  annotate("text", x = -7.25, y = -6, label = "← Machine-generated", size = 3.5) +
+  annotate("text", x = 6.5, y = 3.75, label = "Student", size = 3.5) +
   annotate("text", x = 6, y = -3.75, label = "Published", size = 3.5) +
   annotate("text", x = -6, y = -2.5, label = "ChatGPT", size = 3.5)
+
+ggsave("figures/lda_scatter.pdf", out, width = 5, height = 3.5,
+       dev = CairoPDF)
+
+out
 ```
 
 # Multiple univariate regression
 
-Say stuff...
 
 ```{r message=F, warning=FALSE}
 z_means <- stats_biber %>%
@@ -184,27 +186,32 @@ ld2_tbl <- lm_biber %>%
   arrange(desc(direction), -r.squared)
 ```
 
+Used as Table 2 of the manuscript:
+
 ```{r echo=F, warning=F, message=F}
-#| label: tbl-ld1
-#| tbl-cap: "Caption describing table."
 
 ld1_tbl |> 
   mutate(direction = paste0("Features indicating ", direction, "-generated writing")) |>
   mutate(variable = str_remove(variable, "f_\\d+_")) |>
   mutate(variable = str_replace_all(variable, "_", " ")) |>
+  mutate(p.value = p.value * 67) |> # Bonferroni
   gt(groupname_col = 'direction') |>
   cols_label(
     variable = md(""),
-    ChatGPT = md("**ChatGPT<br>n:100**"),
-    Published = md("**Published<br>n:100**"),
-    Student = md("**Student<br>n:100**"),
+    ChatGPT = md("**ChatGPT**<br>$n = 100$"),
+    Published = md("**Published**<br>$n = 100$"),
+    Student = md("**Student**<br>$n = 100$"),
     r.squared = md("***R*^2^**"),
     p.value = md("***p*-value**")
   ) |> 
   fmt_number(
-    columns = everything(),
+    columns = !p.value,
     decimals = 2
-  )  |> 
+  )  |>
+  fmt(
+    p.value,
+    fns = scales::label_pvalue()
+  ) |>
   data_color(
     columns = c(ChatGPT:Student),
     colors = scales::col_numeric(
@@ -225,10 +232,9 @@ ld1_tbl |>
   )
 ```
 
-```{r echo=F, warning=F, message=F}
-#| label: tbl-ld2
-#| tbl-cap: "Caption describing table."
+And Table 4:
 
+```{r echo=F, warning=F, message=F}
 ld2_tbl |> 
   mutate(direction = paste0("Features indicating ", direction, " writing")) |>
   mutate(variable = str_remove(variable, "f_\\d+_")) |>
@@ -236,16 +242,20 @@ ld2_tbl |>
   gt(groupname_col = 'direction') |>
   cols_label(
     variable = md(""),
-    ChatGPT = md("**ChatGPT<br>n:100**"),
-    Published = md("**Published<br>n:100**"),
-    Student = md("**Student<br>n:100**"),
+    ChatGPT = md("**ChatGPT**<br>$n = 100$"),
+    Published = md("**Published**<br>$n = 100$"),
+    Student = md("**Student**<br>$n = 100$"),
     r.squared = md("***R*^2^**"),
     p.value = md("***p*-value**")
   ) |> 
   fmt_number(
-    columns = everything(),
+    columns = !p.value,
     decimals = 2
-  )  |> 
+  )  |>
+  fmt(
+    p.value,
+    fns = scales::label_pvalue()
+  ) |>
   data_color(
     columns = c(ChatGPT:Student),
     colors = scales::col_numeric(
@@ -266,11 +276,9 @@ ld2_tbl |>
 
 # Modal verb frequencies
 
-Say stuff...
+Table 3 of the manuscript:
 
 ```{r echo=F, warning=F, message=F}
-#| label: tbl-modals
-#| tbl-cap: "Caption describing table."
 
 stats_freq |> 
   filter(tag == "md") |>
@@ -313,7 +321,7 @@ stats_freq |>
 
 # Noun phrases
 
-Say stuff...
+Lengths of noun phrases.
 
 ```{r warning=F, message=F}
 df_plot <- stats_nps  %>% 
@@ -406,9 +414,9 @@ gg.mid <- ggplot_gtable(ggplot_build(g.mid))
 
 ## Plot
 
+Figure 4 of the manuscript:
+
 ```{r echo=F, warning=F, message=F}
-#| label: fig-nps
-#| fig-cap: "Caption describing plot."
 #| fig-height: 3
 
 gridExtra::grid.arrange(gg1, gg.mid, gg2, ncol=3, widths=c(2.2/10, 1.7/10, 6.1/10))
