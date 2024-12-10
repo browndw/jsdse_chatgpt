@@ -144,7 +144,6 @@ out
 
 # Multiple univariate regression
 
-
 ```{r message=F, warning=FALSE}
 z_means <- stats_biber %>%
   select(-doc_id) %>%
@@ -274,7 +273,9 @@ ld2_tbl |>
   )
 ```
 
-# Modal verb frequencies
+# Modal verbs
+
+## Table of modal verb frequencies
 
 Table 3 of the manuscript:
 
@@ -317,6 +318,96 @@ stats_freq |>
       columns = token,
     )
   )
+```
+
+## Modal verb position in full report
+
+Read in the report and format for plotting.
+
+```{r warning=F, message=F}
+
+# read in the full report
+doc <- readtext::readtext("data/gpt-full-report.txt")
+
+# tokenize the document
+doc_tks <- doc %>%
+  quanteda::corpus() %>%
+  quanteda::tokens() %>%
+  quanteda::as.list() %>% 
+  data.frame() %>%
+  rename(token = "gpt.full.report.txt") %>%
+  mutate(section = ifelse(str_detect(token, "^Abstract$|^Introduction$|^Methods$|^Results$|^Discussion$"), token, NA))
+
+# add column for modal verb types
+doc_tks <- doc_tks %>%
+  mutate(modal_type = ifelse(str_detect(token, "^will$|^would$|^'ll$"), "Prediction", NA)) %>%
+  mutate(modal_type = ifelse(str_detect(token, "^can$|^may$|^could$|^might$"), "Possiblity", modal_type)) %>%
+  mutate(modal_type = ifelse(str_detect(token, "^should$|^must$"), "Necessity", modal_type))
+
+# add index for token position
+doc_tks <- doc_tks %>%
+  rownames_to_column("idx") %>%
+  mutate(idx = as.numeric(idx)) %>%
+  mutate(idx = idx/nrow(doc_tks))
+
+# format data for plotting
+doc_tks <- doc_tks %>%
+  filter(!is.na(modal_type) | !is.na(section) ) %>%
+  fill(section) %>%
+  group_by(token) %>%
+  mutate(total = n()) %>%
+  ungroup() %>%
+  mutate(label = ifelse(!is.na(modal_type), paste0("italic(",token, ")~~(n == ", total, ")"), NA))
+
+```
+
+## Plot
+
+Figure 5 of the manuscript:
+
+```{r warning=F, message=F}
+
+p1 <- ggplot(data = filter(doc_tks, !is.na(modal_type))) +
+  geom_segment(aes(x = idx, y = 0, xend = idx, yend = 1), color = "black") +
+  annotate('rect', xmin=0, xmax=min(doc_tks$idx[doc_tks$section == "Introduction"]), ymin=0, ymax=1, alpha=.2, fill='red') +
+  annotate('rect', xmin=min(doc_tks$idx[doc_tks$section == "Methods"]), xmax=min(doc_tks$idx[doc_tks$section == "Results"]), ymin=0, ymax=1, alpha=.2, fill='red') +
+  annotate('rect', xmin=min(doc_tks$idx[doc_tks$section == "Discussion"]), xmax=1, ymin=0, ymax=1, alpha=.2, fill='red') +
+  theme_classic() +
+  theme(
+    axis.line = element_blank(),
+    panel.background = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    plot.background = element_blank(),
+    axis.ticks.y = element_blank(),
+    axis.text.y = element_blank(),
+    strip.text.y = element_text(angle = 0),
+    axis.title.x=element_text(size=9),
+  ) +
+  labs(x = "Relative token index", y = "") +
+  facet_wrap(vars(label), nrow = 4, labeller = label_parsed) +
+  theme(strip.text = element_text(
+    size = 12))
+
+dat_text <- data.frame(
+  sect_label = c("A", "I", "M", "R", "D"),
+  label   = c("italic(would)~~(n == 1)", "italic(would)~~(n == 1)", "italic(would)~~(n == 1)", "italic(would)~~(n == 1)", "italic(would)~~(n == 1)"),
+  x     = c(
+    .025, 
+    min(doc_tks$idx[doc_tks$section == "Introduction"]) + .025,
+    min(doc_tks$idx[doc_tks$section == "Methods"] + .025),
+    min(doc_tks$idx[doc_tks$section == "Results"] + .025),
+    min(doc_tks$idx[doc_tks$section == "Discussion"] + .035)
+  ),
+  y     = c(0.15, 0.15, 0.15, 0.15, 0.15)
+)
+
+out <- p1 + geom_text(
+  data    = dat_text,
+  mapping = aes(x = x, y = y, label = sect_label), fontface='bold'
+)
+
+out
 ```
 
 # Noun phrases
