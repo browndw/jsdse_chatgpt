@@ -35,7 +35,9 @@ library(Cairo)
 ## Load data
 
 ```{r warning=FALSE, message=FALSE}
-load("data/chatgpt_data.rda")
+stats_biber <- read.csv("data/stats_biber.csv")
+stats_freq <- read.csv("data/stats_freq.csv")
+stats_nps <- read.csv("data/stats_nps.csv")
 ```
 
 ## Create a composition table
