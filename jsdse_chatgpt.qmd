@@ -2,7 +2,7 @@
 title: "Student Writing and Expertise in the Age of AI"
 author: "Laura DeLuca, Alex Reinhart, Gordon Weinberg, Michael Laudenbach, Sydney Miller, and David West Brown"
 format:
-  html: 
+  html:
     number-sections: true
 ---
 
@@ -41,7 +41,7 @@ load("data/chatgpt_data.rda")
 ## Create a composition table
 
 ```{r}
-corpus_comp <- stats_freq %>% 
+corpus_comp <- stats_freq %>%
   pivot_longer(cols = AF_chatgpt:AF_student, names_to = "Author_Type", values_to = "AF") %>%
   group_by(Author_Type) %>%
   summarize(Texts = 100,
@@ -55,7 +55,7 @@ Used as Table 1 of the manuscript:
 #| label: tbl-corpus
 #| tbl-cap: "Composition of corpus."
 
-corpus_comp |> 
+corpus_comp |>
   gt() |>
   fmt_integer() |>
   cols_label(
@@ -79,7 +79,7 @@ corpus_comp |>
 biber_scaled <- stats_biber %>%
   select(-doc_id) %>%
   mutate_if(is.numeric, scale)
-  
+
 stats_lda <- MASS::lda(Group ~ ., biber_scaled)
 ```
 
@@ -87,19 +87,19 @@ Function for plotting...
 
 ```{r message=F, warning=FALSE}
 lda_scatter <- function(lda){
-  
+
   var_ex <- (lda$svd)^2/sum(lda$svd^2) * 100
-  
+
   per_ex_1 <- paste0("(", round(var_ex[1], 2), "%)")
   per_ex_2 <- paste0("(", round(var_ex[2], 2), "%)")
-  
+
   scores <- predict(lda) %>%
     data.frame() %>%
     select(class, x.LD1, x.LD2)
-  
+
   max_x <- scores[,2] %>% abs() %>% max() %>% ceiling()+.5
   max_y <- scores[,3] %>% abs() %>% max() %>% ceiling()+.5
-  
+
   p1 <- ggplot() +
     geom_hline(yintercept = 0, linewidth = .25) +
     geom_vline(xintercept = 0, linewidth = .25) +
@@ -129,7 +129,7 @@ CairoFonts(regular = "Source Sans Pro:style=Regular")
 
 out <- p1 +
   annotate("text", x = -9.25, y = 6, label = "↑\nNovice", size = 3.5) +
-  annotate("text", x = 7.25, y = 6, label = "Human-generated →", size = 3.5) + 
+  annotate("text", x = 7.25, y = 6, label = "Human-generated →", size = 3.5) +
   annotate("text", x = 9.25, y = -6, label = "Expert\n↓", size = 3.5) +
   annotate("text", x = -7.25, y = -6, label = "← Machine-generated", size = 3.5) +
   annotate("text", x = 6.5, y = 3.75, label = "Student", size = 3.5) +
@@ -157,7 +157,7 @@ lm_biber <- stats_biber %>%
   select(-doc_id) %>%
   pivot_longer(!Group, names_to = "variable", values_to = "value") %>%
   group_by(variable) %>%
-  arrange(.by_group = TRUE) %>% 
+  arrange(.by_group = TRUE) %>%
   nest() %>%
   mutate(models = map(data, ~ lm(value ~ Group, data = .)),
          glance = map(models, broom::glance)) %>%
@@ -189,7 +189,7 @@ Used as Table 2 of the manuscript:
 
 ```{r echo=F, warning=F, message=F}
 
-ld1_tbl |> 
+ld1_tbl |>
   mutate(direction = paste0("Features indicating ", direction, "-generated writing")) |>
   mutate(variable = str_remove(variable, "f_\\d+_")) |>
   mutate(variable = str_replace_all(variable, "_", " ")) |>
@@ -202,7 +202,7 @@ ld1_tbl |>
     Student = md("**Student**<br>$n = 100$"),
     r.squared = md("***R*^2^**"),
     p.value = md("***p*-value**")
-  ) |> 
+  ) |>
   fmt_number(
     columns = !p.value,
     decimals = 2
@@ -216,8 +216,8 @@ ld1_tbl |>
     colors = scales::col_numeric(
       palette = c(
         "#FF6666", "white", "#336699"),
-      domain = c(pmin(ld1_tbl$ChatGPT, ld1_tbl$Published, ld1_tbl$Student), 
-                 0, 
+      domain = c(pmin(ld1_tbl$ChatGPT, ld1_tbl$Published, ld1_tbl$Student),
+                 0,
                  pmax(ld1_tbl$ChatGPT, ld1_tbl$Published, ld1_tbl$Student)))
   ) |>
   tab_style(
@@ -234,7 +234,7 @@ ld1_tbl |>
 And Table 4:
 
 ```{r echo=F, warning=F, message=F}
-ld2_tbl |> 
+ld2_tbl |>
   mutate(direction = paste0("Features indicating ", direction, " writing")) |>
   mutate(variable = str_remove(variable, "f_\\d+_")) |>
   mutate(variable = str_replace_all(variable, "_", " ")) |>
@@ -246,7 +246,7 @@ ld2_tbl |>
     Student = md("**Student**<br>$n = 100$"),
     r.squared = md("***R*^2^**"),
     p.value = md("***p*-value**")
-  ) |> 
+  ) |>
   fmt_number(
     columns = !p.value,
     decimals = 2
@@ -281,7 +281,7 @@ Table 3 of the manuscript:
 
 ```{r echo=F, warning=F, message=F}
 
-stats_freq |> 
+stats_freq |>
   filter(tag == "md") |>
   select(-tag) |>
   mutate(modal_type = ifelse(str_detect(token, "will|would|'ll"), "Prediction", NA)) |>
@@ -296,7 +296,7 @@ stats_freq |>
     RF_chatgpt = md("ChatGPT"),
     RF_published = md("Published"),
     RF_student = md("Student"),
-  ) |> 
+  ) |>
   tab_spanner(
     label = "Absolute Frequency",
     columns = c(AF_chatgpt, AF_published, AF_student)
@@ -333,7 +333,7 @@ doc <- readtext::readtext("data/gpt-full-report.txt")
 doc_tks <- doc %>%
   quanteda::corpus() %>%
   quanteda::tokens() %>%
-  quanteda::as.list() %>% 
+  quanteda::as.list() %>%
   data.frame() %>%
   rename(token = "gpt.full.report.txt") %>%
   mutate(section = ifelse(str_detect(token, "^Abstract$|^Introduction$|^Methods$|^Results$|^Discussion$"), token, NA))
@@ -393,7 +393,7 @@ dat_text <- data.frame(
   sect_label = c("A", "I", "M", "R", "D"),
   label   = c("italic(would)~~(n == 1)", "italic(would)~~(n == 1)", "italic(would)~~(n == 1)", "italic(would)~~(n == 1)", "italic(would)~~(n == 1)"),
   x     = c(
-    .025, 
+    .025,
     min(doc_tks$idx[doc_tks$section == "Introduction"]) + .025,
     min(doc_tks$idx[doc_tks$section == "Methods"] + .025),
     min(doc_tks$idx[doc_tks$section == "Results"] + .025),
@@ -415,7 +415,7 @@ out
 Lengths of noun phrases.
 
 ```{r warning=F, message=F}
-df_plot <- stats_nps  %>% 
+df_plot <- stats_nps  %>%
   filter(!is.na(n_pre) | !is.na(n_post)) %>%
   group_by(author_type) %>%
   summarize(np_len = mean(np_len),
@@ -434,12 +434,12 @@ text_center <- grid::textGrob("Root noun", gp= grid::gpar(fontsize=10, fontface=
 text_left <- grid::textGrob("Pre-nominal", gp= grid::gpar(fontsize=10, fontface="bold"))
 text_right <- grid::textGrob("Post-nominal", gp= grid::gpar(fontsize=10, fontface="bold"))
 
-g.mid <- ggplot(df_plot, aes(x=1, y=author_type)) + 
+g.mid <- ggplot(df_plot, aes(x=1, y=author_type)) +
   geom_text(aes(label = paste0("- ", author_type, " -")), lineheight = 1) +
   ggtitle("") +
   ylab(NULL) +
   annotation_custom(text_center, xmin=1, xmax=1, ymin=-0.5, ymax=1.5) +
-  coord_cartesian(clip = "off") + 
+  coord_cartesian(clip = "off") +
   theme(axis.title=element_blank(),
         panel.grid=element_blank(),
         axis.text.y=element_blank(),
@@ -452,45 +452,45 @@ g.mid <- ggplot(df_plot, aes(x=1, y=author_type)) +
 g1 <- ggplot(data = df_plot, aes(x = author_type, y = pre_root, fill = author_type)) +
   geom_col(width = 0.5) + ggtitle("") +
   scale_fill_manual(values = c(
-    "Published" = viridis::viridis(3)[2], 
-    "ChatGPT"   = viridis::viridis(3)[1], 
+    "Published" = viridis::viridis(3)[2],
+    "ChatGPT"   = viridis::viridis(3)[1],
     "Student"   = viridis::viridis(3)[3])
     ) +
   geom_text(
     aes(y = .55, label = paste0("← ", round(pre_root, 2), " words")),
     nudge_x = .5
   ) +
-  theme(axis.title.x = element_blank(), 
-        axis.title.y = element_blank(), 
-        axis.text.y = element_blank(), 
-        axis.ticks.y = element_blank(), 
-        axis.text.x = element_blank(), 
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.x = element_blank(),
         legend.position = "none",
-        axis.ticks.x = element_blank(), 
+        axis.ticks.x = element_blank(),
         panel.background = element_blank(),
         plot.margin = unit(c(1, -1, 2, 0), "lines")) +
   annotation_custom(text_left, xmin=-0.5, xmax=1.5, ymin=-0.5, ymax=-0.5) +
-  scale_y_reverse() + 
+  scale_y_reverse() +
   coord_flip()
 
 g2 <- ggplot(data = df_plot, aes(x = author_type, y = post_root, fill = author_type)) +
   xlab(NULL) +
   geom_col(width = 0.5) + ggtitle("") +
   scale_fill_manual(values = c(
-    "Published" = viridis::viridis(3)[2], 
-    "ChatGPT"   = viridis::viridis(3)[1], 
+    "Published" = viridis::viridis(3)[2],
+    "ChatGPT"   = viridis::viridis(3)[1],
     "Student"   = viridis::viridis(3)[3])
   ) +
   geom_text(
     aes(y = .5, label = paste0(round(post_root, 2), " words →")),
     nudge_x = .5
   ) +
-  theme(axis.title.x = element_blank(), 
-        axis.title.y = element_blank(), 
-        axis.text.y = element_blank(), 
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        axis.text.y = element_blank(),
         axis.ticks.y = element_blank(),
-        axis.text.x = element_blank(), 
-        axis.ticks.x = element_blank(), 
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
         legend.position = "none",
         panel.background = element_blank(),
         plot.margin = unit(c(1, 0, 2, -1), "lines")) +
